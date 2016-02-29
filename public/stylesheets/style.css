@@ -1,0 +1,29 @@
+.status {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  border-top: thin solid #999;
+  border-right: thin solid #999;
+}
+
+.status .url,
+.status .statusEntry {
+  border-bottom: thin solid #999;
+  border-left: thin solid #999;
+  vertical-align: top;
+  padding: .25em .5em;
+}
+
+.status .url {
+  width: 30%;
+}
+
+.status .statusEntry {
+  width: 15%;
+  text-align: center;
+}
+
+.statusEntry .statusText {
+  display: block;
+  font-size: smaller;
+}
