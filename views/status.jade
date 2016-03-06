@@ -1,36 +1,58 @@
 extends layout
 
+mixin formatFragmentSpecEntry(url, specEntry)
+  div.fragment
+    h3
+      - var urlWithFragment = url + specEntry.fragment
+      - var fragmentText = decodeURIComponent(specEntry.fragment || '#')
+      a(href=urlWithFragment)= fragmentText
+
+    each engine in engines
+      - var statusEntries = specEntry.engines[engine]
+      if statusEntries
+        div.engine
+          h4.engine-title(class=engine)= engine
+          ul.entry-list
+            each statusEntry in statusEntries
+              - var status = statusEntry.status
+              - var classList = []
+              - classList.push(engine)
+              - classList.push(status.status)
+              - status.behindFlag && classList.push('behindFlag')
+              - status.prefixed && classList.push('prefixed')
+              li.entry(class=classList)
+                - var statusURL = statusEntry.statusURL
+                a(href=statusURL) 
+                  span.title= statusEntry.title
+                div.status
+                  span.text= status.originalStatus
+                  if status.channel
+                    |  (starting 
+                    span.channel= status.channel
+                    | )
+                  if status.behindFlag
+                    | 
+                    span.behindFlag (behind a flag)
+                  if status.prefixed
+                    | 
+                    span.channel (prefixed)
+                  
+
+
+mixin formatSpecEntry(specEntry)
+  section.spec
+    h2
+      - var url = specEntry.url
+      - var urlText = url || '#'
+      a(href=url)= urlText
+
+    each fragmentSpecEntry in specEntry.fragments
+      +formatFragmentSpecEntry(url, fragmentSpecEntry)
+
 block content
   h1= title
-  table.status
-    thead
-      tr
-        th.url(scope='col') URL
-        each engine in engines
-          th.statusEntry(scope='col')= engine
-    tbody
-      each specEntry in data
-        - var i = 0
-        while i < specEntry.maxEntryLength
-          tr
-            td.url
-              - var url = specEntry.url
-              a(href=url)= specEntry.url
-            each engine in engines
-              - var statusEntries = specEntry.engines[engine];
-              - var statusEntry = (statusEntries && i < statusEntries.length) ? statusEntries[i] : null
-              if statusEntry
-                - var status = statusEntry.status.status
-                - var statusURL = statusEntry.statusURL
-                - var originalStatus = 
-                td.statusEntry(class=status)
-                  a(href=statusURL) 
-                    span.statusTitle= statusEntry.title
-                    | 
-                    span.statusText= statusEntry.status.originalStatus
-              else
-                td.statusEntry
-          - i++
+  each specEntry in data
+    +formatSpecEntry(specEntry)
   p
     a(href='/') Back to top page
   p Platform Status Data are form  

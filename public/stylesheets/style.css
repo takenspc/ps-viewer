@@ -1,32 +1,166 @@
-.status {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-  border-top: thin solid #999;
-  border-right: thin solid #999;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.status .url,
-.status .statusEntry {
-  border-bottom: thin solid #999;
-  border-left: thin solid #999;
-  vertical-align: top;
-  padding: .25em .5em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
 }
 
-.status .url {
-  width: 30%;
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 80rem;
+    margin: auto;
+    background: #fff;
+    color: #333;
 }
 
-.status .statusEntry {
-  width: 15%;
-  text-align: center;
+
+h1 {
+    background: #9e9e9e;
+    padding: 2rem 1rem;
 }
 
-.statusEntry .statusTitle {
-  font-size: smaller;
+.spec {
+    margin-bottom: 2em;
 }
 
-.statusEntry .statusText {
-  display: block;
+
+.spec h2 {
+    padding: 1rem 1rem 1rem .5rem;
+    color: #616161;
+    border-left: #616161 solid .5rem;
+}
+
+.spec h2 a {
+    color: inherit;
+}
+
+
+.fragment h3 {
+    padding: 1rem 1rem 1rem .5rem;
+    color: #424242;
+    border-left: #424242 solid .5rem;
+}
+
+.fragment h3 a {
+    color: inherit;
+}
+
+.fragment:after {
+    content: '';
+    display: block;
+    width: 0;
+    clear: both;
+}
+
+
+.engine {
+    margin: 0;
+    padding: 1rem .5rem 1rem 1rem;
+}
+
+.engine-title {
+    background: no-repeat .25rem .125rem;
+    background-size: 1em 1em;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.engine-title.chromium {
+    background-image: url('../images/icons/chrome.png');
+}
+
+.engine-title.edge {
+    background-image: url('../images/icons/edge.png');
+}
+
+.engine-title.gecko {
+    background-image: url('../images/icons/firefox.png');
+}
+
+.engine-title.webkit {
+    background-image: url('../images/icons/webkit.png');
+}
+
+
+.entry-list {
+    list-style: none;
+}
+
+
+.entry {
+    margin-left: 1.5rem;
+    padding: .5rem;
+}
+
+.entry a {
+    color: inherit;
+}
+
+.entry .title {
+    padding-left: 1.25rem;
+    background: no-repeat top left;
+    background-size: 1rem 1rem;
+}
+
+
+.entry.removed .title {
+    background-image: url('../images/icons/removed.svg');
+}
+
+.entry.deprecated .title {
+    background-image: url('../images/icons/removed.svg');
+}
+
+.entry.prefixed .title {
+    background-image: url('../images/icons/deprecated.svg');
+}
+
+.entry.behindFlag .title {
+    background-image: url('../images/icons/deprecated.svg');
+}
+
+
+.entry.supported {
+    background-color: #81c784;
+    border-top: #43a047 thick solid;
+}
+
+.entry.in-development {
+    background-color: #ffd54f;
+    border-top: #ffb300 thick solid;
+}
+
+.entry.under-consideration {
+    background-color: #ffd54f;
+    border-top: #ffb300 thick solid;
+}
+
+.entry.not-planned {
+    background-color: #e0e0e0;
+    border-top: #757575 thick solid;
+}
+
+.entry.deprecated {
+    background-color: #ff8a65;
+    border-top: #f4511e thick solid;
+}
+
+.entry.removed {
+    background-color: #ff8a65;
+    border-top: #f4511e thick solid;
+}
+
+.entry .status {
+    padding-left: 1.25rem;
+    font-size: smaller;
 }
