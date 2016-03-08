@@ -160,13 +160,13 @@
 						},
 						{
 							"engine": "chromium",
-							"id": 6331324939894784,
-							"title": "Experimental Framework",
+							"id": 5393219172958208,
+							"title": "Intent to deprecate: PseudoBeforeAfterForInputElement",
 							"url": "",
-							"statusURL": "https://www.chromestatus.com/features/6331324939894784",
+							"statusURL": "https://www.chromestatus.com/features/5393219172958208",
 							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
+								"status": "deprecated",
+								"originalStatus": "Deprecated",
 								"channel": 51,
 								"behindFlag": false,
 								"prefixed": false
@@ -209,6 +209,20 @@
 							"status": {
 								"status": "removed",
 								"originalStatus": "Removed",
+								"channel": 50,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 6331324939894784,
+							"title": "Experimental Framework",
+							"url": "",
+							"statusURL": "https://www.chromestatus.com/features/6331324939894784",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
 								"channel": 50,
 								"behindFlag": false,
 								"prefixed": false
@@ -877,7 +891,7 @@
 						}
 					]
 				},
-				"maxEntryLength": 56,
+				"maxEntryLength": 57,
 				"fragment": ""
 			}
 		],
@@ -1123,6 +1137,20 @@
 								"status": "supported",
 								"originalStatus": "Enabled by default",
 								"channel": 45,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5135818813341696,
+							"title": "Typed Arrays",
+							"url": "http://www.khronos.org/registry/typedarray/specs/latest/",
+							"statusURL": "https://www.chromestatus.com/features/5135818813341696",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 13,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -6754,12 +6782,7 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": ""
-			}
-		],
-		"url": "https://heycam.github.io/webidl"
-	},
-	{
-		"fragments": [
+			},
 			{
 				"engines": {
 					"chromium": [
@@ -8641,7 +8664,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://http2.github.io/http2-spec"
+		"url": "https://http2.github.io/http2-spec/"
 	},
 	{
 		"fragments": [
@@ -9155,7 +9178,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://rniwa.github.io/selection-api"
+		"url": "https://rniwa.github.io/selection-api/"
 	},
 	{
 		"fragments": [
@@ -9182,182 +9205,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://rwaldron.github.io/exponentiation-operator"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 5740842165731328,
-							"title": "Cache API is restricted to secure origins",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
-							"statusURL": "https://www.chromestatus.com/features/5740842165731328",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 46,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "chromium",
-							"id": 6561526227927040,
-							"title": "Service Worker",
-							"url": "http://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
-							"statusURL": "https://www.chromestatus.com/features/6561526227927040",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 40,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "serviceworker",
-							"title": "Service Worker",
-							"url": "https://github.com/slightlyoff/ServiceWorker/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/serviceworker",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"gecko": [
-						{
-							"engine": "gecko",
-							"id": "service-worker",
-							"title": "Service Worker",
-							"url": "http://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
-							"statusURL": "https://platform-status.mozilla.org/#service-worker",
-							"status": {
-								"status": "supported",
-								"originalStatus": 44,
-								"channel": 44,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 2,
-				"fragment": ""
-			},
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 5072127703121920,
-							"title": "Cache API (global scope)",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-objects",
-							"statusURL": "https://www.chromestatus.com/features/5072127703121920",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 43,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "chromium",
-							"id": 6461631328419840,
-							"title": "Cache API for Service Worker",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-objects",
-							"statusURL": "https://www.chromestatus.com/features/6461631328419840",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 40,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 2,
-				"fragment": "#cache-objects"
-			},
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 5915801131417600,
-							"title": "Cache.{match,matchAll,delete,keys} and CacheStorage.match with ignoreSearch option.",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-query-options-dictionary",
-							"statusURL": "https://www.chromestatus.com/features/5915801131417600",
-							"status": {
-								"status": "in-development",
-								"originalStatus": "In development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#cache-query-options-dictionary"
-			},
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 4716607557337088,
-							"title": "Service workers: Clients.matchAll() returns clients in MRU order",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#clients-matchall-method",
-							"statusURL": "https://www.chromestatus.com/features/4716607557337088",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 46,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#clients-matchall-method"
-			},
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 5163630974730240,
-							"title": "Client.postMessage and ServiceWorkerMessageEvent",
-							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#serviceworkermessage-event-section",
-							"statusURL": "https://www.chromestatus.com/features/5163630974730240",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 45,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#serviceworkermessage-event-section"
-			}
-		],
-		"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/"
+		"url": "https://rwaldron.github.io/exponentiation-operator/"
 	},
 	{
 		"fragments": [
@@ -9402,6 +9250,20 @@
 								"status": "supported",
 								"originalStatus": "Enabled by default",
 								"channel": 47,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5740842165731328,
+							"title": "Cache API is restricted to secure origins",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
+							"statusURL": "https://www.chromestatus.com/features/5740842165731328",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 46,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -9489,11 +9351,115 @@
 								"behindFlag": false,
 								"prefixed": false
 							}
+						},
+						{
+							"engine": "chromium",
+							"id": 6561526227927040,
+							"title": "Service Worker",
+							"url": "http://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
+							"statusURL": "https://www.chromestatus.com/features/6561526227927040",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 40,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "serviceworker",
+							"title": "Service Worker",
+							"url": "https://github.com/slightlyoff/ServiceWorker/",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/serviceworker",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"gecko": [
+						{
+							"engine": "gecko",
+							"id": "service-worker",
+							"title": "Service Worker",
+							"url": "http://slightlyoff.github.io/ServiceWorker/spec/service_worker/",
+							"statusURL": "https://platform-status.mozilla.org/#service-worker",
+							"status": {
+								"status": "supported",
+								"originalStatus": 44,
+								"channel": 44,
+								"behindFlag": false,
+								"prefixed": false
+							}
 						}
 					]
 				},
-				"maxEntryLength": 9,
+				"maxEntryLength": 11,
 				"fragment": ""
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 5072127703121920,
+							"title": "Cache API (global scope)",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-objects",
+							"statusURL": "https://www.chromestatus.com/features/5072127703121920",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 43,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 6461631328419840,
+							"title": "Cache API for Service Worker",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-objects",
+							"statusURL": "https://www.chromestatus.com/features/6461631328419840",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 40,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 2,
+				"fragment": "#cache-objects"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 5915801131417600,
+							"title": "Cache.{match,matchAll,delete,keys} and CacheStorage.match with ignoreSearch option.",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-query-options-dictionary",
+							"statusURL": "https://www.chromestatus.com/features/5915801131417600",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#cache-query-options-dictionary"
 			},
 			{
 				"engines": {
@@ -9522,6 +9488,28 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 4716607557337088,
+							"title": "Service workers: Clients.matchAll() returns clients in MRU order",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#clients-matchall-method",
+							"statusURL": "https://www.chromestatus.com/features/4716607557337088",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 46,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#clients-matchall-method"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
 							"id": 5724079160033280,
 							"title": "ExtendableMessageEvent on ServiceWorkerGlobalScope",
 							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#extendablemessage-event-section",
@@ -9538,9 +9526,31 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#extendablemessage-event-section"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 5163630974730240,
+							"title": "Client.postMessage and ServiceWorkerMessageEvent",
+							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#serviceworkermessage-event-section",
+							"statusURL": "https://www.chromestatus.com/features/5163630974730240",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 45,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#serviceworkermessage-event-section"
 			}
 		],
-		"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html"
+		"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/"
 	},
 	{
 		"fragments": [
@@ -9835,33 +9845,6 @@
 		"fragments": [
 			{
 				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "arrayprototypeincludeses2016",
-							"title": "Array.prototype.includes (ES2016)",
-							"url": "https://tc39.github.io/Array.prototype.includes",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://tc39.github.io/Array.prototype.includes"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
 					"chromium": [
 						{
 							"engine": "chromium",
@@ -9873,6 +9856,22 @@
 								"status": "supported",
 								"originalStatus": "Enabled by default",
 								"channel": 47,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "arrayprototypeincludeses2016",
+							"title": "Array.prototype.includes (ES2016)",
+							"url": "https://tc39.github.io/Array.prototype.includes",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -9960,33 +9959,6 @@
 		"fragments": [
 			{
 				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "asyncfunctionses2016",
-							"title": "Async Functions (ES2016)",
-							"url": "https://tc39.github.io/ecmascript-asyncawait",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/asyncfunctionses2016",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Preview Release",
-								"channel": 10532,
-								"behindFlag": true,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://tc39.github.io/ecmascript-asyncawait"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
 					"chromium": [
 						{
 							"engine": "chromium",
@@ -9999,6 +9971,22 @@
 								"originalStatus": "Proposed",
 								"channel": null,
 								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "asyncfunctionses2016",
+							"title": "Async Functions (ES2016)",
+							"url": "https://tc39.github.io/ecmascript-asyncawait",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/asyncfunctionses2016",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Preview Release",
+								"channel": 10532,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
@@ -11738,7 +11726,7 @@
 				"fragment": "#idl-def-CanvasCaptureMediaStream"
 			}
 		],
-		"url": "https://w3c.github.io/mediacapture-fromelement/index.html"
+		"url": "https://w3c.github.io/mediacapture-fromelement/"
 	},
 	{
 		"fragments": [
@@ -11901,7 +11889,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://w3c.github.io/mediacapture-output"
+		"url": "https://w3c.github.io/mediacapture-output/"
 	},
 	{
 		"fragments": [
@@ -13286,18 +13274,7 @@
 								"prefixed": false
 							}
 						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://w3c.github.io/web-nfc/"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
+					],
 					"edge": [
 						{
 							"engine": "edge",
@@ -13319,7 +13296,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://w3c.github.io/web-nfc/index.html"
+		"url": "https://w3c.github.io/web-nfc/"
 	},
 	{
 		"fragments": [
@@ -13949,36 +13926,31 @@
 				},
 				"maxEntryLength": 5,
 				"fragment": ""
-			}
-		],
-		"url": "https://w3c.github.io/webcomponents/spec/shadow/"
-	},
-	{
-		"fragments": [
+			},
 			{
 				"engines": {
 					"chromium": [
 						{
 							"engine": "chromium",
-							"id": 5663288008376320,
-							"title": "Deprecate and remove some nonstandard uses of RTCPeerConnection legacy methods.",
-							"url": "https://w3c.github.io/webrtc-pc",
-							"statusURL": "https://www.chromestatus.com/features/5663288008376320",
+							"id": 5736827696709632,
+							"title": "Node.treeRoot",
+							"url": "http://w3c.github.io/webcomponents/spec/shadow/#extensions-to-node-interface",
+							"statusURL": "https://www.chromestatus.com/features/5736827696709632",
 							"status": {
-								"status": "removed",
-								"originalStatus": "Removed",
-								"channel": 50,
-								"behindFlag": false,
-								"prefixed": true
+								"status": "supported",
+								"originalStatus": "Behind a flag",
+								"channel": null,
+								"behindFlag": true,
+								"prefixed": false
 							}
 						}
 					]
 				},
 				"maxEntryLength": 1,
-				"fragment": ""
+				"fragment": "#extensions-to-node-interface"
 			}
 		],
-		"url": "https://w3c.github.io/webrtc-pc"
+		"url": "https://w3c.github.io/webcomponents/spec/shadow/"
 	},
 	{
 		"fragments": [
@@ -13997,6 +13969,20 @@
 								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5663288008376320,
+							"title": "Deprecate and remove some nonstandard uses of RTCPeerConnection legacy methods.",
+							"url": "https://w3c.github.io/webrtc-pc",
+							"statusURL": "https://www.chromestatus.com/features/5663288008376320",
+							"status": {
+								"status": "removed",
+								"originalStatus": "Removed",
+								"channel": 50,
+								"behindFlag": false,
+								"prefixed": true
 							}
 						},
 						{
@@ -14075,7 +14061,7 @@
 						}
 					]
 				},
-				"maxEntryLength": 4,
+				"maxEntryLength": 5,
 				"fragment": ""
 			},
 			{
@@ -15263,33 +15249,6 @@
 					"chromium": [
 						{
 							"engine": "chromium",
-							"id": 5135818813341696,
-							"title": "Typed Arrays",
-							"url": "http://www.khronos.org/registry/typedarray/specs/latest/",
-							"statusURL": "https://www.chromestatus.com/features/5135818813341696",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
-								"channel": 13,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://www.khronos.org/registry/typedarray/specs/latest/"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
 							"id": 6254718426808320,
 							"title": "EXT_disjoint_timer_query WebGL extension",
 							"url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
@@ -15357,60 +15316,6 @@
 		"fragments": [
 			{
 				"engines": {
-					"webkit": [
-						{
-							"engine": "webkit",
-							"id": "WebGL 1",
-							"title": "WebGL 1",
-							"url": "https://www.khronos.org/registry/webgl/specs/1.0/",
-							"statusURL": "https://webkit.org/status/#feature-WebGL%201",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Done",
-								"channel": null,
-								"behindFlag": true,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://www.khronos.org/registry/webgl/specs/1.0/"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
-					"webkit": [
-						{
-							"engine": "webkit",
-							"id": "WebGL 2",
-							"title": "WebGL 2",
-							"url": "https://www.khronos.org/registry/webgl/specs/2.0/",
-							"statusURL": "https://webkit.org/status/#feature-WebGL%202",
-							"status": {
-								"status": "in-development",
-								"originalStatus": "In Development",
-								"channel": null,
-								"behindFlag": true,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://www.khronos.org/registry/webgl/specs/2.0/"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
 					"chromium": [
 						{
 							"engine": "chromium",
@@ -15442,18 +15347,7 @@
 								"prefixed": true
 							}
 						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://www.khronos.org/registry/webgl/specs/latest/"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
+					],
 					"gecko": [
 						{
 							"engine": "gecko",
@@ -15466,6 +15360,22 @@
 								"originalStatus": 4,
 								"channel": 4,
 								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"webkit": [
+						{
+							"engine": "webkit",
+							"id": "WebGL 1",
+							"title": "WebGL 1",
+							"url": "https://www.khronos.org/registry/webgl/specs/1.0/",
+							"statusURL": "https://webkit.org/status/#feature-WebGL%201",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Done",
+								"channel": null,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
@@ -15525,6 +15435,22 @@
 								"originalStatus": "in-development",
 								"channel": null,
 								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
+					"webkit": [
+						{
+							"engine": "webkit",
+							"id": "WebGL 2",
+							"title": "WebGL 2",
+							"url": "https://www.khronos.org/registry/webgl/specs/2.0/",
+							"statusURL": "https://webkit.org/status/#feature-WebGL%202",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In Development",
+								"channel": null,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
