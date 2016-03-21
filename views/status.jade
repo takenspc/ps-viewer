@@ -1,63 +1,86 @@
 extends layout
 
-mixin formatFragmentSpecEntry(url, specEntry)
-  div.fragment
-    h3
-      - var urlWithFragment = url + specEntry.fragment
-      - var fragmentText = decodeURIComponent(specEntry.fragment || '#')
-      a(href=urlWithFragment)= fragmentText
+mixin formatEntry(entry)
+  - var status = entry.status
+  - var classList = []
+  - classList.push(engine)
+  - classList.push(status.status)
+  - status.behindFlag && classList.push('behindFlag')
+  - status.prefixed && classList.push('prefixed')
+  li.entry(class=classList)
+    - var statusURL = entry.statusURL
+    a(href=statusURL) 
+      span.title= entry.title
+    div.status
+      span.text= status.originalStatus
+      if status.channel
+        |  (starting 
+        span.channel= status.channel
+        | )
+      if status.behindFlag
+        | 
+        span.behindFlag (behind a flag)
+      if status.prefixed
+        | 
+        span.channel (prefixed)
+
+
+mixin formatEngine(engine, entries)
+  div.engine
+    h5.engine-name(class=engine)= engine
+    ul.entry-list
+      each entry in entries
+        +formatEntry(entry)
+
+
+mixin formatFragment(url, fragment)
+  - var id = url + encodeURIComponent(fragment.fragment)
+  - var href = '/status/' + url + encodeURIComponent(fragment.fragment)
+  - var fragmentText = decodeURIComponent(fragment.fragment || '#')
+  div.fragment(id=id)
+    h4.fragment-name= fragmentText
 
     each engine in engines
-      - var statusEntries = specEntry.engines[engine]
-      if statusEntries
-        div.engine
-          h4.engine-title(class=engine)= engine
-          ul.entry-list
-            each statusEntry in statusEntries
-              - var status = statusEntry.status
-              - var classList = []
-              - classList.push(engine)
-              - classList.push(status.status)
-              - status.behindFlag && classList.push('behindFlag')
-              - status.prefixed && classList.push('prefixed')
-              li.entry(class=classList)
-                - var statusURL = statusEntry.statusURL
-                a(href=statusURL) 
-                  span.title= statusEntry.title
-                div.status
-                  span.text= status.originalStatus
-                  if status.channel
-                    |  (starting 
-                    span.channel= status.channel
-                    | )
-                  if status.behindFlag
-                    | 
-                    span.behindFlag (behind a flag)
-                  if status.prefixed
-                    | 
-                    span.channel (prefixed)
-                  
+      - var entries = fragment.engines[engine]
+      if entries
+        +formatEngine(engine, entries)
 
 
-mixin formatSpecEntry(specEntry)
-  section.spec
-    h2
-      - var url = specEntry.url
-      - var urlText = url || '#'
-      a(href=url)= urlText
+mixin formatURL(urlEntry)
+  - var url = urlEntry.url
+  - var id = url
+  - var href = '/status/' + encodeURIComponent(url || 'about:blank')
+  - var headingText = url || '#'
+  section.url(id=id)
+    h3.url-name
+      a(href=href)= headingText
 
-    each fragmentSpecEntry in specEntry.fragments
-      +formatFragmentSpecEntry(url, fragmentSpecEntry)
+    each fragment in urlEntry.fragments
+      +formatFragment(url, fragment)
+
+mixin formatHost(hostEntry)
+  - var host = hostEntry.host
+  - var id = host || 'about:blank'
+  - var headingText = host || '#'
+  section.host(id=id)
+    h2.host-name= headingText
+    each urlEntry in hostEntry.urls
+      +formatURL(urlEntry)
+
+mixin formatTOC(hostEntry)
+  - var host = hostEntry.host
+  - var href = '#' + encodeURIComponent(host || 'about:blank')
+  - var headingText = (host || '#') + ' (' + hostEntry.urls.length + ')'
+  li
+    a(href=href)= headingText
 
 block content
-  h1= title
-  each specEntry in data
-    +formatSpecEntry(specEntry)
-  p
-    a(href='/') Back to top page
-  p Platform Status Data are form  
-  ul
-    li <a href="https://www.chromestatus.com/features">chromestatus.com</a> (<a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a>)
-    li <a href="https://dev.windows.com/en-us/microsoft-edge/platform/status/">dev.windows.com</a> (<a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a>)
-    li <a href="https://webkit.org/status/">webkit.org</a> (<a href="https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/LICENSE-LGPL-2.1">LGPL</a>)
-    li <a href="https://platform-status.mozilla.org/">platform-status.mozilla.org (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY SA 3.0</a>)
+  - var h1String = 'Platform Status: ' + h1
+  h1= h1String
+  div.toc
+    h2 Table of Contents
+    ul.toc-list
+      each hostEntry in data
+        +formatTOC(hostEntry)
+  each hostEntry in data
+    +formatHost(hostEntry)
