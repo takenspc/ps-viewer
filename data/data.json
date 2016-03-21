@@ -132,6 +132,34 @@
 						},
 						{
 							"engine": "chromium",
+							"id": 5630897160192000,
+							"title": "Notification badges",
+							"url": "",
+							"statusURL": "https://www.chromestatus.com/features/5630897160192000",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5754590205050880,
+							"title": "Notification multiple image definitions",
+							"url": "",
+							"statusURL": "https://www.chromestatus.com/features/5754590205050880",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
 							"id": 5714236168732672,
 							"title": "Remove AppCache from Insecure Contexts",
 							"url": "",
@@ -154,6 +182,34 @@
 								"status": "in-development",
 								"originalStatus": "In development",
 								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5349061406228480,
+							"title": "Custom messages in onbeforeunload dialogs",
+							"url": "",
+							"statusURL": "https://www.chromestatus.com/features/5349061406228480",
+							"status": {
+								"status": "removed",
+								"originalStatus": "Removed",
+								"channel": 51,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 6331324939894784,
+							"title": "Experimental Framework",
+							"url": "",
+							"statusURL": "https://www.chromestatus.com/features/6331324939894784",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 51,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -209,20 +265,6 @@
 							"status": {
 								"status": "removed",
 								"originalStatus": "Removed",
-								"channel": 50,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "chromium",
-							"id": 6331324939894784,
-							"title": "Experimental Framework",
-							"url": "",
-							"statusURL": "https://www.chromestatus.com/features/6331324939894784",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Enabled by default",
 								"channel": 50,
 								"behindFlag": false,
 								"prefixed": false
@@ -806,20 +848,6 @@
 					"edge": [
 						{
 							"engine": "edge",
-							"id": "csspointerevents",
-							"title": "CSS pointer-events",
-							"url": "",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csspointerevents",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 11,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
 							"id": "fido20webapis",
 							"title": "FIDO 2.0 Web APIs",
 							"url": "",
@@ -834,14 +862,14 @@
 						},
 						{
 							"engine": "edge",
-							"id": "motionjpegmjpg",
-							"title": "Motion JPEG (MJPG)",
+							"id": "webkitdirectoryandwebkitrelativepath",
+							"title": "webkitdirectory and webkitRelativePath",
 							"url": "",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/motionjpegmjpg",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webkitdirectoryandwebkitrelativepath",
 							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
+								"status": "in-development",
+								"originalStatus": "In Development",
+								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -862,14 +890,28 @@
 						},
 						{
 							"engine": "edge",
-							"id": "webkitdirectoryandwebkitrelativepath",
-							"title": "webkitdirectory and webkitRelativePath",
+							"id": "csspointerevents",
+							"title": "CSS pointer-events",
 							"url": "",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webkitdirectoryandwebkitrelativepath",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csspointerevents",
 							"status": {
-								"status": "in-development",
-								"originalStatus": "In Development",
-								"channel": null,
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "motionjpegmjpg",
+							"title": "Motion JPEG (MJPG)",
+							"url": "",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/motionjpegmjpg",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -891,7 +933,7 @@
 						}
 					]
 				},
-				"maxEntryLength": 57,
+				"maxEntryLength": 60,
 				"fragment": ""
 			}
 		],
@@ -904,10 +946,10 @@
 					"edge": [
 						{
 							"engine": "edge",
-							"id": "vp9videocodec",
-							"title": "VP9 Video Codec",
+							"id": "webmcontainer",
+							"title": "WebM Container",
 							"url": "http://aomedia.org/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vp9videocodec",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webmcontainer",
 							"status": {
 								"status": "in-development",
 								"originalStatus": "In Development",
@@ -918,10 +960,10 @@
 						},
 						{
 							"engine": "edge",
-							"id": "webmcontainer",
-							"title": "WebM Container",
+							"id": "vp9videocodec",
+							"title": "VP9 Video Codec",
 							"url": "http://aomedia.org/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webmcontainer",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vp9videocodec",
 							"status": {
 								"status": "in-development",
 								"originalStatus": "In Development",
@@ -1063,9 +1105,9 @@
 							"url": "http://wiki.ecmascript.org/doku.php?id=harmony:observe",
 							"statusURL": "https://www.chromestatus.com/features/6147094632988672",
 							"status": {
-								"status": "deprecated",
-								"originalStatus": "Deprecated",
-								"channel": 49,
+								"status": "removed",
+								"originalStatus": "Removed",
+								"channel": 50,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -1159,6 +1201,62 @@
 					"edge": [
 						{
 							"engine": "edge",
+							"id": "es6blockbindingsletconstfunction",
+							"title": "ES6 Block bindings (let, const, function)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6blockbindingsletconstfunction",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "mapes6",
+							"title": "Map (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mapes6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "setes6",
+							"title": "Set (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/setes6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "weakmapes6",
+							"title": "WeakMap (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/weakmapes6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
 							"id": "arrowfunctiones6",
 							"title": "Arrow function (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
@@ -1167,20 +1265,6 @@
 								"status": "supported",
 								"originalStatus": "Shipped",
 								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "classeses6",
-							"title": "Classes (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/classeses6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10532,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -1215,14 +1299,14 @@
 						},
 						{
 							"engine": "edge",
-							"id": "es6blockbindingsletconstfunction",
-							"title": "ES6 Block bindings (let, const, function)",
+							"id": "restparameterses6",
+							"title": "Rest parameters (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6blockbindingsletconstfunction",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/restparameterses6",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
-								"channel": 11,
+								"channel": 10240,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -1243,10 +1327,10 @@
 						},
 						{
 							"engine": "edge",
-							"id": "es6numericliterals",
-							"title": "ES6 Numeric Literals",
+							"id": "symbolses6",
+							"title": "Symbols (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6numericliterals",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/symbolses6",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
@@ -1271,76 +1355,6 @@
 						},
 						{
 							"engine": "edge",
-							"id": "mapes6",
-							"title": "Map (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mapes6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 11,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "moduleses6",
-							"title": "Modules (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/moduleses6",
-							"status": {
-								"status": "in-development",
-								"originalStatus": "In Development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "numberbuiltinses6",
-							"title": "Number Built-ins (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/numberbuiltinses6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "objectbuiltinses6",
-							"title": "Object Built-ins (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectbuiltinses6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "protoes6",
-							"title": "__proto__ (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/protoes6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 11,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
 							"id": "proxieses6",
 							"title": "Proxies (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
@@ -1355,52 +1369,10 @@
 						},
 						{
 							"engine": "edge",
-							"id": "regexpbuiltinses6",
-							"title": "RegExp Built-ins (ES6)",
+							"id": "numberbuiltinses6",
+							"title": "Number Built-ins (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/regexpbuiltinses6",
-							"status": {
-								"status": "in-development",
-								"originalStatus": "In Development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "restparameterses6",
-							"title": "Rest parameters (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/restparameterses6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "setes6",
-							"title": "Set (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/setes6",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 11,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "spreades6",
-							"title": "Spread (ES6)",
-							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/spreades6",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/numberbuiltinses6",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
@@ -1425,10 +1397,24 @@
 						},
 						{
 							"engine": "edge",
-							"id": "subclassinges6",
-							"title": "Subclassing (ES6)",
+							"id": "objectbuiltinses6",
+							"title": "Object Built-ins (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/subclassinges6",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectbuiltinses6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "regexpbuiltinses6",
+							"title": "RegExp Built-ins (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/regexpbuiltinses6",
 							"status": {
 								"status": "in-development",
 								"originalStatus": "In Development",
@@ -1439,10 +1425,52 @@
 						},
 						{
 							"engine": "edge",
-							"id": "symbolses6",
-							"title": "Symbols (ES6)",
+							"id": "protoes6",
+							"title": "__proto__ (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/symbolses6",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/protoes6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 11,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "classeses6",
+							"title": "Classes (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/classeses6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10532,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "spreades6",
+							"title": "Spread (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/spreades6",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "templatestringses6",
+							"title": "Template Strings (ES6)",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templatestringses6",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
@@ -1467,28 +1495,42 @@
 						},
 						{
 							"engine": "edge",
-							"id": "templatestringses6",
-							"title": "Template Strings (ES6)",
+							"id": "subclassinges6",
+							"title": "Subclassing (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templatestringses6",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/subclassinges6",
 							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
+								"status": "in-development",
+								"originalStatus": "In Development",
+								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
 						},
 						{
 							"engine": "edge",
-							"id": "weakmapes6",
-							"title": "WeakMap (ES6)",
+							"id": "moduleses6",
+							"title": "Modules (ES6)",
 							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/weakmapes6",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/moduleses6",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In Development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "es6numericliterals",
+							"title": "ES6 Numeric Literals",
+							"url": "http://ecma-international.org/ecma-262/6.0/index.html",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6numericliterals",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
-								"channel": 11,
+								"channel": 10240,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -2757,7 +2799,7 @@
 							"engine": "edge",
 							"id": "filewriter",
 							"title": "FileWriter",
-							"url": "http://dev.w3.org/2009/dap/file-system/file-writer.html",
+							"url": "https://dev.w3.org/2009/dap/file-system/file-writer.html",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/filewriter",
 							"status": {
 								"status": "under-consideration",
@@ -2920,6 +2962,33 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 5649871251963904,
+							"title": "Stricter user gestures for touch",
+							"url": "https://docs.google.com/document/d/1oF1T3O7_E4t1PYHV6gyCwHxOi3ystm0eSL5xZu7nvOg/edit#heading=h.qq59ev3u8fba",
+							"statusURL": "https://www.chromestatus.com/features/5649871251963904",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#heading=h.qq59ev3u8fba"
+			}
+		],
+		"url": "https://docs.google.com/document/d/1oF1T3O7_E4t1PYHV6gyCwHxOi3ystm0eSL5xZu7nvOg/edit"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
 							"id": 6212846455095296,
 							"title": "Document.charset setter",
 							"url": "https://dom.spec.whatwg.org",
@@ -3046,6 +3115,28 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#dom-eventlisteneroptions-passive"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 5736827696709632,
+							"title": "Node.rootNode",
+							"url": "https://dom.spec.whatwg.org/#dom-node-rootnode",
+							"statusURL": "https://www.chromestatus.com/features/5736827696709632",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#dom-node-rootnode"
 			},
 			{
 				"engines": {
@@ -3384,7 +3475,7 @@
 							"engine": "edge",
 							"id": "csstransitionsanimationsforsvgelements",
 							"title": "CSS Transitions & Animations for SVG elements",
-							"url": "http://dev.w3.org/csswg/css-animations-1/",
+							"url": "https://dev.w3.org/csswg/css-animations-1/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csstransitionsanimationsforsvgelements",
 							"status": {
 								"status": "supported",
@@ -3487,7 +3578,7 @@
 							"engine": "edge",
 							"id": "cssinitialvalue",
 							"title": "CSS initial value",
-							"url": "http://dev.w3.org/csswg/css-cascade/#initial",
+							"url": "https://dev.w3.org/csswg/css-cascade/#initial",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssinitialvalue",
 							"status": {
 								"status": "supported",
@@ -3509,7 +3600,7 @@
 							"engine": "edge",
 							"id": "cssunsetvalue",
 							"title": "CSS unset value",
-							"url": "http://dev.w3.org/csswg/css-cascade/#unset",
+							"url": "https://dev.w3.org/csswg/css-cascade/#unset",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssunsetvalue",
 							"status": {
 								"status": "supported",
@@ -3552,7 +3643,7 @@
 							"engine": "edge",
 							"id": "conditionalrules",
 							"title": "Conditional Rules",
-							"url": "http://dev.w3.org/csswg/css-conditional/",
+							"url": "https://dev.w3.org/csswg/css-conditional/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/conditionalrules",
 							"status": {
 								"status": "supported",
@@ -3622,7 +3713,7 @@
 							"engine": "edge",
 							"id": "cssdeviceadaptation",
 							"title": "CSS Device Adaptation",
-							"url": "http://dev.w3.org/csswg/css-device-adapt/",
+							"url": "https://dev.w3.org/csswg/css-device-adapt/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssdeviceadaptation",
 							"status": {
 								"status": "supported",
@@ -3665,7 +3756,7 @@
 							"engine": "edge",
 							"id": "exclusions",
 							"title": "Exclusions",
-							"url": "http://dev.w3.org/csswg/css-exclusions/",
+							"url": "https://dev.w3.org/csswg/css-exclusions/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/exclusions",
 							"status": {
 								"status": "supported",
@@ -3708,7 +3799,7 @@
 							"engine": "edge",
 							"id": "flexbox",
 							"title": "Flexbox",
-							"url": "http://dev.w3.org/csswg/css-flexbox/",
+							"url": "https://dev.w3.org/csswg/css-flexbox/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/flexbox",
 							"status": {
 								"status": "supported",
@@ -3937,7 +4028,7 @@
 							"engine": "edge",
 							"id": "cssfontstretch",
 							"title": "CSS font-stretch",
-							"url": "http://dev.w3.org/csswg/css-fonts/#propdef-font-stretch",
+							"url": "https://dev.w3.org/csswg/css-fonts/#propdef-font-stretch",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssfontstretch",
 							"status": {
 								"status": "supported",
@@ -3969,22 +4060,6 @@
 							"status": {
 								"status": "not-planned",
 								"originalStatus": "No active development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "generatedcontentforpagedmedia",
-							"title": "Generated Content for Paged Media",
-							"url": "http://dev.w3.org/csswg/css-gcpm/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/generatedcontentforpagedmedia",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
 								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
@@ -4126,7 +4201,7 @@
 							"engine": "edge",
 							"id": "objectfitandobjectposition",
 							"title": "object-fit and object-position",
-							"url": "http://dev.w3.org/csswg/css-images-3/#the-object-fit",
+							"url": "https://dev.w3.org/csswg/css-images-3/#the-object-fit",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition",
 							"status": {
 								"status": "under-consideration",
@@ -4180,7 +4255,7 @@
 							"engine": "edge",
 							"id": "cssgradientmidpoints",
 							"title": "CSS Gradient Midpoints",
-							"url": "http://dev.w3.org/csswg/css-images/#color-stop-syntax",
+							"url": "https://dev.w3.org/csswg/css-images/#color-stop-syntax",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssgradientmidpoints",
 							"status": {
 								"status": "supported",
@@ -4256,7 +4331,7 @@
 							"engine": "edge",
 							"id": "csslogicalpropertieslevel1",
 							"title": "CSS Logical Properties Level 1",
-							"url": "http://dev.w3.org/csswg/css-logical-props/",
+							"url": "https://dev.w3.org/csswg/css-logical-props/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csslogicalpropertieslevel1",
 							"status": {
 								"status": "under-consideration",
@@ -4326,7 +4401,7 @@
 							"engine": "edge",
 							"id": "multicolumnfullsupport",
 							"title": "Multi-column (full support)",
-							"url": "http://dev.w3.org/csswg/css-multicol/",
+							"url": "https://dev.w3.org/csswg/css-multicol/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/multicolumnfullsupport",
 							"status": {
 								"status": "supported",
@@ -4375,7 +4450,7 @@
 							"engine": "edge",
 							"id": "positionsticky",
 							"title": "position: sticky",
-							"url": "http://dev.w3.org/csswg/css-position/#sticky-positioning",
+							"url": "https://dev.w3.org/csswg/css-position/#sticky-positioning",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/positionsticky",
 							"status": {
 								"status": "under-consideration",
@@ -4478,7 +4553,7 @@
 							"engine": "edge",
 							"id": "cssscrollingsnappoints",
 							"title": "CSS Scrolling Snap Points",
-							"url": "http://dev.w3.org/csswg/css-snappoints/",
+							"url": "https://dev.w3.org/csswg/css-snappoints/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssscrollingsnappoints",
 							"status": {
 								"status": "supported",
@@ -4602,7 +4677,7 @@
 							"engine": "edge",
 							"id": "csswillchange",
 							"title": "CSS Will Change",
-							"url": "http://dev.w3.org/csswg/css-will-change/",
+							"url": "https://dev.w3.org/csswg/css-will-change/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csswillchange",
 							"status": {
 								"status": "under-consideration",
@@ -4694,7 +4769,7 @@
 							"engine": "edge",
 							"id": "boxalignment",
 							"title": "Box Alignment",
-							"url": "http://dev.w3.org/csswg/css3-align/",
+							"url": "https://dev.w3.org/csswg/css3-align/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/boxalignment",
 							"status": {
 								"status": "under-consideration",
@@ -4719,9 +4794,36 @@
 					"edge": [
 						{
 							"engine": "edge",
+							"id": "generatedcontentforpagedmedia",
+							"title": "Generated Content for Paged Media",
+							"url": "https://dev.w3.org/csswg/css3-gcpm/",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/generatedcontentforpagedmedia",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": ""
+			}
+		],
+		"url": "https://drafts.csswg.org/css3-gcpm/"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
 							"id": "grid",
 							"title": "Grid",
-							"url": "http://dev.w3.org/csswg/css3-grid-layout/",
+							"url": "https://dev.w3.org/csswg/css3-grid-layout/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/grid",
 							"status": {
 								"status": "supported",
@@ -4764,7 +4866,7 @@
 							"engine": "edge",
 							"id": "gradients",
 							"title": "Gradients",
-							"url": "http://dev.w3.org/csswg/css3-images/",
+							"url": "https://dev.w3.org/csswg/css3-images/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/gradients",
 							"status": {
 								"status": "supported",
@@ -4807,7 +4909,7 @@
 							"engine": "edge",
 							"id": "regions",
 							"title": "Regions",
-							"url": "http://dev.w3.org/csswg/css3-regions/",
+							"url": "https://dev.w3.org/csswg/css3-regions/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/regions",
 							"status": {
 								"status": "supported",
@@ -4850,7 +4952,7 @@
 							"engine": "edge",
 							"id": "cssintrinsicsizing",
 							"title": "CSS Intrinsic Sizing",
-							"url": "http://dev.w3.org/csswg/css3-sizing/",
+							"url": "https://dev.w3.org/csswg/css3-sizing/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssintrinsicsizing",
 							"status": {
 								"status": "under-consideration",
@@ -4893,7 +4995,7 @@
 							"engine": "edge",
 							"id": "transforms",
 							"title": "Transforms",
-							"url": "http://dev.w3.org/csswg/css3-transforms/",
+							"url": "https://dev.w3.org/csswg/css3-transforms/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/transforms",
 							"status": {
 								"status": "supported",
@@ -4985,7 +5087,7 @@
 							"engine": "edge",
 							"id": "cssomviewsmoothscrollapi",
 							"title": "CSSOM View smooth scroll API",
-							"url": "http://dev.w3.org/csswg/cssom-view",
+							"url": "https://dev.w3.org/csswg/cssom-view",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssomviewsmoothscrollapi",
 							"status": {
 								"status": "under-consideration",
@@ -5086,7 +5188,7 @@
 							"engine": "edge",
 							"id": "devicepixelratioonzoom",
 							"title": "devicePixelRatio on zoom",
-							"url": "http://dev.w3.org/csswg/cssom-view/#dom-window-devicepixelratio",
+							"url": "https://dev.w3.org/csswg/cssom-view/#dom-window-devicepixelratio",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/devicepixelratioonzoom",
 							"status": {
 								"status": "supported",
@@ -5146,7 +5248,7 @@
 							"engine": "edge",
 							"id": "matchmedia",
 							"title": "matchMedia",
-							"url": "http://dev.w3.org/csswg/cssom-view/#widl-Window-matchMedia-MediaQueryList-DOMString-query",
+							"url": "https://dev.w3.org/csswg/cssom-view/#widl-Window-matchMedia-MediaQueryList-DOMString-query",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/matchmedia",
 							"status": {
 								"status": "supported",
@@ -5525,10 +5627,10 @@
 					"edge": [
 						{
 							"engine": "edge",
-							"id": "backgroundblendmode",
-							"title": "background-blend-mode",
+							"id": "mixblendmode",
+							"title": "mix-blend-mode",
 							"url": "https://drafts.fxtf.org/compositing-1/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/backgroundblendmode",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mixblendmode",
 							"status": {
 								"status": "under-consideration",
 								"originalStatus": "Under Consideration",
@@ -5539,10 +5641,10 @@
 						},
 						{
 							"engine": "edge",
-							"id": "mixblendmode",
-							"title": "mix-blend-mode",
+							"id": "backgroundblendmode",
+							"title": "background-blend-mode",
 							"url": "https://drafts.fxtf.org/compositing-1/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mixblendmode",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/backgroundblendmode",
 							"status": {
 								"status": "under-consideration",
 								"originalStatus": "Under Consideration",
@@ -5579,7 +5681,7 @@
 							"engine": "edge",
 							"id": "compositingandblendingincanvas2d",
 							"title": "Compositing and Blending in Canvas 2D",
-							"url": "http://dev.w3.org/fxtf/compositing-1/#canvascompositingandblending",
+							"url": "https://dev.w3.org/fxtf/compositing-1/#canvascompositingandblending",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/compositingandblendingincanvas2d",
 							"status": {
 								"status": "supported",
@@ -5649,7 +5751,7 @@
 							"engine": "edge",
 							"id": "masks",
 							"title": "Masks",
-							"url": "http://dev.w3.org/fxtf/css-masking-1/",
+							"url": "https://dev.w3.org/fxtf/css-masking-1/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/masks",
 							"status": {
 								"status": "under-consideration",
@@ -5692,7 +5794,7 @@
 							"engine": "edge",
 							"id": "backdropfilter",
 							"title": "Backdrop filter",
-							"url": "http://dev.w3.org/fxtf/filters-2/#BackdropFilterProperty",
+							"url": "https://dev.w3.org/fxtf/filters-2/#BackdropFilterProperty",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/backdropfilter",
 							"status": {
 								"status": "under-consideration",
@@ -6887,22 +6989,6 @@
 								"prefixed": false
 							}
 						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "iframeseamlessattribute",
-							"title": "iframe[seamless] attribute",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-iframe-seamless",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframeseamlessattribute",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
 					]
 				},
 				"maxEntryLength": 1,
@@ -6973,28 +7059,6 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#microdata-dom-api"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "timerelatedinputtypes",
-							"title": "Time-related input types",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#time-state-%28type=time%29",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/timerelatedinputtypes",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10532,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#time-state-%28type=time%29"
 			}
 		],
 		"url": "https://html.spec.whatwg.org/multipage/"
@@ -7028,31 +7092,9 @@
 					"edge": [
 						{
 							"engine": "edge",
-							"id": "applicationcache",
-							"title": "Application Cache",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/browsers.html#offline",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/applicationcache",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#offline"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
 							"id": "showmodaldialog",
 							"title": "showModalDialog",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/browsers.html#window",
+							"url": "https://www.w3.org/html/wg/drafts/html/master/browsers.html#window",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/showmodaldialog",
 							"status": {
 								"status": "deprecated",
@@ -7220,22 +7262,6 @@
 								"prefixed": false
 							}
 						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "iframesandboxattribute",
-							"title": "iframe[sandbox] attribute",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-iframe-sandbox",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframesandboxattribute",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
 					]
 				},
 				"maxEntryLength": 1,
@@ -7254,22 +7280,6 @@
 								"status": "supported",
 								"originalStatus": "Enabled by default",
 								"channel": 20,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "iframesrcdocattribute",
-							"title": "iframe[srcdoc] attribute",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-iframe-srcdoc",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframesrcdocattribute",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -7311,61 +7321,11 @@
 								"behindFlag": false,
 								"prefixed": false
 							}
-						},
-						{
-							"engine": "edge",
-							"id": "imgsrcset",
-							"title": "<img srcset>",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-srcset",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/imgsrcset",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
 						}
 					]
 				},
-				"maxEntryLength": 2,
+				"maxEntryLength": 1,
 				"fragment": "#attr-img-srcset"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "audiotracks",
-							"title": "Audio tracks",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#audiotracklist-and-videotracklist-objects",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/audiotracks",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						},
-						{
-							"engine": "edge",
-							"id": "videotracks",
-							"title": "Video tracks",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#audiotracklist-and-videotracklist-objects",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/videotracks",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 2,
-				"fragment": "#audiotracklist-and-videotracklist-objects"
 			},
 			{
 				"engines": {
@@ -7413,17 +7373,17 @@
 			},
 			{
 				"engines": {
-					"edge": [
+					"chromium": [
 						{
-							"engine": "edge",
-							"id": "wavaudiosupport",
-							"title": "WAV Audio Support",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-audio-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/wavaudiosupport",
+							"engine": "chromium",
+							"id": 5989005896187904,
+							"title": "HTMLMediaElement.srcObject attribute",
+							"url": "https://html.spec.whatwg.org/multipage/embedded-content.html#media-elements",
+							"statusURL": "https://www.chromestatus.com/features/5989005896187904",
 							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -7431,7 +7391,7 @@
 					]
 				},
 				"maxEntryLength": 1,
-				"fragment": "#the-audio-element"
+				"fragment": "#media-elements"
 			},
 			{
 				"engines": {
@@ -7471,22 +7431,6 @@
 			},
 			{
 				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "pictureelement",
-							"title": "<picture> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-picture-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/pictureelement",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10547,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
 					"webkit": [
 						{
 							"engine": "webkit",
@@ -7524,22 +7468,6 @@
 								"prefixed": false
 							}
 						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "trackelement",
-							"title": "Track element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#the-track-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/trackelement",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
 					]
 				},
 				"maxEntryLength": 1,
@@ -7562,22 +7490,6 @@
 							"status": {
 								"status": "in-development",
 								"originalStatus": "In development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "inputmode",
-							"title": "inputmode",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#attr-fe-inputmode",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/inputmode",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
 								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
@@ -7631,28 +7543,6 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#constraints"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "daterelatedinputtypes",
-							"title": "Date-related input types",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#date-state-%28type=date%29",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/daterelatedinputtypes",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#date-state-%28type=date%29"
 			},
 			{
 				"engines": {
@@ -7759,22 +7649,6 @@
 								"prefixed": false
 							}
 						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "detailssummary",
-							"title": "<details>/<summary>",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-details-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/detailssummary",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
 					]
 				},
 				"maxEntryLength": 1,
@@ -7803,7 +7677,7 @@
 							"engine": "edge",
 							"id": "dialogelementformodals",
 							"title": "<dialog> element for modals",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-dialog-element",
+							"url": "https://www.w3.org/html/wg/drafts/html/master/semantics.html#the-dialog-element",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/dialogelementformodals",
 							"status": {
 								"status": "under-consideration",
@@ -7841,7 +7715,7 @@
 							"engine": "edge",
 							"id": "datalistelement",
 							"title": "<datalist> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-list-attribute",
+							"url": "https://www.w3.org/html/wg/drafts/html/master/semantics.html#the-list-attribute",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/datalistelement",
 							"status": {
 								"status": "supported",
@@ -7855,50 +7729,6 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#the-list-attribute"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "menuelement",
-							"title": "<menu> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-menu-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/menuelement",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#the-menu-element"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "outputelement",
-							"title": "<output> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-output-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/outputelement",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#the-output-element"
 			}
 		],
 		"url": "https://html.spec.whatwg.org/multipage/forms.html"
@@ -8169,22 +7999,6 @@
 							}
 						}
 					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "templateelement",
-							"title": "<template> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-template-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templateelement",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10547,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
 					"gecko": [
 						{
 							"engine": "gecko",
@@ -8212,50 +8026,6 @@
 		"fragments": [
 			{
 				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "adownloadattribute",
-							"title": "a[download] attribute",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#attr-hyperlink-download",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/adownloadattribute",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10547,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#attr-hyperlink-download"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "olreversedattribute",
-							"title": "ol[reversed] attribute",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#attr-ol-reversed",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/olreversedattribute",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#attr-ol-reversed"
-			},
-			{
-				"engines": {
 					"chromium": [
 						{
 							"engine": "chromium",
@@ -8267,22 +8037,6 @@
 								"status": "removed",
 								"originalStatus": "Removed",
 								"channel": 35,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					],
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "scopedstyles",
-							"title": "Scoped Styles",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#attr-style-scoped",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/scopedstyles",
-							"status": {
-								"status": "not-planned",
-								"originalStatus": "Not currently planned",
-								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -8335,50 +8089,6 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#link-type-noopener"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "mainelement",
-							"title": "<main> element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-main-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mainelement",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Shipped",
-								"channel": 10240,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#the-main-element"
-			},
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "timeelement",
-							"title": "<time> Element",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-time-element",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/timeelement",
-							"status": {
-								"status": "under-consideration",
-								"originalStatus": "Under Consideration",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#the-time-element"
 			}
 		],
 		"url": "https://html.spec.whatwg.org/multipage/semantics.html"
@@ -8434,6 +8144,28 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 5702730488217600,
+							"title": "Disallow document.open and document.write during unload",
+							"url": "https://html.spec.whatwg.org/multipage/webappapis.html#opening-the-input-stream",
+							"statusURL": "https://www.chromestatus.com/features/5702730488217600",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Proposed",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#opening-the-input-stream"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
 							"id": 4514713492783104,
 							"title": "Throttle rendering pipeline based on viewport visibility",
 							"url": "https://html.spec.whatwg.org/multipage/webappapis.html#processing-model-8",
@@ -8474,7 +8206,7 @@
 							"engine": "edge",
 							"id": "runtimeerrorreportingerrorevent",
 							"title": "Runtime error reporting: ErrorEvent.",
-							"url": "http://www.w3.org/html/wg/drafts/html/master/webappapis.html#runtime-script-errors",
+							"url": "https://www.w3.org/html/wg/drafts/html/master/webappapis.html#runtime-script-errors",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/runtimeerrorreportingerrorevent",
 							"status": {
 								"status": "under-consideration",
@@ -9162,7 +8894,7 @@
 							"engine": "edge",
 							"id": "selectionapi",
 							"title": "Selection API",
-							"url": "http://rniwa.github.io/selection-api",
+							"url": "https://rniwa.github.io/selection-api",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/selectionapi",
 							"status": {
 								"status": "supported",
@@ -9189,7 +8921,7 @@
 							"engine": "edge",
 							"id": "exponentiationoperatores2016",
 							"title": "Exponentiation Operator (ES2016)",
-							"url": "http://rwaldron.github.io/exponentiation-operator",
+							"url": "https://rwaldron.github.io/exponentiation-operator",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/exponentiationoperatores2016",
 							"status": {
 								"status": "supported",
@@ -9471,10 +9203,10 @@
 							"url": "https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#clients-get",
 							"statusURL": "https://www.chromestatus.com/features/5637562412564480",
 							"status": {
-								"status": "in-development",
-								"originalStatus": "In development",
-								"channel": null,
-								"behindFlag": false,
+								"status": "supported",
+								"originalStatus": "Behind a flag",
+								"channel": 51,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
@@ -9891,6 +9623,28 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 4750327530127360,
+							"title": "Array subclassing and Symbol.species support",
+							"url": "https://tc39.github.io/ecma262/#sec-arrayspeciescreate",
+							"statusURL": "https://www.chromestatus.com/features/4750327530127360",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Enabled by default",
+								"channel": 51,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#sec-arrayspeciescreate"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
 							"id": 5365692190687232,
 							"title": "Modules (ES6)",
 							"url": "http://tc39.github.io/ecma262/#sec-modules",
@@ -9951,6 +9705,28 @@
 				},
 				"maxEntryLength": 1,
 				"fragment": "#sec-setfunctionname"
+			},
+			{
+				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 5690218174742528,
+							"title": "Symbol.hasInstance (ES6)",
+							"url": "https://tc39.github.io/ecma262/#sec-symbol.hasinstance",
+							"statusURL": "https://www.chromestatus.com/features/5690218174742528",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Behind a flag",
+								"channel": 50,
+								"behindFlag": true,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#sec-symbol.hasinstance"
 			}
 		],
 		"url": "https://tc39.github.io/ecma262/"
@@ -10325,13 +10101,13 @@
 							"engine": "chromium",
 							"id": 5097603234529280,
 							"title": "Token Binding",
-							"url": "https://tools.ietf.org/html/draft-ietf-tokbind-protocol-03",
+							"url": "https://tools.ietf.org/html/draft-ietf-tokbind-protocol-04",
 							"statusURL": "https://www.chromestatus.com/features/5097603234529280",
 							"status": {
-								"status": "in-development",
-								"originalStatus": "In development",
+								"status": "supported",
+								"originalStatus": "Behind a flag",
 								"channel": null,
-								"behindFlag": false,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
@@ -10341,7 +10117,7 @@
 				"fragment": ""
 			}
 		],
-		"url": "https://tools.ietf.org/html/draft-ietf-tokbind-protocol-03"
+		"url": "https://tools.ietf.org/html/draft-ietf-tokbind-protocol-04"
 	},
 	{
 		"fragments": [
@@ -10575,6 +10351,33 @@
 			}
 		],
 		"url": "https://tools.ietf.org/html/rfc6454"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "opusaudiocodec",
+							"title": "Opus Audio Codec",
+							"url": "https://tools.ietf.org/html/rfc6716",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/opusaudiocodec",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In Development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": ""
+			}
+		],
+		"url": "https://tools.ietf.org/html/rfc6716"
 	},
 	{
 		"fragments": [
@@ -10833,7 +10636,7 @@
 							"engine": "edge",
 							"id": "blob",
 							"title": "Blob",
-							"url": "http://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob",
+							"url": "https://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/blob",
 							"status": {
 								"status": "supported",
@@ -11189,7 +10992,7 @@
 							"engine": "edge",
 							"id": "devicemotion",
 							"title": "Device Motion",
-							"url": "http://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion",
+							"url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/devicemotion",
 							"status": {
 								"status": "supported",
@@ -11211,7 +11014,7 @@
 							"engine": "edge",
 							"id": "deviceorientation",
 							"title": "Device Orientation",
-							"url": "http://w3c.github.io/deviceorientation/spec-source-orientation.html#deviceorientation",
+							"url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html#deviceorientation",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/deviceorientation",
 							"status": {
 								"status": "supported",
@@ -11281,7 +11084,7 @@
 							"engine": "edge",
 							"id": "encryptedmediaextensions",
 							"title": "Encrypted Media Extensions",
-							"url": "http://w3c.github.io/encrypted-media/",
+							"url": "https://w3c.github.io/encrypted-media/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/encryptedmediaextensions",
 							"status": {
 								"status": "supported",
@@ -11308,7 +11111,7 @@
 							"engine": "edge",
 							"id": "findtextapi",
 							"title": "FindText API",
-							"url": "http://w3c.github.io/findtext/",
+							"url": "https://w3c.github.io/findtext/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/findtextapi",
 							"status": {
 								"status": "under-consideration",
@@ -11481,6 +11284,426 @@
 			}
 		],
 		"url": "https://w3c.github.io/hr-time/"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "applicationcache",
+							"title": "Application Cache",
+							"url": "https://w3c.github.io/html/browsers.html#offline-web-applications",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/applicationcache",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#offline-web-applications"
+			}
+		],
+		"url": "https://w3c.github.io/html/browsers.html"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "audiotracks",
+							"title": "Audio tracks",
+							"url": "https://w3c.github.io/html/semantics.html#audiotracklist-and-videotracklist-objects",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/audiotracks",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "edge",
+							"id": "videotracks",
+							"title": "Video tracks",
+							"url": "https://w3c.github.io/html/semantics.html#audiotracklist-and-videotracklist-objects",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/videotracks",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 2,
+				"fragment": "#audiotracklist-and-videotracklist-objects"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "adownloadattribute",
+							"title": "a[download] attribute",
+							"url": "https://w3c.github.io/html/semantics.html#element-attrdef-links-download",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/adownloadattribute",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10547,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#element-attrdef-links-download"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "olreversedattribute",
+							"title": "ol[reversed] attribute",
+							"url": "https://w3c.github.io/html/semantics.html#element-attrdef-ol-reversed",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/olreversedattribute",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#element-attrdef-ol-reversed"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "scopedstyles",
+							"title": "Scoped Styles",
+							"url": "https://w3c.github.io/html/semantics.html#element-attrdef-style-scoped",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/scopedstyles",
+							"status": {
+								"status": "not-planned",
+								"originalStatus": "Not currently planned",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#element-attrdef-style-scoped"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "daterelatedinputtypes",
+							"title": "Date-related input types",
+							"url": "https://w3c.github.io/html/semantics.html#element-statedef-input-date-and-time",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/daterelatedinputtypes",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#element-statedef-input-date-and-time"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "timerelatedinputtypes",
+							"title": "Time-related input types",
+							"url": "https://w3c.github.io/html/semantics.html#element-statedef-input-time",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/timerelatedinputtypes",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10532,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#element-statedef-input-time"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "inputmode",
+							"title": "inputmode",
+							"url": "https://w3c.github.io/html/semantics.html#input-modalities-the-inputmode-attribute",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/inputmode",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#input-modalities-the-inputmode-attribute"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "iframeseamlessattribute",
+							"title": "iframe[seamless] attribute",
+							"url": "https://w3c.github.io/html/semantics.html#seamless-iframe",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframeseamlessattribute",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#seamless-iframe"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "wavaudiosupport",
+							"title": "WAV Audio Support",
+							"url": "https://w3c.github.io/html/semantics.html#the-audio-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/wavaudiosupport",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-audio-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "detailssummary",
+							"title": "<details>/<summary>",
+							"url": "https://w3c.github.io/html/semantics.html#the-details-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/detailssummary",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-details-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "imgsrcset",
+							"title": "<img srcset>",
+							"url": "https://w3c.github.io/html/semantics.html#the-img-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/imgsrcset",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-img-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "mainelement",
+							"title": "<main> element",
+							"url": "https://w3c.github.io/html/semantics.html#the-main-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mainelement",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10240,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-main-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "menuelement",
+							"title": "<menu> Element",
+							"url": "https://w3c.github.io/html/semantics.html#the-menu-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/menuelement",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-menu-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "outputelement",
+							"title": "<output> Element",
+							"url": "https://w3c.github.io/html/semantics.html#the-output-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/outputelement",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-output-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "pictureelement",
+							"title": "<picture> Element",
+							"url": "https://w3c.github.io/html/semantics.html#the-picture-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/pictureelement",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10547,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-picture-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "templateelement",
+							"title": "<template> Element",
+							"url": "https://w3c.github.io/html/semantics.html#the-template-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templateelement",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10547,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-template-element"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "timeelement",
+							"title": "<time> Element",
+							"url": "https://w3c.github.io/html/semantics.html#the-time-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/timeelement",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-time-element"
+			}
+		],
+		"url": "https://w3c.github.io/html/semantics.html"
 	},
 	{
 		"fragments": [
@@ -11780,7 +12003,7 @@
 							"engine": "edge",
 							"id": "mediacaptureandstreams",
 							"title": "Media Capture and Streams",
-							"url": "http://dev.w3.org/2011/webrtc/editor/getusermedia.html",
+							"url": "https://w3c.github.io/mediacapture-main/getusermedia.html",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mediacaptureandstreams",
 							"status": {
 								"status": "supported",
@@ -11927,7 +12150,7 @@
 							"engine": "edge",
 							"id": "screencapture",
 							"title": "Screen Capture",
-							"url": "http://w3c.github.io/mediacapture-screen-share/",
+							"url": "https://w3c.github.io/mediacapture-screen-share/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/screencapture",
 							"status": {
 								"status": "under-consideration",
@@ -12063,6 +12286,20 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 5758579827015680,
+							"title": "Fire VisibilityChange event on document unloading",
+							"url": "http://w3c.github.io/page-visibility/",
+							"statusURL": "https://www.chromestatus.com/features/5758579827015680",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
 							"id": 5689697795833856,
 							"title": "Page Visibility API",
 							"url": "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PageVisibility/Overview.html",
@@ -12109,7 +12346,7 @@
 						}
 					]
 				},
-				"maxEntryLength": 1,
+				"maxEntryLength": 2,
 				"fragment": ""
 			}
 		],
@@ -13344,6 +13581,22 @@
 								"prefixed": false
 							}
 						}
+					],
+					"webkit": [
+						{
+							"engine": "webkit",
+							"id": "Content Security Policy Level 3",
+							"title": "Content Security Policy Level 3",
+							"url": "https://w3c.github.io/webappsec-csp/",
+							"statusURL": "https://webkit.org/status/#feature-Content%20Security%20Policy%20Level%203",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Partial Support",
+								"channel": null,
+								"behindFlag": true,
+								"prefixed": false
+							}
+						}
 					]
 				},
 				"maxEntryLength": 1,
@@ -13373,6 +13626,33 @@
 			}
 		],
 		"url": "https://w3c.github.io/webappsec-csp/"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"webkit": [
+						{
+							"engine": "webkit",
+							"id": "Content Security Policy Level 2",
+							"title": "Content Security Policy Level 2",
+							"url": "https://w3c.github.io/webappsec-csp/2/",
+							"statusURL": "https://webkit.org/status/#feature-Content%20Security%20Policy%20Level%202",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Done",
+								"channel": null,
+								"behindFlag": true,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": ""
+			}
+		],
+		"url": "https://w3c.github.io/webappsec-csp/2/"
 	},
 	{
 		"fragments": [
@@ -13620,7 +13900,7 @@
 							"engine": "edge",
 							"id": "subresourceintegrity",
 							"title": "Subresource Integrity",
-							"url": "http://w3c.github.io/webappsec/specs/subresourceintegrity/",
+							"url": "https://w3c.github.io/webappsec/specs/subresourceintegrity/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/subresourceintegrity",
 							"status": {
 								"status": "under-consideration",
@@ -13685,6 +13965,22 @@
 		"fragments": [
 			{
 				"engines": {
+					"chromium": [
+						{
+							"engine": "chromium",
+							"id": 4696261944934400,
+							"title": "Custom Elements v1",
+							"url": "https://w3c.github.io/webcomponents/spec/custom/",
+							"statusURL": "https://www.chromestatus.com/features/4696261944934400",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					],
 					"gecko": [
 						{
 							"engine": "gecko",
@@ -13821,7 +14117,7 @@
 						{
 							"engine": "chromium",
 							"id": 4769966083538944,
-							"title": "Deprecate Multiple Shadow Roots",
+							"title": "Deprecate / Remove Multiple Shadow Roots",
 							"url": "https://w3c.github.io/webcomponents/spec/shadow/",
 							"statusURL": "https://www.chromestatus.com/features/4769966083538944",
 							"status": {
@@ -13880,7 +14176,7 @@
 							"engine": "edge",
 							"id": "shadowdom",
 							"title": "Shadow DOM",
-							"url": "http://w3c.github.io/webcomponents/spec/shadow/",
+							"url": "https://w3c.github.io/webcomponents/spec/shadow/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/shadowdom",
 							"status": {
 								"status": "under-consideration",
@@ -13926,28 +14222,6 @@
 				},
 				"maxEntryLength": 5,
 				"fragment": ""
-			},
-			{
-				"engines": {
-					"chromium": [
-						{
-							"engine": "chromium",
-							"id": 5736827696709632,
-							"title": "Node.treeRoot",
-							"url": "http://w3c.github.io/webcomponents/spec/shadow/#extensions-to-node-interface",
-							"statusURL": "https://www.chromestatus.com/features/5736827696709632",
-							"status": {
-								"status": "supported",
-								"originalStatus": "Behind a flag",
-								"channel": null,
-								"behindFlag": true,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": "#extensions-to-node-interface"
 			}
 		],
 		"url": "https://w3c.github.io/webcomponents/spec/shadow/"
@@ -14033,7 +14307,7 @@
 							"engine": "edge",
 							"id": "webrtcwebrtcv10api",
 							"title": "WebRTC – WebRTC v1.0 API",
-							"url": "http://dev.w3.org/2011/webrtc/editor/webrtc.html",
+							"url": "https://w3c.github.io/webrtc-pc/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webrtcwebrtcv10api",
 							"status": {
 								"status": "under-consideration",
@@ -14231,6 +14505,20 @@
 					"chromium": [
 						{
 							"engine": "chromium",
+							"id": 5693824068222976,
+							"title": "WebAudio:  AudioParams include min/max attributes to specify the nominal range",
+							"url": "http://webaudio.github.io/web-audio-api/",
+							"statusURL": "https://www.chromestatus.com/features/5693824068222976",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
 							"id": 5767190162702336,
 							"title": "WebAudio: Add SpatialPannerNode",
 							"url": "http://webaudio.github.io/web-audio-api/",
@@ -14249,6 +14537,20 @@
 							"title": "WebAudio: Add buffering/latency hint via playbackCategory ",
 							"url": "http://webaudio.github.io/web-audio-api/",
 							"statusURL": "https://www.chromestatus.com/features/5678699475107840",
+							"status": {
+								"status": "in-development",
+								"originalStatus": "In development",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						},
+						{
+							"engine": "chromium",
+							"id": 5086921298542592,
+							"title": "WebAudio: DynamicsCompressor.reduction is a float not AudioParam",
+							"url": "http://webaudio.github.io/web-audio-api/",
+							"statusURL": "https://www.chromestatus.com/features/5086921298542592",
 							"status": {
 								"status": "in-development",
 								"originalStatus": "In development",
@@ -14473,7 +14775,7 @@
 							"engine": "edge",
 							"id": "webaudioapi",
 							"title": "Web Audio API",
-							"url": "http://webaudio.github.io/web-audio-api/",
+							"url": "https://webaudio.github.io/web-audio-api/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webaudioapi",
 							"status": {
 								"status": "supported",
@@ -14501,7 +14803,7 @@
 						}
 					]
 				},
-				"maxEntryLength": 17,
+				"maxEntryLength": 19,
 				"fragment": ""
 			},
 			{
@@ -14642,7 +14944,7 @@
 							"engine": "edge",
 							"id": "webmidiapi",
 							"title": "Web MIDI API",
-							"url": "http://webaudio.github.io/web-midi-api/",
+							"url": "https://webaudio.github.io/web-midi-api/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webmidiapi",
 							"status": {
 								"status": "not-planned",
@@ -14704,8 +15006,8 @@
 							"url": "http://webbluetoothcg.github.io/web-bluetooth/",
 							"statusURL": "https://platform-status.mozilla.org/#web-bluetooth",
 							"status": {
-								"status": "in-development",
-								"originalStatus": "in-development",
+								"status": "under-consideration",
+								"originalStatus": "under-consideration",
 								"channel": null,
 								"behindFlag": false,
 								"prefixed": false
@@ -15197,7 +15499,7 @@
 							"engine": "edge",
 							"id": "spdy3",
 							"title": "SPDY/3",
-							"url": "http://www.chromium.org/spdy/spdy-protocol",
+							"url": "https://www.chromium.org/spdy/spdy-protocol",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/spdy3",
 							"status": {
 								"status": "deprecated",
@@ -15444,7 +15746,7 @@
 							"engine": "webkit",
 							"id": "WebGL 2",
 							"title": "WebGL 2",
-							"url": "https://www.khronos.org/registry/webgl/specs/2.0/",
+							"url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
 							"statusURL": "https://webkit.org/status/#feature-WebGL%202",
 							"status": {
 								"status": "in-development",
@@ -15488,33 +15790,6 @@
 			}
 		],
 		"url": "https://www.opengl.org/wiki/Vertex_Rendering"
-	},
-	{
-		"fragments": [
-			{
-				"engines": {
-					"edge": [
-						{
-							"engine": "edge",
-							"id": "opusaudiocodec",
-							"title": "Opus Audio Codec",
-							"url": "http://www.opus-codec.org/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/opusaudiocodec",
-							"status": {
-								"status": "in-development",
-								"originalStatus": "In Development",
-								"channel": null,
-								"behindFlag": false,
-								"prefixed": false
-							}
-						}
-					]
-				},
-				"maxEntryLength": 1,
-				"fragment": ""
-			}
-		],
-		"url": "https://www.opus-codec.org/"
 	},
 	{
 		"fragments": [
@@ -15579,7 +15854,7 @@
 							"engine": "edge",
 							"id": "customfiltersshaders",
 							"title": "Custom filters (shaders)",
-							"url": "http://www.w3.org/Graphics/fx/wiki/CSS_Shaders_Security",
+							"url": "https://www.w3.org/Graphics/fx/wiki/CSS_Shaders_Security",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/customfiltersshaders",
 							"status": {
 								"status": "not-planned",
@@ -15660,7 +15935,7 @@
 							"engine": "edge",
 							"id": "svgexternalcontent",
 							"title": "SVG External Content",
-							"url": "http://www.w3.org/TR/2010/REC-xlink11-20100506/",
+							"url": "https://www.w3.org/TR/2010/REC-xlink11-20100506/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/svgexternalcontent",
 							"status": {
 								"status": "supported",
@@ -15795,7 +16070,7 @@
 							"engine": "edge",
 							"id": "canvas",
 							"title": "Canvas",
-							"url": "http://www.w3.org/TR/2dcontext/",
+							"url": "https://www.w3.org/TR/2dcontext/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/canvas",
 							"status": {
 								"status": "supported",
@@ -15809,7 +16084,7 @@
 							"engine": "edge",
 							"id": "canvasfocusring",
 							"title": "Canvas focus ring",
-							"url": "http://www.w3.org/TR/2dcontext/",
+							"url": "https://www.w3.org/TR/2dcontext/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/canvasfocusring",
 							"status": {
 								"status": "under-consideration",
@@ -15831,7 +16106,7 @@
 							"engine": "edge",
 							"id": "canvas2dellipse",
 							"title": "Canvas 2D ellipse",
-							"url": "http://www.w3.org/TR/2dcontext/#dom-context-2d-ellipse",
+							"url": "https://www.w3.org/TR/2dcontext/#dom-context-2d-ellipse",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/canvas2dellipse",
 							"status": {
 								"status": "supported",
@@ -15875,7 +16150,7 @@
 							"engine": "edge",
 							"id": "canvas2dtextdecoration",
 							"title": "Canvas2D text decoration",
-							"url": "http://www.w3.org/TR/2dcontext/#textmetrics",
+							"url": "https://www.w3.org/TR/2dcontext/#textmetrics",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/canvas2dtextdecoration",
 							"status": {
 								"status": "under-consideration",
@@ -15902,7 +16177,7 @@
 							"engine": "edge",
 							"id": "canvas2dpath2d",
 							"title": "Canvas 2D path2D",
-							"url": "http://www.w3.org/TR/2dcontext2/#path2d-objects",
+							"url": "https://www.w3.org/TR/2dcontext2/#path2d-objects",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/canvas2dpath2d",
 							"status": {
 								"status": "in-development",
@@ -15972,7 +16247,7 @@
 							"engine": "edge",
 							"id": "contentsecuritypolicylevel2",
 							"title": "Content Security Policy Level 2",
-							"url": "http://www.w3.org/TR/CSP2/",
+							"url": "https://www.w3.org/TR/CSP2/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/contentsecuritypolicylevel2",
 							"status": {
 								"status": "under-consideration",
@@ -16053,7 +16328,7 @@
 							"engine": "edge",
 							"id": "dom3keyboardevents",
 							"title": "DOM3 Keyboard Events",
-							"url": "http://www.w3.org/TR/DOM-Level-3-Events/",
+							"url": "https://www.w3.org/TR/DOM-Level-3-Events/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/dom3keyboardevents",
 							"status": {
 								"status": "supported",
@@ -16102,7 +16377,7 @@
 							"engine": "edge",
 							"id": "domlevel3xpath",
 							"title": "DOM Level 3 XPath",
-							"url": "http://www.w3.org/TR/DOM-Level-3-XPath/",
+							"url": "https://www.w3.org/TR/DOM-Level-3-XPath/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/domlevel3xpath",
 							"status": {
 								"status": "supported",
@@ -16129,7 +16404,7 @@
 							"engine": "edge",
 							"id": "indexeddb",
 							"title": "IndexedDB",
-							"url": "http://www.w3.org/TR/IndexedDB/",
+							"url": "https://www.w3.org/TR/IndexedDB/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/indexeddb",
 							"status": {
 								"status": "supported",
@@ -16183,7 +16458,7 @@
 							"engine": "edge",
 							"id": "indexeddbarraysandmultientrysupport",
 							"title": "IndexedDB Arrays and MultiEntry Support",
-							"url": "http://www.w3.org/TR/IndexedDB/#dfn-multientry",
+							"url": "https://www.w3.org/TR/IndexedDB/#dfn-multientry",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/indexeddbarraysandmultientrysupport",
 							"status": {
 								"status": "under-consideration",
@@ -16226,7 +16501,7 @@
 							"engine": "edge",
 							"id": "mathml",
 							"title": "MathML",
-							"url": "http://www.w3.org/TR/MathML3/",
+							"url": "https://www.w3.org/TR/MathML3/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mathml",
 							"status": {
 								"status": "not-planned",
@@ -16253,7 +16528,7 @@
 							"engine": "edge",
 							"id": "platformforprivacypreferences10p3p10",
 							"title": "Platform for Privacy Preferences 1.0 (P3P 1.0)",
-							"url": "http://www.w3.org/TR/P3P/",
+							"url": "https://www.w3.org/TR/P3P/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/platformforprivacypreferences10p3p10",
 							"status": {
 								"status": "deprecated",
@@ -16339,7 +16614,7 @@
 							"engine": "edge",
 							"id": "svgsmilanimation",
 							"title": "SVG+SMIL Animation",
-							"url": "http://www.w3.org/TR/SVG/animate.html",
+							"url": "https://www.w3.org/TR/SVG/animate.html",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/svgsmilanimation",
 							"status": {
 								"status": "not-planned",
@@ -16366,7 +16641,7 @@
 							"engine": "edge",
 							"id": "svgforeignobjectelement",
 							"title": "SVG foreignobject element",
-							"url": "http://www.w3.org/TR/SVG/extend.html#EmbeddingForeignObjects",
+							"url": "https://www.w3.org/TR/SVG/extend.html#EmbeddingForeignObjects",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/svgforeignobjectelement",
 							"status": {
 								"status": "supported",
@@ -16528,7 +16803,7 @@
 							"engine": "edge",
 							"id": "crossdomainfontloading",
 							"title": "Cross-Domain Font Loading",
-							"url": "http://www.w3.org/TR/WOFF/",
+							"url": "https://www.w3.org/TR/WOFF/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/crossdomainfontloading",
 							"status": {
 								"status": "in-development",
@@ -16571,7 +16846,7 @@
 							"engine": "edge",
 							"id": "wofffileformat20",
 							"title": "WOFF File Format 2.0",
-							"url": "http://www.w3.org/TR/WOFF2/",
+							"url": "https://www.w3.org/TR/WOFF2/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/wofffileformat20",
 							"status": {
 								"status": "in-development",
@@ -16625,7 +16900,7 @@
 							"engine": "edge",
 							"id": "accessiblenameanddescriptioncomputationandapimappings11",
 							"title": "Accessible Name and Description: Computation and API Mappings 1.1",
-							"url": "http://www.w3.org/TR/accname-aam-1.1/",
+							"url": "https://www.w3.org/TR/accname-aam-1.1/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/accessiblenameanddescriptioncomputationandapimappings11",
 							"status": {
 								"status": "in-development",
@@ -16652,7 +16927,7 @@
 							"engine": "edge",
 							"id": "ambientlightevents",
 							"title": "Ambient Light Events",
-							"url": "http://www.w3.org/TR/ambient-light/",
+							"url": "https://www.w3.org/TR/ambient-light/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/ambientlightevents",
 							"status": {
 								"status": "supported",
@@ -16679,7 +16954,7 @@
 							"engine": "edge",
 							"id": "beacon",
 							"title": "Beacon",
-							"url": "http://www.w3.org/TR/beacon/",
+							"url": "https://www.w3.org/TR/beacon/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/beacon",
 							"status": {
 								"status": "in-development",
@@ -16896,7 +17171,7 @@
 							"engine": "edge",
 							"id": "shapes",
 							"title": "Shapes",
-							"url": "http://www.w3.org/TR/css-shapes/",
+							"url": "https://www.w3.org/TR/css-shapes/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/shapes",
 							"status": {
 								"status": "under-consideration",
@@ -17004,7 +17279,7 @@
 							"engine": "edge",
 							"id": "cssvariables",
 							"title": "CSS Variables",
-							"url": "http://www.w3.org/TR/css-variables/",
+							"url": "https://www.w3.org/TR/css-variables/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssvariables",
 							"status": {
 								"status": "under-consideration",
@@ -17074,7 +17349,7 @@
 							"engine": "edge",
 							"id": "cssallshorthand",
 							"title": "CSS all shorthand",
-							"url": "http://www.w3.org/TR/css3-cascade/#all-shorthand",
+							"url": "https://www.w3.org/TR/css3-cascade/#all-shorthand",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssallshorthand",
 							"status": {
 								"status": "under-consideration",
@@ -17117,7 +17392,7 @@
 							"engine": "edge",
 							"id": "mediaqueriesresolutionfeature",
 							"title": "Media Queries: resolution feature",
-							"url": "http://www.w3.org/TR/css3-mediaqueries/#resolution",
+							"url": "https://www.w3.org/TR/css3-mediaqueries/#resolution",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mediaqueriesresolutionfeature",
 							"status": {
 								"status": "supported",
@@ -17166,7 +17441,7 @@
 							"engine": "edge",
 							"id": "csstabsizeproperty",
 							"title": "CSS tab-size property",
-							"url": "http://www.w3.org/TR/css3-text/#tab-size",
+							"url": "https://www.w3.org/TR/css3-text/#tab-size",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csstabsizeproperty",
 							"status": {
 								"status": "under-consideration",
@@ -17193,7 +17468,7 @@
 							"engine": "edge",
 							"id": "csstransformspreserve3d",
 							"title": "CSS Transforms - preserve-3d",
-							"url": "http://www.w3.org/TR/css3-transforms/#transform-style-property",
+							"url": "https://www.w3.org/TR/css3-transforms/#transform-style-property",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csstransformspreserve3d",
 							"status": {
 								"status": "supported",
@@ -17236,7 +17511,7 @@
 							"engine": "edge",
 							"id": "csscalc",
 							"title": "CSS calc()",
-							"url": "http://www.w3.org/TR/css3-values",
+							"url": "https://www.w3.org/TR/css3-values",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csscalc",
 							"status": {
 								"status": "supported",
@@ -17263,7 +17538,7 @@
 							"engine": "edge",
 							"id": "csslevel3attrfunction",
 							"title": "CSS Level 3 attr() function",
-							"url": "http://www.w3.org/TR/css3-values/#attr-notation",
+							"url": "https://www.w3.org/TR/css3-values/#attr-notation",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csslevel3attrfunction",
 							"status": {
 								"status": "under-consideration",
@@ -17285,7 +17560,7 @@
 							"engine": "edge",
 							"id": "dppxunitfortheresolutionmediaquery",
 							"title": "dppx Unit for the resolution Media Query",
-							"url": "http://www.w3.org/TR/css3-values/#resolution",
+							"url": "https://www.w3.org/TR/css3-values/#resolution",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/dppxunitfortheresolutionmediaquery",
 							"status": {
 								"status": "supported",
@@ -17307,7 +17582,7 @@
 							"engine": "edge",
 							"id": "cssvmaxunit",
 							"title": "CSS vmax unit",
-							"url": "http://www.w3.org/TR/css3-values/#viewport-relative-lengths",
+							"url": "https://www.w3.org/TR/css3-values/#viewport-relative-lengths",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssvmaxunit",
 							"status": {
 								"status": "under-consideration",
@@ -17377,7 +17652,7 @@
 							"engine": "edge",
 							"id": "customelements",
 							"title": "Custom Elements",
-							"url": "http://www.w3.org/TR/custom-elements/",
+							"url": "https://www.w3.org/TR/custom-elements/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/customelements",
 							"status": {
 								"status": "under-consideration",
@@ -17404,7 +17679,7 @@
 							"engine": "edge",
 							"id": "serversenteventseventsource",
 							"title": "Server-Sent Events (EventSource)",
-							"url": "http://www.w3.org/TR/eventsource/",
+							"url": "https://www.w3.org/TR/eventsource/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/serversenteventseventsource",
 							"status": {
 								"status": "under-consideration",
@@ -17447,7 +17722,7 @@
 							"engine": "edge",
 							"id": "cssfilterimagefunction",
 							"title": "CSS filter() image function",
-							"url": "http://www.w3.org/TR/filter-effects/#FilterCSSImageValue",
+							"url": "https://www.w3.org/TR/filter-effects/#FilterCSSImageValue",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssfilterimagefunction",
 							"status": {
 								"status": "under-consideration",
@@ -17496,7 +17771,7 @@
 							"engine": "edge",
 							"id": "htmlformhttpextensions",
 							"title": "HTML Form HTTP Extensions",
-							"url": "http://www.w3.org/TR/form-http-extensions/",
+							"url": "https://www.w3.org/TR/form-http-extensions/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/htmlformhttpextensions",
 							"status": {
 								"status": "under-consideration",
@@ -17566,7 +17841,7 @@
 							"engine": "edge",
 							"id": "geolocation",
 							"title": "Geolocation",
-							"url": "http://www.w3.org/TR/geolocation-API/",
+							"url": "https://www.w3.org/TR/geolocation-API/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/geolocation",
 							"status": {
 								"status": "supported",
@@ -17620,7 +17895,7 @@
 							"engine": "edge",
 							"id": "htmlsectionsinaccessibilityapi",
 							"title": "HTML Sections in Accessibility API",
-							"url": "http://www.w3.org/TR/html-aapi/",
+							"url": "https://www.w3.org/TR/html-aapi/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/htmlsectionsinaccessibilityapi",
 							"status": {
 								"status": "in-development",
@@ -17647,7 +17922,7 @@
 							"engine": "edge",
 							"id": "cssrangepseudoclasses",
 							"title": "CSS Range Pseudo-classes",
-							"url": "http://www.w3.org/TR/html5/disabled-elements.html#selector-in-range",
+							"url": "https://www.w3.org/TR/html5/disabled-elements.html#selector-in-range",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssrangepseudoclasses",
 							"status": {
 								"status": "supported",
@@ -17669,7 +17944,7 @@
 							"engine": "edge",
 							"id": "cssmutabilitypseudoclasses",
 							"title": "CSS Mutability Pseudo-classes",
-							"url": "http://www.w3.org/TR/html5/disabled-elements.html#selector-read-write",
+							"url": "https://www.w3.org/TR/html5/disabled-elements.html#selector-read-write",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/cssmutabilitypseudoclasses",
 							"status": {
 								"status": "supported",
@@ -17694,9 +17969,80 @@
 					"edge": [
 						{
 							"engine": "edge",
+							"id": "iframesandboxattribute",
+							"title": "iframe[sandbox] attribute",
+							"url": "https://www.w3.org/TR/html5/embedded-content-0.html#attr-iframe-sandbox",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframesandboxattribute",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#attr-iframe-sandbox"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "iframesrcdocattribute",
+							"title": "iframe[srcdoc] attribute",
+							"url": "https://www.w3.org/TR/html5/embedded-content-0.html#attr-iframe-srcdoc",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/iframesrcdocattribute",
+							"status": {
+								"status": "under-consideration",
+								"originalStatus": "Under Consideration",
+								"channel": null,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#attr-iframe-srcdoc"
+			},
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
+							"id": "trackelement",
+							"title": "Track element",
+							"url": "https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/trackelement",
+							"status": {
+								"status": "supported",
+								"originalStatus": "Shipped",
+								"channel": 10,
+								"behindFlag": false,
+								"prefixed": false
+							}
+						}
+					]
+				},
+				"maxEntryLength": 1,
+				"fragment": "#the-track-element"
+			}
+		],
+		"url": "https://www.w3.org/TR/html5/embedded-content-0.html"
+	},
+	{
+		"fragments": [
+			{
+				"engines": {
+					"edge": [
+						{
+							"engine": "edge",
 							"id": "formattribute",
 							"title": "Form attribute",
-							"url": "http://www.w3.org/TR/html5/forms.html#attr-fae-form",
+							"url": "https://www.w3.org/TR/html5/forms.html#attr-fae-form",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/formattribute",
 							"status": {
 								"status": "under-consideration",
@@ -17740,7 +18086,7 @@
 							"engine": "edge",
 							"id": "selectiondirectionattributeontextinputelements",
 							"title": "selectionDirection attribute on text input elements",
-							"url": "http://www.w3.org/TR/html5/forms.html#dom-textarea/input-selectiondirection",
+							"url": "https://www.w3.org/TR/html5/forms.html#dom-textarea/input-selectiondirection",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/selectiondirectionattributeontextinputelements",
 							"status": {
 								"status": "supported",
@@ -17778,7 +18124,7 @@
 							"engine": "edge",
 							"id": "keygenelement",
 							"title": "<keygen> element",
-							"url": "http://www.w3.org/TR/html5/forms.html#the-keygen-element",
+							"url": "https://www.w3.org/TR/html5/forms.html#the-keygen-element",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/keygenelement",
 							"status": {
 								"status": "not-planned",
@@ -17800,7 +18146,7 @@
 							"engine": "edge",
 							"id": "meterelement",
 							"title": "<meter> Element",
-							"url": "http://www.w3.org/TR/html5/forms.html#the-meter-element",
+							"url": "https://www.w3.org/TR/html5/forms.html#the-meter-element",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/meterelement",
 							"status": {
 								"status": "supported",
@@ -17854,7 +18200,7 @@
 							"engine": "edge",
 							"id": "oninvalideventhandler",
 							"title": "oninvalid event handler",
-							"url": "http://www.w3.org/TR/html5/webappapis.html#events",
+							"url": "https://www.w3.org/TR/html5/webappapis.html#events",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/oninvalideventhandler",
 							"status": {
 								"status": "supported",
@@ -17881,7 +18227,7 @@
 							"engine": "edge",
 							"id": "mediafragments",
 							"title": "Media Fragments",
-							"url": "http://www.w3.org/TR/media-frags/",
+							"url": "https://www.w3.org/TR/media-frags/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mediafragments",
 							"status": {
 								"status": "under-consideration",
@@ -17911,10 +18257,10 @@
 							"url": "http://www.w3.org/TR/mediacapture-fromelement/#html-canvas-element-media-capture-extensions",
 							"statusURL": "https://www.chromestatus.com/features/4817998447640576",
 							"status": {
-								"status": "not-planned",
-								"originalStatus": "No active development",
-								"channel": null,
-								"behindFlag": false,
+								"status": "supported",
+								"originalStatus": "Behind a flag",
+								"channel": 50,
+								"behindFlag": true,
 								"prefixed": false
 							}
 						}
@@ -17973,7 +18319,7 @@
 							"engine": "edge",
 							"id": "mediarecorder",
 							"title": "MediaRecorder",
-							"url": "http://www.w3.org/TR/mediastream-recording/",
+							"url": "https://www.w3.org/TR/mediastream-recording/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mediarecorder",
 							"status": {
 								"status": "under-consideration",
@@ -18000,7 +18346,7 @@
 							"engine": "edge",
 							"id": "microdata",
 							"title": "Microdata",
-							"url": "http://www.w3.org/TR/microdata/",
+							"url": "https://www.w3.org/TR/microdata/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/microdata",
 							"status": {
 								"status": "not-planned",
@@ -18054,7 +18400,7 @@
 							"engine": "edge",
 							"id": "webnotifications",
 							"title": "Web Notifications",
-							"url": "http://www.w3.org/TR/notifications/",
+							"url": "https://www.w3.org/TR/notifications/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webnotifications",
 							"status": {
 								"status": "in-development",
@@ -18097,7 +18443,7 @@
 							"engine": "edge",
 							"id": "pointerevents",
 							"title": "Pointer Events",
-							"url": "http://www.w3.org/TR/pointerevents/",
+							"url": "https://www.w3.org/TR/pointerevents/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/pointerevents",
 							"status": {
 								"status": "supported",
@@ -18167,7 +18513,7 @@
 							"engine": "edge",
 							"id": "quotamanagementapi",
 							"title": "Quota Management API",
-							"url": "http://www.w3.org/TR/quota-api/",
+							"url": "https://www.w3.org/TR/quota-api/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/quotamanagementapi",
 							"status": {
 								"status": "not-planned",
@@ -18270,7 +18616,7 @@
 							"engine": "edge",
 							"id": "resourcetimingapi",
 							"title": "Resource Timing API",
-							"url": "http://www.w3.org/TR/resource-timing/",
+							"url": "https://www.w3.org/TR/resource-timing/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/resourcetimingapi",
 							"status": {
 								"status": "supported",
@@ -18297,7 +18643,7 @@
 							"engine": "edge",
 							"id": "csscontextualreferenceelementpseudoclassscope",
 							"title": "CSS Contextual Reference Element Pseudo-class :scope",
-							"url": "http://www.w3.org/TR/selectors4/#the-scope-pseudo",
+							"url": "https://www.w3.org/TR/selectors4/#the-scope-pseudo",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csscontextualreferenceelementpseudoclassscope",
 							"status": {
 								"status": "under-consideration",
@@ -18394,7 +18740,7 @@
 							"engine": "edge",
 							"id": "touchevents",
 							"title": "Touch Events",
-							"url": "http://www.w3.org/TR/touch-events/",
+							"url": "https://www.w3.org/TR/touch-events/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/touchevents",
 							"status": {
 								"status": "supported",
@@ -18437,7 +18783,7 @@
 							"engine": "edge",
 							"id": "uieventskeyboardqueryapis",
 							"title": "UIEvents - Keyboard Query APIs",
-							"url": "http://www.w3.org/TR/uievents/",
+							"url": "https://www.w3.org/TR/uievents/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/uieventskeyboardqueryapis",
 							"status": {
 								"status": "under-consideration",
@@ -18464,7 +18810,7 @@
 							"engine": "edge",
 							"id": "usertimingapi",
 							"title": "User Timing API",
-							"url": "http://www.w3.org/TR/user-timing/",
+							"url": "https://www.w3.org/TR/user-timing/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/usertimingapi",
 							"status": {
 								"status": "supported",
@@ -18491,7 +18837,7 @@
 							"engine": "edge",
 							"id": "vibrationapi",
 							"title": "Vibration API",
-							"url": "http://www.w3.org/TR/vibration/",
+							"url": "https://www.w3.org/TR/vibration/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vibrationapi",
 							"status": {
 								"status": "under-consideration",
@@ -18518,7 +18864,7 @@
 							"engine": "edge",
 							"id": "accessiblerichinternetapplicationswaiaria11",
 							"title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
-							"url": "http://www.w3.org/TR/wai-aria-1.1/",
+							"url": "https://www.w3.org/TR/wai-aria-1.1/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/accessiblerichinternetapplicationswaiaria11",
 							"status": {
 								"status": "in-development",
@@ -18545,7 +18891,7 @@
 							"engine": "edge",
 							"id": "arialandmarkroles",
 							"title": "ARIA Landmark Roles",
-							"url": "http://www.w3.org/TR/wai-aria/roles#landmark_roles",
+							"url": "https://www.w3.org/TR/wai-aria/roles#landmark_roles ",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/arialandmarkroles",
 							"status": {
 								"status": "supported",
@@ -18588,7 +18934,7 @@
 							"engine": "edge",
 							"id": "webanimationsjavascriptapi",
 							"title": "Web Animations JavaScript API",
-							"url": "http://www.w3.org/TR/web-animations/",
+							"url": "https://www.w3.org/TR/web-animations/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi",
 							"status": {
 								"status": "under-consideration",
@@ -18631,7 +18977,7 @@
 							"engine": "edge",
 							"id": "websqldatabase",
 							"title": "Web SQL Database",
-							"url": "http://www.w3.org/TR/webdatabase/",
+							"url": "https://www.w3.org/TR/webdatabase/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/websqldatabase",
 							"status": {
 								"status": "not-planned",
@@ -18658,7 +19004,7 @@
 							"engine": "edge",
 							"id": "webdriver",
 							"title": "WebDriver",
-							"url": "http://www.w3.org/TR/webdriver/",
+							"url": "https://www.w3.org/TR/webdriver/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webdriver",
 							"status": {
 								"status": "supported",
@@ -18683,28 +19029,28 @@
 					"edge": [
 						{
 							"engine": "edge",
-							"id": "messagechannels",
-							"title": "Message Channels",
-							"url": "http://www.w3.org/TR/webmessaging/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/messagechannels",
+							"id": "postmessage",
+							"title": "postMessage",
+							"url": "https://www.w3.org/TR/webmessaging/",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/postmessage",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
-								"channel": 10,
+								"channel": 8,
 								"behindFlag": false,
 								"prefixed": false
 							}
 						},
 						{
 							"engine": "edge",
-							"id": "postmessage",
-							"title": "postMessage",
-							"url": "http://www.w3.org/TR/webmessaging/",
-							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/postmessage",
+							"id": "messagechannels",
+							"title": "Message Channels",
+							"url": "https://www.w3.org/TR/webmessaging/",
+							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/messagechannels",
 							"status": {
 								"status": "supported",
 								"originalStatus": "Shipped",
-								"channel": 8,
+								"channel": 10,
 								"behindFlag": false,
 								"prefixed": false
 							}
@@ -18753,7 +19099,7 @@
 							"engine": "edge",
 							"id": "webstorage",
 							"title": "Web Storage",
-							"url": "http://www.w3.org/TR/webstorage/",
+							"url": "https://www.w3.org/TR/webstorage/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webstorage",
 							"status": {
 								"status": "supported",
@@ -18807,7 +19153,7 @@
 							"engine": "edge",
 							"id": "webrtcobjectrtcapi",
 							"title": "WebRTC – Object RTC API",
-							"url": "http://www.w3.org/community/ortc/",
+							"url": "https://www.w3.org/community/ortc/",
 							"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webrtcobjectrtcapi",
 							"status": {
 								"status": "supported",
