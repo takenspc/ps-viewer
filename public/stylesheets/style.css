@@ -21,18 +21,20 @@ body {
     max-width: 80rem;
 }
 
-
 h1 {
     font-size: 2rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1rem;
+}
+
+.content {
+    margin: 0 1rem 5rem;
 }
 
 
 .toc {
     border-left: medium solid gray;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    padding: 0 1rem .5rem;
+    margin-bottom: 1rem;
+    padding: .25rem 1rem;
 }
 
 .toc h2 {
@@ -57,18 +59,39 @@ h1 {
 .host-name {
     color: #212121;
     font-size: 2rem;
-    padding: 1rem 1rem .5rem;
+    padding: 1rem 0 .5rem;
 }
 
 .url .url-name {
     color: #424242;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .url .url-name a {
     color: inherit;
 }
+
+.url-nav {
+    display: flex;
+    font-size: .75em;
+}
+
+.url-nav .link {
+    background: no-repeat 0 .25em / 1em 1em;
+    line-height: 1.5;
+    padding: 0 1.125em;
+}
+
+.url-nav .link-spec {
+    background-image: url('../images/icons/link-spec.svg');
+}
+
+.url-nav .link-standalone {
+    background-image: url('../images/icons/link-standalone.svg');
+}
+
+
 
 .fragment {
     margin-bottom: 3rem;
@@ -77,7 +100,7 @@ h1 {
 .fragment .fragment-name {
     color: #757575;
     font-size: 1.2rem;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
 }
 
 .fragment:after {
@@ -90,7 +113,7 @@ h1 {
 
 .engine {
     margin-bottom: 1rem;
-    padding: 1rem .5rem 1rem 1rem;
+    padding: 1rem 0;
 }
 
 .engine-name {
@@ -118,12 +141,11 @@ h1 {
 
 .entry-list {
     list-style: none;
+    margin-left: 1.5rem;
 }
-
 
 .entry {
     background: no-repeat .5rem .5rem / 2rem 2rem;
-    margin-left: 1.5rem;
     padding: .5rem .5rem .5rem 2rem;
     position: relative;
 }
@@ -240,7 +262,7 @@ h1 {
 .footer {
     border-top: thin solid #212121;
     font-size: .75rem;
-    padding: 1em 0.5rem;
+    padding: 1rem 1rem;
 }
 
 .footer a {

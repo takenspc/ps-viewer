@@ -5,6 +5,9 @@ var url = require('url');
 var express = require('express');
 var router = express.Router();
 
+
+const engines = ['chromium', 'edge', 'webkit', 'gecko'];
+
 function readFile(filePath) {
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf-8', (err, text) => {
@@ -55,12 +58,12 @@ router.get(/^\/(.+)$/, function(req, res, next) {
             return urlString === entry.url;
         });
 
-        const engines = ['chromium', 'edge', 'webkit', 'gecko'];
         res.render('status', {
             title: urlString + ' - Indexes of Platform Status',
             h1: urlString,
             engines: engines,
             data: groupByHost(urlData),
+            isStandalonePage: true,
         });
     }).catch((err) => {
         next(err);
@@ -69,13 +72,12 @@ router.get(/^\/(.+)$/, function(req, res, next) {
 
 router.get('/', function(req, res, next) {
     readJSON().then((data) => {
-        const engines = ['chromium', 'edge', 'webkit', 'gecko'];
-
         res.render('status', {
             title: 'Indexes of Platform Status',
             h1: 'Indexes',
             engines: engines,
             data: groupByHost(data),
+            isStandalonePage: false,
         });
     }).catch((err) => {
         next(err);
