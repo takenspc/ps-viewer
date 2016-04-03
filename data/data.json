@@ -1006,22 +1006,6 @@
 									"edge": [
 										{
 											"engine": "edge",
-											"id": "csspointerevents",
-											"redirects": [
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 11,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csspointerevents",
-											"title": "CSS pointer-events",
-											"url": ""
-										},
-										{
-											"engine": "edge",
 											"id": "fido20webapis",
 											"redirects": [
 											],
@@ -1038,18 +1022,18 @@
 										},
 										{
 											"engine": "edge",
-											"id": "motionjpegmjpg",
+											"id": "webkitdirectoryandwebkitrelativepath",
 											"redirects": [
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": 10240,
-												"originalStatus": "Shipped",
+												"channel": null,
+												"originalStatus": "In Development",
 												"prefixed": false,
-												"status": "supported"
+												"status": "in-development"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/motionjpegmjpg",
-											"title": "Motion JPEG (MJPG)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webkitdirectoryandwebkitrelativepath",
+											"title": "webkitdirectory and webkitRelativePath",
 											"url": ""
 										},
 										{
@@ -1070,18 +1054,34 @@
 										},
 										{
 											"engine": "edge",
-											"id": "webkitdirectoryandwebkitrelativepath",
+											"id": "csspointerevents",
 											"redirects": [
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In Development",
+												"channel": 11,
+												"originalStatus": "Shipped",
 												"prefixed": false,
-												"status": "in-development"
+												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webkitdirectoryandwebkitrelativepath",
-											"title": "webkitdirectory and webkitRelativePath",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/csspointerevents",
+											"title": "CSS pointer-events",
+											"url": ""
+										},
+										{
+											"engine": "edge",
+											"id": "motionjpegmjpg",
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 10240,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/motionjpegmjpg",
+											"title": "Motion JPEG (MJPG)",
 											"url": ""
 										}
 									],
@@ -1163,22 +1163,6 @@
 									"edge": [
 										{
 											"engine": "edge",
-											"id": "vp9videocodec",
-											"redirects": [
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In Development",
-												"prefixed": false,
-												"status": "in-development"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vp9videocodec",
-											"title": "VP9 Video Codec",
-											"url": "http://aomedia.org/"
-										},
-										{
-											"engine": "edge",
 											"id": "webmcontainer",
 											"redirects": [
 											],
@@ -1199,6 +1183,44 @@
 							}
 						},
 						"url": "http://aomedia.org/"
+					}
+				}
+			}
+		}
+	},
+	"arv": {
+		"entity": "arv",
+		"hosts": {
+			"github.com/arv": {
+				"host": "github.com/arv",
+				"urls": {
+					"https://github.com/arv/ecmascript-object-observe": {
+						"fragments": {
+							"": {
+								"engines": {
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "objectobserve",
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "Not currently planned",
+												"prefixed": false,
+												"status": "not-planned"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectobserve",
+											"title": "Object.observe()",
+											"url": "https://github.com/arv/ecmascript-object-observe"
+										}
+									]
+								},
+								"fragment": ""
+							}
+						},
+						"url": "https://github.com/arv/ecmascript-object-observe"
 					}
 				}
 			}
@@ -3640,9 +3662,9 @@
 											"redirects": [
 											],
 											"status": {
-												"behindFlag": true,
-												"channel": 45,
-												"originalStatus": "Behind a flag",
+												"behindFlag": false,
+												"channel": 50,
+												"originalStatus": "Enabled by default",
 												"prefixed": false,
 												"status": "supported"
 											},
@@ -6469,24 +6491,6 @@
 											"title": "Object.observe()",
 											"url": "http://wiki.ecmascript.org/doku.php?id=harmony:observe"
 										}
-									],
-									"edge": [
-										{
-											"engine": "edge",
-											"id": "objectobserve",
-											"redirects": [
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "Not currently planned",
-												"prefixed": false,
-												"status": "not-planned"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectobserve",
-											"title": "Object.observe()",
-											"url": "http://wiki.ecmascript.org/doku.php?id=harmony:observe"
-										}
 									]
 								},
 								"fragment": ""
@@ -6597,22 +6601,6 @@
 									"edge": [
 										{
 											"engine": "edge",
-											"id": "backgroundblendmode",
-											"redirects": [
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "Under Consideration",
-												"prefixed": false,
-												"status": "under-consideration"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/backgroundblendmode",
-											"title": "background-blend-mode",
-											"url": "https://drafts.fxtf.org/compositing-1/"
-										},
-										{
-											"engine": "edge",
 											"id": "mixblendmode",
 											"redirects": [
 											],
@@ -6625,6 +6613,22 @@
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mixblendmode",
 											"title": "mix-blend-mode",
+											"url": "https://drafts.fxtf.org/compositing-1/"
+										},
+										{
+											"engine": "edge",
+											"id": "backgroundblendmode",
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "Under Consideration",
+												"prefixed": false,
+												"status": "under-consideration"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/backgroundblendmode",
+											"title": "background-blend-mode",
 											"url": "https://drafts.fxtf.org/compositing-1/"
 										}
 									]
@@ -8126,14 +8130,14 @@
 											"redirects": [
 											],
 											"status": {
-												"behindFlag": true,
-												"channel": 50,
-												"originalStatus": "Behind a flag",
+												"behindFlag": false,
+												"channel": 51,
+												"originalStatus": "Enabled by default",
 												"prefixed": false,
 												"status": "supported"
 											},
 											"statusURL": "https://www.chromestatus.com/features/4672634709082112",
-											"title": "\"First-Party-Only\" cookies.",
+											"title": "'SameSite' cookie attribute",
 											"url": "https://tools.ietf.org/html/draft-west-first-party-cookies"
 										},
 										{
@@ -8309,6 +8313,42 @@
 						},
 						"url": "https://tools.ietf.org/html/rfc5861"
 					},
+					"https://tools.ietf.org/html/rfc6386": {
+						"fragments": {
+							"": {
+								"engines": {
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "vp8forrtc",
+											"redirects": [
+												{
+													"reason": "prefer https: over http:",
+													"redirectInfo": {
+														"protocol": "https:"
+													},
+													"to": "https://tools.ietf.org/html/rfc6386",
+													"type": "rewrite"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "Under Consideration",
+												"prefixed": false,
+												"status": "under-consideration"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vp8forrtc",
+											"title": "VP8 for RTC",
+											"url": "http://tools.ietf.org/html/rfc6386"
+										}
+									]
+								},
+								"fragment": ""
+							}
+						},
+						"url": "https://tools.ietf.org/html/rfc6386"
+					},
 					"https://tools.ietf.org/html/rfc6454": {
 						"fragments": {
 							"#section-4": {
@@ -8344,7 +8384,7 @@
 									"edge": [
 										{
 											"engine": "edge",
-											"id": "opusaudiocodec",
+											"id": "opusaudioplayback",
 											"redirects": [
 											],
 											"status": {
@@ -8354,8 +8394,8 @@
 												"prefixed": false,
 												"status": "in-development"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/opusaudiocodec",
-											"title": "Opus Audio Codec",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/opusaudioplayback",
+											"title": "Opus Audio Playback",
 											"url": "https://tools.ietf.org/html/rfc6716"
 										}
 									]
@@ -8520,6 +8560,44 @@
 							}
 						},
 						"url": "https://tools.ietf.org/html/rfc7540"
+					}
+				}
+			}
+		}
+	},
+	"itu": {
+		"entity": "itu",
+		"hosts": {
+			"www.itu.int": {
+				"host": "www.itu.int",
+				"urls": {
+					"http://www.itu.int/rec/T-REC-H.264": {
+						"fragments": {
+							"": {
+								"engines": {
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "h264avcforrtc",
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "In Development",
+												"prefixed": false,
+												"status": "in-development"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/h264avcforrtc",
+											"title": "H.264/AVC for RTC",
+											"url": "http://www.itu.int/rec/T-REC-H.264"
+										}
+									]
+								},
+								"fragment": ""
+							}
+						},
+						"url": "http://www.itu.int/rec/T-REC-H.264"
 					}
 				}
 			}
@@ -9795,10 +9873,10 @@
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In development",
+												"channel": 51,
+												"originalStatus": "Enabled by default",
 												"prefixed": false,
-												"status": "in-development"
+												"status": "supported"
 											},
 											"statusURL": "https://www.chromestatus.com/features/5724079160033280",
 											"title": "ExtendableMessageEvent on ServiceWorkerGlobalScope",
@@ -10051,6 +10129,39 @@
 	"tc39": {
 		"entity": "tc39",
 		"hosts": {
+			"github.com/tc39": {
+				"host": "github.com/tc39",
+				"urls": {
+					"https://github.com/tc39/proposal-object-getownpropertydescriptors": {
+						"fragments": {
+							"": {
+								"engines": {
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "objectgetownpropertydescriptors",
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "Under Consideration",
+												"prefixed": false,
+												"status": "under-consideration"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectgetownpropertydescriptors",
+											"title": "Object.getOwnPropertyDescriptors",
+											"url": "https://github.com/tc39/proposal-object-getownpropertydescriptors"
+										}
+									]
+								},
+								"fragment": ""
+							}
+						},
+						"url": "https://github.com/tc39/proposal-object-getownpropertydescriptors"
+					}
+				}
+			},
 			"tc39.github.io": {
 				"host": "tc39.github.io",
 				"urls": {
@@ -10102,11 +10213,11 @@
 												}
 											],
 											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "Under Consideration",
+												"behindFlag": true,
+												"channel": 14279,
+												"originalStatus": "Preview Release",
 												"prefixed": false,
-												"status": "under-consideration"
+												"status": "supported"
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016",
 											"title": "Array.prototype.includes (ES2016)",
@@ -10238,6 +10349,178 @@
 									"edge": [
 										{
 											"engine": "edge",
+											"id": "es6blockbindingsletconstfunction",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 11,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6blockbindingsletconstfunction",
+											"title": "ES6 Block bindings (let, const, function)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "mapes6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 11,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mapes6",
+											"title": "Map (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "setes6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 11,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/setes6",
+											"title": "Set (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "weakmapes6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 11,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/weakmapes6",
+											"title": "WeakMap (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
 											"id": "arrowfunctiones6",
 											"redirects": [
 												{
@@ -10277,49 +10560,6 @@
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/arrowfunctiones6",
 											"title": "Arrow function (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "classeses6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 10532,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/classeses6",
-											"title": "Classes (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -10410,7 +10650,7 @@
 										},
 										{
 											"engine": "edge",
-											"id": "es6blockbindingsletconstfunction",
+											"id": "restparameterses6",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -10442,13 +10682,13 @@
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": 11,
+												"channel": 10240,
 												"originalStatus": "Shipped",
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6blockbindingsletconstfunction",
-											"title": "ES6 Block bindings (let, const, function)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/restparameterses6",
+											"title": "Rest parameters (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -10496,7 +10736,7 @@
 										},
 										{
 											"engine": "edge",
-											"id": "es6numericliterals",
+											"id": "symbolses6",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -10533,8 +10773,8 @@
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6numericliterals",
-											"title": "ES6 Numeric Literals",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/symbolses6",
+											"title": "Symbols (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -10582,7 +10822,7 @@
 										},
 										{
 											"engine": "edge",
-											"id": "mapes6",
+											"id": "proxieses6",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -10614,56 +10854,13 @@
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": 11,
+												"channel": 10240,
 												"originalStatus": "Shipped",
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/mapes6",
-											"title": "Map (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "moduleses6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In Development",
-												"prefixed": false,
-												"status": "in-development"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/moduleses6",
-											"title": "Modules (ES6)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/proxieses6",
+											"title": "Proxies (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -10711,6 +10908,49 @@
 										},
 										{
 											"engine": "edge",
+											"id": "stringbuiltinses6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 10240,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/stringbuiltinses6",
+											"title": "String Built-ins (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
 											"id": "objectbuiltinses6",
 											"redirects": [
 												{
@@ -10750,92 +10990,6 @@
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/objectbuiltinses6",
 											"title": "Object Built-ins (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "protoes6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 11,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/protoes6",
-											"title": "__proto__ (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "proxieses6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 10240,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/proxieses6",
-											"title": "Proxies (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -10883,50 +11037,7 @@
 										},
 										{
 											"engine": "edge",
-											"id": "restparameterses6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 10240,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/restparameterses6",
-											"title": "Rest parameters (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "setes6",
+											"id": "protoes6",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -10963,8 +11074,51 @@
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/setes6",
-											"title": "Set (ES6)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/protoes6",
+											"title": "__proto__ (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "classeses6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 10532,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/classeses6",
+											"title": "Classes (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -11012,7 +11166,7 @@
 										},
 										{
 											"engine": "edge",
-											"id": "stringbuiltinses6",
+											"id": "templatestringses6",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -11049,94 +11203,8 @@
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/stringbuiltinses6",
-											"title": "String Built-ins (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "subclassinges6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In Development",
-												"prefixed": false,
-												"status": "in-development"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/subclassinges6",
-											"title": "Subclassing (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "symbolses6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 10240,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/symbolses6",
-											"title": "Symbols (ES6)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templatestringses6",
+											"title": "Template Strings (ES6)",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										},
 										{
@@ -11184,7 +11252,93 @@
 										},
 										{
 											"engine": "edge",
-											"id": "templatestringses6",
+											"id": "subclassinges6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 14279,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/subclassinges6",
+											"title": "Subclassing (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "moduleses6",
+											"redirects": [
+												{
+													"reason": "remove default index (index.html).",
+													"redirectInfo": {
+														"pathname": "/ecma-262/6.0/"
+													},
+													"to": "http://ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "prefer www.ecma-international.org over ecma-international.org",
+													"redirectInfo": {
+														"host": "www.ecma-international.org"
+													},
+													"to": "http://www.ecma-international.org/ecma-262/6.0/",
+													"type": "rewrite"
+												},
+												{
+													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecma262/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecma262/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "In Development",
+												"prefixed": false,
+												"status": "in-development"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/moduleses6",
+											"title": "Modules (ES6)",
+											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
+										},
+										{
+											"engine": "edge",
+											"id": "es6numericliterals",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -11221,51 +11375,8 @@
 												"prefixed": false,
 												"status": "supported"
 											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/templatestringses6",
-											"title": "Template Strings (ES6)",
-											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
-										},
-										{
-											"engine": "edge",
-											"id": "weakmapes6",
-											"redirects": [
-												{
-													"reason": "remove default index (index.html).",
-													"redirectInfo": {
-														"pathname": "/ecma-262/6.0/"
-													},
-													"to": "http://ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "prefer www.ecma-international.org over ecma-international.org",
-													"redirectInfo": {
-														"host": "www.ecma-international.org"
-													},
-													"to": "http://www.ecma-international.org/ecma-262/6.0/",
-													"type": "rewrite"
-												},
-												{
-													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
-													"redirectInfo": {
-														"host": "tc39.github.io",
-														"pathname": "/ecma262/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://tc39.github.io/ecma262/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 11,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/weakmapes6",
-											"title": "WeakMap (ES6)",
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/es6numericliterals",
+											"title": "ES6 Numeric Literals",
 											"url": "http://ecma-international.org/ecma-262/6.0/index.html"
 										}
 									]
@@ -13683,6 +13794,35 @@
 											"url": "https://github.com/tc39/ecmascript_sharedmem"
 										}
 									],
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "sharedmemoryandatomics",
+											"redirects": [
+												{
+													"reason": "prefer github.io over github.com",
+													"redirectInfo": {
+														"host": "tc39.github.io",
+														"pathname": "/ecmascript_sharedmem/shmem.html",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://tc39.github.io/ecmascript_sharedmem/shmem.html",
+													"type": "rewrite"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "Under Consideration",
+												"prefixed": false,
+												"status": "under-consideration"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/sharedmemoryandatomics",
+											"title": "Shared Memory and Atomics",
+											"url": "https://github.com/tc39/ecmascript_sharedmem"
+										}
+									],
 									"gecko": [
 										{
 											"engine": "gecko",
@@ -15925,6 +16065,33 @@
 									"edge": [
 										{
 											"engine": "edge",
+											"id": "highresolutiontime2",
+											"redirects": [
+												{
+													"reason": "using http://www.specref.org/ data",
+													"redirectInfo": {
+														"host": "w3c.github.io",
+														"pathname": "/hr-time/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://w3c.github.io/hr-time/",
+													"type": "wd2ed"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "In Development",
+												"prefixed": false,
+												"status": "in-development"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/highresolutiontime2",
+											"title": "High Resolution Time 2",
+											"url": "https://www.w3.org/TR/hr-time-2/"
+										},
+										{
+											"engine": "edge",
 											"id": "highresolutiontime",
 											"redirects": [
 												{
@@ -15957,33 +16124,6 @@
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/highresolutiontime",
 											"title": "High Resolution Time",
 											"url": "https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HighResolutionTime/Overview.html"
-										},
-										{
-											"engine": "edge",
-											"id": "highresolutiontime2",
-											"redirects": [
-												{
-													"reason": "using http://www.specref.org/ data",
-													"redirectInfo": {
-														"host": "w3c.github.io",
-														"pathname": "/hr-time/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://w3c.github.io/hr-time/",
-													"type": "wd2ed"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In Development",
-												"prefixed": false,
-												"status": "in-development"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/highresolutiontime2",
-											"title": "High Resolution Time 2",
-											"url": "https://www.w3.org/TR/hr-time-2/"
 										}
 									]
 								},
@@ -17387,7 +17527,7 @@
 					},
 					"https://w3c.github.io/mediacapture-fromelement/": {
 						"fragments": {
-							"#html-canvas-element-media-capture-extensions": {
+							"": {
 								"engines": {
 									"chromium": [
 										{
@@ -17399,35 +17539,24 @@
 													"redirectInfo": {
 														"protocol": "https:"
 													},
-													"to": "https://www.w3.org/TR/mediacapture-fromelement/#html-canvas-element-media-capture-extensions",
+													"to": "https://w3c.github.io/mediacapture-fromelement/",
 													"type": "rewrite"
-												},
-												{
-													"reason": "using http://www.specref.org/ data",
-													"redirectInfo": {
-														"host": "w3c.github.io",
-														"pathname": "/mediacapture-fromelement/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://w3c.github.io/mediacapture-fromelement/#html-canvas-element-media-capture-extensions",
-													"type": "wd2ed"
 												}
 											],
 											"status": {
 												"behindFlag": true,
-												"channel": 50,
+												"channel": 49,
 												"originalStatus": "Behind a flag",
 												"prefixed": false,
 												"status": "supported"
 											},
 											"statusURL": "https://www.chromestatus.com/features/4817998447640576",
 											"title": "Media Capture from Canvas",
-											"url": "http://www.w3.org/TR/mediacapture-fromelement/#html-canvas-element-media-capture-extensions"
+											"url": "http://w3c.github.io/mediacapture-fromelement/"
 										}
 									]
 								},
-								"fragment": "#html-canvas-element-media-capture-extensions"
+								"fragment": ""
 							},
 							"#html-media-element-media-capture-extensions": {
 								"engines": {
@@ -19927,10 +20056,10 @@
 											],
 											"status": {
 												"behindFlag": false,
-												"channel": null,
-												"originalStatus": "In development",
+												"channel": 51,
+												"originalStatus": "Enabled by default",
 												"prefixed": false,
-												"status": "in-development"
+												"status": "supported"
 											},
 											"statusURL": "https://www.chromestatus.com/features/4748790720364544",
 											"title": "UIEvents KeyboardEvent |key| attribute",
@@ -22237,9 +22366,9 @@
 											"status": {
 												"behindFlag": false,
 												"channel": null,
-												"originalStatus": "Under Consideration",
+												"originalStatus": "In Development",
 												"prefixed": false,
-												"status": "under-consideration"
+												"status": "in-development"
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/webrtcwebrtcv10api",
 											"title": "WebRTC – WebRTC v1.0 API",
@@ -24802,6 +24931,55 @@
 			}
 		}
 	},
+	"webmproject": {
+		"entity": "webmproject",
+		"hosts": {
+			"www.webmproject.org": {
+				"host": "www.webmproject.org",
+				"urls": {
+					"http://www.webmproject.org/vp9/": {
+						"fragments": {
+							"": {
+								"engines": {
+									"edge": [
+										{
+											"engine": "edge",
+											"id": "vp9videoplayback",
+											"redirects": [
+												{
+													"reason": "redirect by HTTP 30x",
+													"redirectInfo": {
+														"host": "www.webmproject.org",
+														"pathname": "/vp9/",
+														"protocol": "http:",
+														"search": null
+													},
+													"to": "http://www.webmproject.org/vp9/",
+													"type": "redirect"
+												}
+											],
+											"status": {
+												"behindFlag": true,
+												"channel": 14291,
+												"originalStatus": "Preview Release",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/vp9videoplayback",
+											"title": "VP9 Video Playback",
+											"url": "http://webmproject.org/vp9"
+										}
+									]
+								},
+								"fragment": ""
+							}
+						},
+						"url": "http://www.webmproject.org/vp9/"
+					}
+				}
+			}
+		}
+	},
 	"whatwg": {
 		"entity": "whatwg",
 		"hosts": {
@@ -25146,6 +25324,22 @@
 							"": {
 								"engines": {
 									"chromium": [
+										{
+											"engine": "chromium",
+											"id": 5692236742262784,
+											"redirects": [
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": null,
+												"originalStatus": "In development",
+												"prefixed": false,
+												"status": "in-development"
+											},
+											"statusURL": "https://www.chromestatus.com/features/5692236742262784",
+											"title": "Fetch API: referrer policy",
+											"url": "https://fetch.spec.whatwg.org/"
+										},
 										{
 											"engine": "chromium",
 											"id": 5686195350667264,
@@ -26040,56 +26234,6 @@
 									"edge": [
 										{
 											"engine": "edge",
-											"id": "messagechannels",
-											"redirects": [
-												{
-													"reason": "using http://www.specref.org/ data",
-													"redirectInfo": {
-														"host": "dev.w3.org",
-														"pathname": "/html5/postmsg/",
-														"protocol": "http:",
-														"search": null
-													},
-													"to": "http://dev.w3.org/html5/postmsg/",
-													"type": "wd2ed"
-												},
-												{
-													"reason": "redirect by HTTP 30x",
-													"redirectInfo": {
-														"host": "w3c.github.io",
-														"pathname": "/webmessaging/",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://w3c.github.io/webmessaging/",
-													"type": "redirect"
-												},
-												{
-													"reason": "https://w3c.github.io/webmessaging/ says \"use the WHATWG Living Standard\"",
-													"redirectInfo": {
-														"hash": "#web-messaging",
-														"host": "html.spec.whatwg.org",
-														"pathname": "/multipage/comms.html",
-														"protocol": "https:",
-														"search": null
-													},
-													"to": "https://html.spec.whatwg.org/multipage/comms.html#web-messaging",
-													"type": "rewrite"
-												}
-											],
-											"status": {
-												"behindFlag": false,
-												"channel": 10,
-												"originalStatus": "Shipped",
-												"prefixed": false,
-												"status": "supported"
-											},
-											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/messagechannels",
-											"title": "Message Channels",
-											"url": "https://www.w3.org/TR/webmessaging/"
-										},
-										{
-											"engine": "edge",
 											"id": "postmessage",
 											"redirects": [
 												{
@@ -26136,6 +26280,56 @@
 											},
 											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/postmessage",
 											"title": "postMessage",
+											"url": "https://www.w3.org/TR/webmessaging/"
+										},
+										{
+											"engine": "edge",
+											"id": "messagechannels",
+											"redirects": [
+												{
+													"reason": "using http://www.specref.org/ data",
+													"redirectInfo": {
+														"host": "dev.w3.org",
+														"pathname": "/html5/postmsg/",
+														"protocol": "http:",
+														"search": null
+													},
+													"to": "http://dev.w3.org/html5/postmsg/",
+													"type": "wd2ed"
+												},
+												{
+													"reason": "redirect by HTTP 30x",
+													"redirectInfo": {
+														"host": "w3c.github.io",
+														"pathname": "/webmessaging/",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://w3c.github.io/webmessaging/",
+													"type": "redirect"
+												},
+												{
+													"reason": "https://w3c.github.io/webmessaging/ says \"use the WHATWG Living Standard\"",
+													"redirectInfo": {
+														"hash": "#web-messaging",
+														"host": "html.spec.whatwg.org",
+														"pathname": "/multipage/comms.html",
+														"protocol": "https:",
+														"search": null
+													},
+													"to": "https://html.spec.whatwg.org/multipage/comms.html#web-messaging",
+													"type": "rewrite"
+												}
+											],
+											"status": {
+												"behindFlag": false,
+												"channel": 10,
+												"originalStatus": "Shipped",
+												"prefixed": false,
+												"status": "supported"
+											},
+											"statusURL": "https://dev.windows.com/en-us/microsoft-edge/platform/status/messagechannels",
+											"title": "Message Channels",
 											"url": "https://www.w3.org/TR/webmessaging/"
 										}
 									]
