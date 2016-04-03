@@ -1,0 +1,226 @@
+extends ../layout
+
+block content
+  h1= h1
+  p Each Platform Status uses different set of status information. Therefore Plateostatus normalizes thier status information.
+
+  h2 Normalized Status
+  p Plateostatus uses following normalized status information.
+  dl
+    dt Status
+    dd Staut information of the feature.
+    dt behind a flag
+    dd The feature is behind a flag, users need to turn the flag on to use the feature. 
+    dt prefixed
+    dd The feature is prefixed. The feature is not ready for production usage.
+
+  h3 Status
+  p Plateostatus uses following Status
+  table.status-table
+   thead
+     tr
+       th Status
+       th Description
+   tbody
+     tr
+       td
+         div.entry.supported supported
+       td The feature is supported by an engine. The feature is exposed to users.
+     tr
+       td
+         div.entry.in-development in-development
+       td The feature is being developed by an engine. The feature is unstable or the feature is not exposed to all users (e.g. the feature is behind a flag).
+     tr
+       td
+         div.entry.under-consideration under-consideration
+       td The feature is possible to be developed by an engine. However there are no development activities.
+     tr
+       td
+         div.entry.not-planned not-planned
+       td The feature is not planned by an engine.
+     tr
+       td
+         div.entry.deprecated deprecated
+       td The feature is deprecated by an engine.
+     tr
+       td
+         div.entry.removed removed
+       td The feature is removed from an engine.
+
+  h2 Chromium
+  p Plateostatus normalizes status information as follows.
+  
+  h3 Status
+  table.status-table
+    thead
+      tr
+        th Original Status
+        th Normalized Status
+    tbody
+      tr
+        td Enabled by default
+        td
+          div.entry.supported supported
+      tr
+        td Behind a flag
+        td
+          div.entry.supported supported
+      tr
+        td In experimental framework
+        td
+          div.entry.in-development in-development
+      tr
+        td In development
+        td
+          div.entry.in-development in-development
+      tr
+        td Proposed
+        td
+          div.entry.under-consideration under-consideration
+      tr
+        td No active development
+        td
+          div.entry.not-planned not-planned
+      tr
+        td No longer pursuing
+        td
+          div.entry.not-planned not-planned
+      tr
+        td Deprecated
+        td
+          div.entry.deprecated deprecated
+      tr
+        td Removed
+        td
+          div.entry.removed removed
+
+  h3 Conditions to mark Platfrom Status entry as "behind a flag"
+  p if <code>entry.meta.needFlag</code> is true or <code>entry.impl_status_chrome</code> is "Behind a flag", Plateostatus marks the entry as "behind a flag"
+
+  h3 Conditions to mark Platfrom Status entry as "prefixed"
+  p if <code>entry.prefixed</code> is true, Plateostatus marks the entry as "prefixed"
+
+
+  h2 Edge
+  p Plateostatus normalizes status information as follows.
+  
+  h3 Status
+  table.status-table
+    thead
+      tr
+        th Original Status
+        th Normalized Status
+    tbody
+      tr
+        td Shipped
+        td
+          div.entry.supported supported
+      tr
+        td Preview Release
+        td
+          div.entry.supported supported
+      tr
+        td Prefixed
+        td
+          div.entry.supported supported
+      tr
+        td In Development
+        td
+          div.entry.in-development in-development
+      tr
+        td Under Consideration
+        td
+          div.entry.under-consideration under-consideration
+      tr
+        td Not currently planned
+        td
+          div.entry.not-planned not-planned
+      tr
+        td Deprecated
+        td
+          div.entry.deprecated deprecated
+
+  h3 Conditions to mark Platfrom Status entry as "behind a flag"
+  p if <code>entry.browsers.ie.flag</code> is true, Plateostatus marks the entry as "behind a flag"
+
+  h3 Conditions to mark Platfrom Status entry as "prefixed"
+  p if <code>entry.browsers.ie.status</code> is "Prefixed", Plateostatus marks the entry as "prefixed"
+
+  h2 WebKit
+  p Plateostatus normalizes status information as follows.
+  
+  h3 Status
+  table.status-table
+    thead
+      tr
+        th Original Status
+        th Normalized Status
+    tbody
+      tr
+        td Done
+        td
+          div.entry.supported supported
+      tr
+        td Partial Support
+        td
+          div.entry.supported supported
+      tr
+        td In Development
+        td
+          div.entry.in-development in-development
+      tr
+        td Prototyping
+        td
+          div.entry.in-development in-development
+      tr
+        td Under Consideration
+        td
+          div.entry.under-consideration under-consideration
+      tr
+        td Not Considering
+        td
+          div.entry.not-planned not-planned
+      tr
+        td Removed
+        td
+          div.entry.removed removed
+
+  h3 Conditions to mark Platfrom Status entry as "behind a flag"
+  p if <code>entry.status.enabled-by-default</code> is true, Plateostatus marks the entry as "behind a flag"
+
+  h3 Conditions to mark Platfrom Status entry as "prefixed"
+  p There is no corresponding information in WebKit Platfrom Status.
+
+  h2 Gecko
+  p Plateostatus normalizes status information as follows.
+  
+  h3 Status
+  table.status-table
+    thead
+      tr
+        th Original Status
+        th Normalized Status
+    tbody
+      tr
+        td (any numbers)
+        td
+          div.entry.supported supported
+      tr
+        td in-development
+        td
+          div.entry.in-development in-development
+      tr
+        td under-consideration
+        td
+          div.entry.under-consideration under-consideration
+      tr
+        td not-planned
+        td
+          div.entry.not-planned not-planned
+      
+  h3 Conditions to mark Platfrom Status entry as "behind a flag"
+  p There is no corresponding information in Gecko Platfrom Status.
+
+  h3 Conditions to mark Platfrom Status entry as "prefixed"
+  p There is no corresponding information in Gecko Platfrom Status.
+

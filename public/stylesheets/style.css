@@ -21,15 +21,38 @@ body {
     max-width: 80rem;
 }
 
-h1 {
-    font-size: 2rem;
-    padding: 2rem 1rem 1rem;
-}
-
 .content {
     margin: 0 1rem 5rem;
 }
 
+.content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0 1rem;
+}
+
+.content h2 {
+    color: #212121;
+    font-size: 2rem;
+    padding: 1rem 0 .5rem;
+}
+
+.content h3 {
+    color: #424242;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.content h4 {
+    color: #757575;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+}
+
+
+.content p {
+    margin-bottom: 1em;
+}
 
 .link-external {
     background: url('../images/icons/link-spec.svg') no-repeat 0 .25em / 1em 1em;
@@ -44,6 +67,30 @@ h1 {
 }
 
 
+/*
+ * local navigation
+ */
+.nav-local {
+    border-top: medium solid #212121;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-local li {
+    padding: 0 .5rem 0 0;
+}
+
+.nav-local li a {
+    display: block;
+    padding: .125rem .5rem .125rem;
+    background: #212121;
+    color: #fff;
+}
+
+
+/*
+ * Table of Contents
+ */
 .toc {
     border-left: medium solid gray;
     margin-bottom: 1rem;
@@ -52,6 +99,7 @@ h1 {
 
 .toc h2 {
     padding: 0 0 .5rem;
+    font-size: 1em;
 }
 
 .toc a {
@@ -65,22 +113,18 @@ h1 {
     list-style: none;
 }
 
+
+/*
+ * Platform Status Entry
+ */
 .host {
     margin-bottom: 2em;
 }
 
-.host-name {
-    color: #212121;
-    font-size: 2rem;
+.host .host-name,
+.url .url-name,
+.fragment .fragment-name {
     hyphens: auto;
-    padding: 1rem 0 .5rem;
-}
-
-.url .url-name {
-    color: #424242;
-    font-size: 1.5rem;
-    hyphens: auto;
-    padding: 1rem 0;
 }
 
 .url .url-name a {
@@ -91,17 +135,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     font-size: .75em;
+    margin-bottom: .5rem;
 }
 
 
 .fragment {
     margin-bottom: 3rem;
-}
-
-.fragment .fragment-name {
-    color: #757575;
-    font-size: 1.2rem;
-    padding: .5rem 0;
 }
 
 .fragment:after {
@@ -149,6 +188,7 @@ h1 {
     background: no-repeat .5rem .5rem / 2rem 2rem;
     padding: .5rem .5rem .5rem 3.25rem;
     position: relative;
+    min-height: 3.25rem;
 }
 
 .entry a {
@@ -174,9 +214,9 @@ h1 {
 }
 
 .entry.not-planned {
-    background-color: #eeeeee;
-    background-image: url('../images/icons/not-planned.svg');
-    border-top: #757575 medium solid;
+    background-color: #ffab91;
+    background-image: url('../images/icons/deprecated.svg');
+    border-top: #f4511e medium solid;
 }
 
 .entry.deprecated {
@@ -225,6 +265,75 @@ h1 {
 .entry .status-link {
     font-size: .75em;
     hyphens: auto;
+}
+
+
+/*
+ * URL normalization
+ */
+.redirect {
+    background-color: #eeeeee;
+    border-top: #757575 medium solid;
+    padding: .5rem .5rem .5rem 1rem;
+}
+
+.redirect a {
+    color: inherit;
+}
+
+.redirect .explain {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.redirect .status-link {
+    font-size: .75em;
+    hyphens: auto;
+}
+
+.redirect-list {
+    margin-top: .5rem;
+    counter-reset: redirectCount;
+}
+
+.redirect-list .type {
+    float: left;
+    padding: 0 .5em;
+    font-size: .75em;
+    background: #fff;
+    border-radius: .5em;
+    margin-top: 0.25em;
+    margin-right: .5rem;
+    width: 4.5rem;
+}
+
+.redirect-list .type:before {
+    content: counter(redirectCount) '. ';
+    counter-increment: redirectCount;
+}
+
+
+.redirect-list .reason {
+    clear: both;
+    font-size: .75em;
+    margin-left: 5rem;
+    margin-bottom: .5em;
+}
+
+/*
+ * Status normalization
+ */
+.status-table {
+    border-collapse: collapse;
+    border-left: thin solid #ccc;
+    border-top: thin solid #ccc;
+}
+
+.status-table th,
+.status-table td {
+    padding: .25em;
+    border-right: thin solid #ccc;
+    border-bottom: thin solid #ccc;
 }
 
 

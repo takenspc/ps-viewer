@@ -3,59 +3,6 @@ var express = require('express');
 var router = express.Router();
 var utils = require('./utils');
 
-
-/**
- * @param data {any}
- * @param urlString {string}
- * @returns {any[]}
- */
-function queryByURL(data, urlString) {
-    // XXX IT IS SLOW
-    for (const entityKey of Object.keys(data)) {
-        const hosts = data[entityKey].hosts;
-        for (const hostKey of Object.keys(hosts)) {
-            const hostEntry = hosts[hostKey];
-            const urls = hostEntry.urls;
-            for (const urlKey of Object.keys(urls)) {
-                if (urlKey === urlString) {
-                    const newUrls = {};
-                    newUrls[urlKey] = urls[urlKey];
-
-                    const newHostEntry = Object.assign({ urls: urls }, hostEntry);
-                    return [ newHostEntry ];
-                }
-            }
-        }
-    }
-
-    return null;
-}
-
-
-router.get(/^url\/(.+)$/, function(req, res, next) {
-    const urlString = req.param(0);
-    const queryString = urlString === 'about:blank' ? '' : urlString;
-
-    utils.readJSON().then((data) => {
-        const hostEntries = queryByURL(data, queryString);
-        if (!hostEntries) {
-            next(new Error('Platform Status Entry was not found: ' + urlString));
-            return;
-        }
-
-        res.render('status', {
-            title: urlString + ' | Platform Status',
-            h1: urlString,
-            engines: utils.engines,
-            data: hostEntries,
-            isStandalonePage: true,
-        });
-    }).catch((err) => {
-        next(err);
-    });
-});
-
-
 /**
  * @param data {any}
  * @param queryEngine {string?}
@@ -81,16 +28,21 @@ function groupByHost(data, queryEngine) {
                 for (const fragmentKey of Object.keys(fragments)) {
                     const fragmentEntry = fragments[fragmentKey]
                     const engines = fragmentEntry.engines;
-                    let newEngines = {};
+                    const newEngines = {};
 
-                    if (queryEngine) {
-                        if (engines[queryEngine]) {
-                            newEngines[queryEngine] = engines[queryEngine];
-                        }                        
-                    } else {
-                        newEngines = engines; 
+                    for (const engineKey of Object.keys(engines)) {
+                        if (queryEngine && engineKey !== queryEngine) {
+                            continue;
+                        }
+                        
+                        const entries = engines[engineKey].filter((statusEntry) => {
+                            return statusEntry.redirects.length > 0;
+                        });
+                        
+                        if (entries.length > 0) {
+                            newEngines[engineKey] = entries;
+                        }
                     }
-
 
                     if (Object.keys(newEngines).length > 0) {
                         const newFragmentEntry = Object.assign({}, fragmentEntry );
@@ -126,40 +78,55 @@ router.param('engine', function(req, res, next, engine) {
     }
 });
 
-router.get('/engine/:engine', function(req, res, next) {
+router.get('/url/engine/:engine', function(req, res, next) {
     const engine = req.engine;
     
     utils.readJSON().then((data) => {
         const hostEntries = groupByHost(data, engine);
 
-        res.render('status', {
-            title: engine + ' | Indexes | Platform Status',
-            h1: 'Indexes: ' + engine,
+        res.render('n11n/url.jade', {
+            title: engine + ' | URLs | Normalization',
+            h1: 'Normalzation of URLs: ' + engine,
             engines: utils.engines,
             queryEngine: engine,
             data: hostEntries,
-            isStandalonePage: false,
         });
     }).catch((err) => {
         next(err);
+    });
+});
+
+
+router.get('/url/', function(req, res, next) {
+    utils.readJSON().then((data) => {
+        const hostEntries = groupByHost(data, null);
+
+        res.render('n11n/url.jade', {
+            title: 'URLs | Normalization',
+            h1: 'Normalzation of URLs',
+            engines: utils.engines,
+            queryEngine: null,
+            data: hostEntries,
+        });
+    }).catch((err) => {
+        next(err);
+    });
+});
+
+router.get('/status/', function(req, res, next) {
+    res.render('n11n/status.jade', {
+        title: 'Status | Normalization',
+        h1: 'Normalization of status',
     });
 });
 
 
 router.get('/', function(req, res, next) {
-    utils.readJSON().then((data) => {
-        const hostEntries = groupByHost(data);
-
-        res.render('status', {
-            title: 'Indexes | Platform Status',
-            h1: 'Indexes',
-            engines: utils.engines,
-            data: hostEntries,
-            isStandalonePage: false,
-        });
-    }).catch((err) => {
-        next(err);
+    res.render('n11n/index.jade', {
+        title: 'Normalization',
+        h1: 'Normalization',
     });
 });
+
 
 module.exports = router;

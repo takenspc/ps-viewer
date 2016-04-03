@@ -1,26 +1,26 @@
-extends layout
+extends ../layout
 
 mixin formatEntry(entry)
-  - var status = entry.status;
-  - var classList = [];
-  - classList.push(engine);
-  - classList.push(status.status);
-  - status.behindFlag && classList.push('behindFlag');
-  - status.prefixed && classList.push('prefixed');
-  li.entry(class=classList)
+  li.redirect
     span.title= entry.title
-    div.status
-      span.text= status.originalStatus
-      if status.channel
-        |  (starting 
-        span.channel= status.channel
-        | )
-      if status.behindFlag
-        | 
-        span.behindFlag (behind a flag)
-      if status.prefixed
-        | 
-        span.channel (prefixed)
+    p.explain Platestatus normalized the specification URL as follows:
+    ol.redirect-list
+      li
+        div.type.original original
+        div.url
+          a(href=entry.url)= entry.url
+        div.reason Original URL
+      each redirect in entry.redirects
+        li
+          div.type= redirect.type
+          div.url
+            a(href=redirect.to)= redirect.to
+          - var typeMessge = '';
+          - if (redirect.type === 'rewrite') { typeMessage = 'Rewrite URL manually: '; }
+          - if (redirect.type === 'wd2ed') { typeMessage = 'Switch URL to its Editor\'s Draft: '; }
+          - if (redirect.type === 'redirect') { typeMessage = 'Follow redirection: '; }
+          - var reason = typeMessage + redirect.reason
+          div.reason= reason
     div.status-link.link-external
       - var statusURL = entry.statusURL;
       - var statusHost = url2Host(statusURL);
@@ -89,23 +89,22 @@ mixin formatTOC(hostEntry)
     a(href=href)= headingText
 
 block content
-  if !isStandalonePage
-    nav
-      ul.nav-local
+  nav
+    ul.nav-local
+      li
+        if queryEngine === null
+          a Index
+        else
+          a(href='/n11n/url/') Index
+      each engine in engines
         li
-          if queryEngine === null
-            a Index
+          - var n11nLink = '/n11n/url/engine/' + encodeURIComponent(engine) + '/'
+          if queryEngine === engine
+            a= engine
           else
-            a(href='/status/') Indexes
-        each engine in engines
-          li
-            - var n11nLink = '/status/engine/' + encodeURIComponent(engine) + '/'
-            if queryEngine === engine
-              a= engine
-            else
-              a(href=n11nLink)= engine
-  - var h1String = 'Platform Status: ' + h1;
-  h1= h1String
+            a(href=n11nLink)= engine
+  h1= h1
+  p This page provides normalization result of specifications' URL of Platform Status Entries.
   div.toc
     h2 Table of Contents
     ul.toc-list

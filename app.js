@@ -8,6 +8,7 @@ var url = require('url');
 
 var routes = require('./routes/index');
 var status = require('./routes/status');
+var n11n = require('./routes/n11n');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/status', status);
+app.use('/n11n', n11n);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
