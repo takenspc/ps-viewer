@@ -123,7 +123,13 @@ body {
 
 .host .host-name,
 .url .url-name,
-.fragment .fragment-name {
+.fragment .fragment-name,
+.entry .title,
+.entry .status-link,
+.redirect .status-link {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto;
 }
 
@@ -254,17 +260,12 @@ body {
     width: 1rem;
 }
 
-.entry .title {
-    hyphens: auto;
-}
-
 .entry .status {
     font-size: .75em;
 }
 
 .entry .status-link {
     font-size: .75em;
-    hyphens: auto;
 }
 
 
@@ -288,7 +289,6 @@ body {
 
 .redirect .status-link {
     font-size: .75em;
-    hyphens: auto;
 }
 
 .redirect-list {
