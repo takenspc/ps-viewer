@@ -31,6 +31,19 @@ h1 {
 }
 
 
+.link-external {
+    background: url('../images/icons/link-spec.svg') no-repeat 0 .25em / 1em 1em;
+    line-height: 1.5;
+    padding: 0 1.125em;
+}
+
+.link-standalone {
+    background: url('../images/icons/link-standalone.svg') no-repeat 0 .25em / 1em 1em;
+    line-height: 1.5;
+    padding: 0 1.125em;
+}
+
+
 .toc {
     border-left: medium solid gray;
     margin-bottom: 1rem;
@@ -76,21 +89,6 @@ h1 {
     display: flex;
     font-size: .75em;
 }
-
-.url-nav .link {
-    background: no-repeat 0 .25em / 1em 1em;
-    line-height: 1.5;
-    padding: 0 1.125em;
-}
-
-.url-nav .link-spec {
-    background-image: url('../images/icons/link-spec.svg');
-}
-
-.url-nav .link-standalone {
-    background-image: url('../images/icons/link-standalone.svg');
-}
-
 
 
 .fragment {
@@ -146,16 +144,12 @@ h1 {
 
 .entry {
     background: no-repeat .5rem .5rem / 2rem 2rem;
-    padding: .5rem .5rem .5rem 2rem;
+    padding: .5rem .5rem .5rem 3.25rem;
     position: relative;
 }
 
 .entry a {
     color: inherit;
-}
-
-.entry .title {
-    padding-left: 1.25rem;
 }
 
 .entry.supported {
@@ -217,9 +211,9 @@ h1 {
     width: 1rem;
 }
 
-.entry .status {
+.entry .status,
+.entry .status-link {
     font-size: .75em;
-    padding-left: 1.25rem;
 }
 
 

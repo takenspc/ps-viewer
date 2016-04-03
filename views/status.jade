@@ -1,16 +1,14 @@
 extends layout
 
 mixin formatEntry(entry)
-  - var status = entry.status
-  - var classList = []
-  - classList.push(engine)
-  - classList.push(status.status)
-  - status.behindFlag && classList.push('behindFlag')
-  - status.prefixed && classList.push('prefixed')
+  - var status = entry.status;
+  - var classList = [];
+  - classList.push(engine);
+  - classList.push(status.status);
+  - status.behindFlag && classList.push('behindFlag');
+  - status.prefixed && classList.push('prefixed');
   li.entry(class=classList)
-    - var statusURL = entry.statusURL
-    a(href=statusURL) 
-      span.title= entry.title
+    span.title= entry.title
     div.status
       span.text= status.originalStatus
       if status.channel
@@ -23,6 +21,11 @@ mixin formatEntry(entry)
       if status.prefixed
         | 
         span.channel (prefixed)
+    div.status-link.link-external
+      - var statusURL = entry.statusURL;
+      - var statusHost = url2Host(statusURL);
+      - var linkText = 'View the platform status entry (' + statusHost + ')';
+      a(href=statusURL)= linkText
 
 
 mixin formatEngine(engine, entries)
@@ -34,9 +37,9 @@ mixin formatEngine(engine, entries)
 
 
 mixin formatFragment(url, fragment)
-  - var id = url + encodeURIComponent(fragment.fragment)
-  - var href = '/status/' + url + encodeURIComponent(fragment.fragment)
-  - var fragmentText = decodeURIComponent(fragment.fragment || '#')
+  - var id = url + encodeURIComponent(fragment.fragment);
+  - var href = '/status/' + url + encodeURIComponent(fragment.fragment);
+  - var fragmentText = decodeURIComponent(fragment.fragment || '#');
   div.fragment(id=id)
     h4.fragment-name= fragmentText
 
@@ -49,42 +52,45 @@ mixin formatFragment(url, fragment)
 mixin formatURL(host, urlEntry)
   - var url = urlEntry.url
   - var id = url
-  - var href = '/status/' + encodeURIComponent(url || 'about:blank')
-  - var headingText = url || '(no url was specified)'
-  - var linkText = 'View the spec (' + host + ')'
+  - var href = '/status/' + encodeURIComponent(url || 'about:blank');
+  - var headingText = url || '(no url was specified)';
+  - var linkText = 'View the spec (' + host + ')';
   section.url(id=id)
     h3.url-name= headingText
     ul.url-nav
       if url
-        li.link.link-spec
+        li.link-external
           a(href=url)= linkText
       if !isStandalonePage
-        li.link.link-standalone
+        li.link-standalone
           a(href=href) View on standalone page
 
-    each fragment in urlEntry.fragments
-      +formatFragment(url, fragment)
+    - var fragments = Object.keys(urlEntry.fragments).sort();
+    each fragment in fragments
+      +formatFragment(url, urlEntry.fragments[fragment])
 
 
 mixin formatHost(hostEntry)
-  - var host = hostEntry.host
-  - var id = host || 'about:blank'
-  - var headingText = host || '(no host was specified)'
+  - var host = hostEntry.host;
+  - var id = host || 'about:blank';
+  - var headingText = host || '(no host was specified)';
   section.host(id=id)
     h2.host-name= headingText
-    each urlEntry in hostEntry.urls
-      +formatURL(host, urlEntry)
+
+    - var urls = Object.keys(hostEntry.urls).sort();
+    each url in urls
+      +formatURL(host, hostEntry.urls[url])
 
 
 mixin formatTOC(hostEntry)
-  - var host = hostEntry.host
-  - var href = '#' + encodeURIComponent(host || 'about:blank')
-  - var headingText = (host || '(no url was specified)') + ' (' + hostEntry.urls.length + ')'
+  - var host = hostEntry.host;
+  - var href = '#' + encodeURIComponent(host || 'about:blank');
+  - var headingText = host || '(no url was specified)';
   li
     a(href=href)= headingText
 
 block content
-  - var h1String = 'Platform Status: ' + h1
+  - var h1String = 'Platform Status: ' + h1;
   h1= h1String
   div.content
     div.toc

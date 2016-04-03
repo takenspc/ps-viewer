@@ -1,13 +1,16 @@
 'use strict';
 var fs = require('fs');
 var path = require('path');
-var url = require('url');
 var express = require('express');
 var router = express.Router();
 
 
 const engines = ['chromium', 'edge', 'webkit', 'gecko'];
 
+/**
+ * @param filePath {string}
+ * @returns Promise<string>
+ */
 function readFile(filePath) {
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf-8', (err, text) => {
@@ -21,48 +24,62 @@ function readFile(filePath) {
     });
 }
 
+/**
+ * @returns Promise<any>
+ */
 function readJSON() {
     const jsonPath = path.join(__dirname, '..', 'data', 'data.json');
     return readFile(jsonPath).then((text) => {
         const data = JSON.parse(text);
+        Object.freeze(data);
         return data;
     });
 }
 
-function groupByHost(data) {
-    const hosts = [];
-    const hostToEntry = new Map();
-    for (const entry of data) {
-        const urlString = entry.url;
-        const host = (urlString === '') ? '' : url.parse(urlString).host;
-        if (!hostToEntry.has(host)) {
-            hostToEntry.set(host, { host: host, urls: [] });
-            hosts.push(host);
+
+/**
+ * @param data {any}
+ * @param urlString {string}
+ * @returns {any[]}
+ */
+function queryByURL(data, urlString) {
+    // XXX IT IS SLOW
+    for (const entityKey of Object.keys(data)) {
+        const hosts = data[entityKey].hosts;
+        for (const hostKey of Object.keys(hosts)) {
+            const hostEntry = hosts[hostKey];
+            const urls = hostEntry.urls;
+            for (const urlKey of Object.keys(urls)) {
+                if (urlKey === urlString) {
+                    const newUrls = {};
+                    newUrls[urlKey] = urls[urlKey];
+
+                    const newHostEntry = Object.assign({ urls: urls }, hostEntry);
+                    return [ newHostEntry ];
+                }
+            }
         }
-        hostToEntry.get(host).urls.push(entry);
     }
-
-    const dataByHost = [];
-    for (const host of hosts) {
-        dataByHost.push(hostToEntry.get(host));
-    }
-
-    return dataByHost;
+    
+    return null;
 }
 
 router.get(/^\/(.+)$/, function(req, res, next) {
     const urlString = req.param(0);
+    const queryString = urlString === 'about:blank' ? '' : urlString;
 
     readJSON().then((data) => {
-        const urlData = data.filter((entry) => {
-            return urlString === entry.url;
-        });
+        const hostEntries = queryByURL(data, queryString);
+        if (!hostEntries) {
+            next(new Error('Platform Status Entry was not found: ' + urlString));
+            return;
+        }
 
         res.render('status', {
             title: urlString + ' - Indexes of Platform Status',
             h1: urlString,
             engines: engines,
-            data: groupByHost(urlData),
+            data: hostEntries,
             isStandalonePage: true,
         });
     }).catch((err) => {
@@ -70,13 +87,32 @@ router.get(/^\/(.+)$/, function(req, res, next) {
     });
 });
 
+
+/**
+ * @param data {any}
+ * @returns {any[]}
+ */
+function groupByHost(data) {
+    const hostEntries = [];
+    for (const entityKey of Object.keys(data)) {
+        const hosts = data[entityKey].hosts;
+        for (const hostKey of Object.keys(hosts)) {
+            hostEntries.push(hosts[hostKey]);
+        }
+    }
+
+    return hostEntries;
+}
+
 router.get('/', function(req, res, next) {
     readJSON().then((data) => {
+        const hostEntries = groupByHost(data);
+
         res.render('status', {
             title: 'Indexes of Platform Status',
             h1: 'Indexes',
             engines: engines,
-            data: groupByHost(data),
+            data: hostEntries,
             isStandalonePage: false,
         });
     }).catch((err) => {
