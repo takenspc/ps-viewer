@@ -72,12 +72,14 @@ h1 {
 .host-name {
     color: #212121;
     font-size: 2rem;
+    hyphens: auto;
     padding: 1rem 0 .5rem;
 }
 
 .url .url-name {
     color: #424242;
     font-size: 1.5rem;
+    hyphens: auto;
     padding: 1rem 0;
 }
 
@@ -87,6 +89,7 @@ h1 {
 
 .url-nav {
     display: flex;
+    flex-wrap: wrap;
     font-size: .75em;
 }
 
@@ -211,9 +214,17 @@ h1 {
     width: 1rem;
 }
 
-.entry .status,
+.entry .title {
+    hyphens: auto;
+}
+
+.entry .status {
+    font-size: .75em;
+}
+
 .entry .status-link {
     font-size: .75em;
+    hyphens: auto;
 }
 
 
