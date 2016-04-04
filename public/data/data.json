@@ -1021,7 +1021,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Force Click Events",
+											"id": "feature-force-click-events",
 											"redirects": [
 											],
 											"status": {
@@ -1219,7 +1219,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "ASM.js",
+											"id": "feature-asm.js",
 											"redirects": [
 												{
 													"reason": "http://asmjs.org/ has \"specification (work in progress)\" link which points to http://asmjs.org/spec/latest",
@@ -1468,7 +1468,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Painting API Level 1",
+											"id": "specification-css-painting-api-level-1",
 											"redirects": [
 											],
 											"status": {
@@ -1495,7 +1495,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Properties and Values API Level 1",
+											"id": "specification-css-properties-and-values-api-level-1",
 											"redirects": [
 											],
 											"status": {
@@ -3051,7 +3051,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Grid Layout Level 1",
+											"id": "specification-css-grid-layout-level-1",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -3400,7 +3400,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Inline Layout Module Level 3",
+											"id": "specification-css-inline-layout-module-level-3",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -3440,7 +3440,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Initial Letter",
+											"id": "feature-initial-letter",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -3621,7 +3621,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Position: sticky",
+											"id": "feature-position:-sticky",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -4013,7 +4013,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Shape outside for floats",
+											"id": "feature-shape-outside-for-floats",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -4265,7 +4265,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Scroll Snap Points Module Level 1",
+											"id": "specification-css-scroll-snap-points-module-level-1",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -4840,7 +4840,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Variables",
+											"id": "specification-css-variables",
 											"redirects": [
 												{
 													"reason": "\"Latest published version\" of https://www.w3.org/TR/css-variables/ is http://www.w3.org/TR/css-variables-1/",
@@ -4974,7 +4974,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Will Change",
+											"id": "specification-css-will-change",
 											"redirects": [
 											],
 											"status": {
@@ -5726,7 +5726,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Interaction Media Features (pointer, hover, any-pointer, any-hover)",
+											"id": "feature-interaction-media-features-(pointer,-hover,-any-pointer,-any-hover)",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -5788,7 +5788,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Case-insensitive attribute selectors",
+											"id": "feature-case-insensitive-attribute-selectors",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -5828,7 +5828,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :matches()",
+											"id": "feature-css-selector-:matches()",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -5868,7 +5868,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :not() level 4",
+											"id": "feature-css-selector-:not()-level-4",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -5925,7 +5925,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :placeholder-shown",
+											"id": "feature-css-selector-:placeholder-shown",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -5965,7 +5965,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :any-link",
+											"id": "feature-css-selector-:any-link",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -6027,7 +6027,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :lang() level 4",
+											"id": "feature-css-selector-:lang()-level-4",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -6067,7 +6067,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "CSS Selector :nth-child(An+B of selector list) and :nth-last-child(An+B of selector list)",
+											"id": "feature-css-selector-:nth-child(an+b-of-selector-list)-and-:nth-last-child(an+b-of-selector-list)",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -6667,7 +6667,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Filter Effects backdrop-filter propery",
+											"id": "feature-filter-effects-backdrop-filter-propery",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -8528,7 +8528,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WebGL 1",
+											"id": "specification-webgl-1",
 											"redirects": [
 												{
 													"reason": "Editors Draft of WebGL 1.0 is https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -8617,7 +8617,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WebGL 2",
+											"id": "specification-webgl-2",
 											"redirects": [
 											],
 											"status": {
@@ -9355,7 +9355,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Service Workers",
+											"id": "specification-service-workers",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -9903,7 +9903,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Array.prototype.includes",
+											"id": "feature-array.prototype.includes",
 											"redirects": [
 												{
 													"reason": "prefer github.io over github.com",
@@ -11069,7 +11069,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Array.prototype.copyWithin",
+											"id": "feature-array.prototype.copywithin",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -11152,7 +11152,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Arrow Functions",
+											"id": "feature-arrow-functions",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -11193,7 +11193,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "new.target",
+											"id": "feature-new.target",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11254,7 +11254,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Classes",
+											"id": "feature-classes",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11315,7 +11315,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Destructuring Syntax",
+											"id": "feature-destructuring-syntax",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11401,7 +11401,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "for...of Loops",
+											"id": "feature-for...of-loops",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -11462,7 +11462,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Default Parameter Values",
+											"id": "feature-default-parameter-values",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11488,7 +11488,7 @@
 										},
 										{
 											"engine": "webkit",
-											"id": "Rest Parameter",
+											"id": "feature-rest-parameter",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11587,7 +11587,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Generators",
+											"id": "feature-generators",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -11689,7 +11689,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Block Scoping",
+											"id": "feature-block-scoping",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -11750,7 +11750,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Octal and Binary Literals",
+											"id": "feature-octal-and-binary-literals",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -11783,7 +11783,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Map Data Structure",
+											"id": "feature-map-data-structure",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12026,7 +12026,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Modules",
+											"id": "feature-modules",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -12067,7 +12067,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Number Object Extensions",
+											"id": "feature-number-object-extensions",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12308,7 +12308,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Promise Objects",
+											"id": "feature-promise-objects",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12404,7 +12404,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Proxy Objects",
+											"id": "feature-proxy-objects",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -12445,7 +12445,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Reflect API",
+											"id": "feature-reflect-api",
 											"redirects": [
 												{
 													"reason": "Editors Draft of ECMA-262 is https://tc39.github.io/ecma262/",
@@ -12555,7 +12555,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Set Data Structure",
+											"id": "feature-set-data-structure",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12679,7 +12679,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Symbol Objects",
+											"id": "feature-symbol-objects",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12800,7 +12800,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Tagged Templates",
+											"id": "feature-tagged-templates",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -12861,7 +12861,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Tail Calls",
+											"id": "feature-tail-calls",
 											"redirects": [
 												{
 													"reason": "remove default index (index.html).",
@@ -12930,7 +12930,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Template Literals",
+											"id": "feature-template-literals",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -13103,7 +13103,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WeakMap",
+											"id": "feature-weakmap",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -13164,7 +13164,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WeakSet",
+											"id": "feature-weakset",
 											"redirects": [
 												{
 													"reason": "redirect by HTTP 30x",
@@ -13238,7 +13238,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Internationalization API",
+											"id": "specification-internationalization-api",
 											"redirects": [
 												{
 													"reason": "prefer www.ecma-international.org over ecma-international.org",
@@ -13994,7 +13994,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WebCrypto",
+											"id": "specification-webcrypto",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -14556,7 +14556,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "IndexedDB",
+											"id": "specification-indexeddb",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -20310,7 +20310,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Content Security Policy Level 3",
+											"id": "specification-content-security-policy-level-3",
 											"redirects": [
 											],
 											"status": {
@@ -20557,7 +20557,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Content Security Policy Level 2",
+											"id": "specification-content-security-policy-level-2",
 											"redirects": [
 											],
 											"status": {
@@ -21137,7 +21137,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Custom Elements",
+											"id": "feature-custom-elements",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -21269,7 +21269,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "HTML imports",
+											"id": "feature-html-imports",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -21466,7 +21466,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Shadow DOM",
+											"id": "feature-shadow-dom",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -21712,7 +21712,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WebRTC",
+											"id": "specification-webrtc",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -22924,7 +22924,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Template Element",
+											"id": "feature-template-element",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -23337,7 +23337,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "WebAssembly",
+											"id": "specification-webassembly",
 											"redirects": [
 												{
 													"reason": "prefer https: over http:",
@@ -24309,7 +24309,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Element.closest()",
+											"id": "feature-element.closest()",
 											"redirects": [
 											],
 											"status": {
@@ -24689,7 +24689,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Fetch API",
+											"id": "specification-fetch-api",
 											"redirects": [
 											],
 											"status": {
@@ -25797,7 +25797,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Srcset w descriptor and related sizes attribute",
+											"id": "feature-srcset-w-descriptor-and-related-sizes-attribute",
 											"redirects": [
 											],
 											"status": {
@@ -25812,7 +25812,7 @@
 										},
 										{
 											"engine": "webkit",
-											"id": "Srcset x descriptor",
+											"id": "feature-srcset-x-descriptor",
 											"redirects": [
 											],
 											"status": {
@@ -25834,7 +25834,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Picture element",
+											"id": "feature-picture-element",
 											"redirects": [
 											],
 											"status": {
@@ -26287,7 +26287,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "MicroData",
+											"id": "feature-microdata",
 											"redirects": [
 											],
 											"status": {
@@ -26682,15 +26682,15 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Download Attribute",
+											"id": "feature-download-attribute",
 											"redirects": [
 											],
 											"status": {
 												"behindFlag": false,
 												"channel": null,
-												"originalStatus": "Under Consideration",
+												"originalStatus": "In Development",
 												"prefixed": false,
-												"status": "under-consideration"
+												"status": "in-development"
 											},
 											"title": "Download Attribute",
 											"url": "https://html.spec.whatwg.org/multipage/semantics.html#downloading-resources"
@@ -27139,7 +27139,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Navigator.hardwareConcurrency",
+											"id": "feature-navigator.hardwareconcurrency",
 											"redirects": [
 												{
 													"reason": "See https://github.com/whatwg/html/issues/879",
@@ -27195,7 +27195,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Shared Web Workers",
+											"id": "feature-shared-web-workers",
 											"redirects": [
 											],
 											"status": {
@@ -27609,7 +27609,7 @@
 									"webkit": [
 										{
 											"engine": "webkit",
-											"id": "Readable Streams",
+											"id": "feature-readable-streams",
 											"redirects": [
 											],
 											"status": {
