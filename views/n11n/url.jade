@@ -19,9 +19,9 @@ mixin formatEntry(engine, entry)
             a(href=redirect.to)= redirect.to
           - var typeMessge = '';
           - if (redirect.type === 'rewrite') { typeMessage = 'Rewrite URL manually: '; }
-          - if (redirect.type === 'wd2ed') { typeMessage = 'Switch URL to its Editor\'s Draft: '; }
+          - if (redirect.type === 'wd2ed') { typeMessage = 'Switch URL to Editor\'s Draft: '; }
           - if (redirect.type === 'redirect') { typeMessage = 'Follow redirection: '; }
-          - var reason = typeMessage + redirect.reason
+          - var reason = typeMessage + redirect.reason;
           div.reason= reason
     div.status-link.link-internal
       - var url = '/status/#' + id;
