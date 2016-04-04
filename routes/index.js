@@ -9,6 +9,11 @@ router.get('/about/', function(req, res, next) {
   res.render('about', { title: 'About' });
 });
 
+router.get('/updates/', function(req, res, next) {
+  res.render('update', { title: 'Updates' });
+});
+
+
 router.get('/addons/', function(req, res, next) {
   res.render('addons', { title: 'Addons' });
 });
