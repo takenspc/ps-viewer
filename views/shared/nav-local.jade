@@ -1,0 +1,15 @@
+mixin navLocalEngines(base, engines, engine)
+  nav
+    ul.nav-local
+      li
+        if queryEngine === null
+          a Indexes
+        else
+          a(href=base) Indexes
+      each engine in engines
+        li
+          - var engineLink = base + '/engine/' + encodeURIComponent(engine) + '/'
+          if queryEngine === engine
+            a= engine
+          else
+            a(href=engineLink)= engine

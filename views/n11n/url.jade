@@ -1,3 +1,4 @@
+include ../shared/nav-local
 extends ../layout
 
 mixin formatEntry(entry)
@@ -89,20 +90,7 @@ mixin formatTOC(hostEntry)
     a(href=href)= headingText
 
 block content
-  nav
-    ul.nav-local
-      li
-        if queryEngine === null
-          a Index
-        else
-          a(href='/n11n/url/') Index
-      each engine in engines
-        li
-          - var n11nLink = '/n11n/url/engine/' + encodeURIComponent(engine) + '/'
-          if queryEngine === engine
-            a= engine
-          else
-            a(href=n11nLink)= engine
+  +navLocalEngines('/n11n/url/', engines, engine)
   h1= h1
   p This page provides normalization result of specifications' URL of Platform Status Entries.
   div.toc

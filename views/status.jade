@@ -1,3 +1,4 @@
+include ./shared/nav-local
 extends layout
 
 mixin formatEntry(entry)
@@ -90,20 +91,7 @@ mixin formatTOC(hostEntry)
 
 block content
   if !isStandalonePage
-    nav
-      ul.nav-local
-        li
-          if queryEngine === null
-            a Index
-          else
-            a(href='/status/') Indexes
-        each engine in engines
-          li
-            - var n11nLink = '/status/engine/' + encodeURIComponent(engine) + '/'
-            if queryEngine === engine
-              a= engine
-            else
-              a(href=n11nLink)= engine
+    +navLocalEngines('/status/', engines, engine)
   - var h1String = 'Platform Status: ' + h1;
   h1= h1String
   div.toc
