@@ -9,7 +9,7 @@ const url = require('url');
  * @returns {string}
  */
 function getPlatformStatusId(engine, id) {
-    return engine + '-' + id;
+    return engine + '-' + encodeURIComponent(id);
 }
 
 
