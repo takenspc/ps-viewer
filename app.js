@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var url = require('url');
+
 
 var routes = require('./routes/index');
 var status = require('./routes/status');
@@ -13,7 +13,7 @@ var n11n = require('./routes/n11n');
 var app = express();
 
 // local
-app.locals.url2Host = function(urlString) { return url.parse(urlString).host; };
+app.locals.utils = require('./utils');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
