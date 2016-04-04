@@ -16,7 +16,7 @@ function getPlatformStatusId(engine, id) {
 const PLATFORM_STATUS_URL_MAP = new Map([
     ['chromium', 'https://www.chromestatus.com/features/'],
     ['edge', 'https://developer.microsoft.com/en-us/microsoft-edge/platform/status/'],
-    ['webkit', 'https://webkit.org/status/#feature-'],
+    ['webkit', 'https://webkit.org/status/#'],
     ['gecko', 'https://platform-status.mozilla.org/#'],
 ]);
 
