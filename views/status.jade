@@ -24,8 +24,8 @@ mixin formatEntry(engine, entry)
         | 
         span.channel (prefixed)
     div.status-link.link-external
-      - var statusURL = entry.statusURL;
-      - var statusHost = url2Host(statusURL);
+      - var statusUrl = utils.getPlatformStatusUrl(engine, entry.id);
+      - var statusHost = utils.getHost(statusUrl);
       - var linkText = 'View the platform status entry (' + statusHost + ')';
       a(href=statusURL)= linkText
 

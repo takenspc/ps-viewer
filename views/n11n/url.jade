@@ -27,10 +27,10 @@ mixin formatEntry(engine, entry)
       - var url = '/status/#' + id;
       a(href=url) View more info of platform status entry
     div.status-link.link-external
-      - var statusURL = entry.statusURL;
-      - var statusHost = url2Host(statusURL);
+      - var statusUrl = utils.getPlatformStatusUrl(engine, entry.id);
+      - var statusHost = utils.getHost(statusUrl);
       - var linkText = 'View the platform status entry (' + statusHost + ')';
-      a(href=statusURL)= linkText
+      a(href=statusUrl)= linkText
 
 
 mixin formatEngine(engine, entries)
