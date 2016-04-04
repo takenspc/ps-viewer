@@ -27,7 +27,7 @@ mixin formatEntry(engine, entry)
       - var statusUrl = utils.getPlatformStatusUrl(engine, entry.id);
       - var statusHost = utils.getHost(statusUrl);
       - var linkText = 'View the platform status entry (' + statusHost + ')';
-      a(href=statusURL)= linkText
+      a(href=statusUrl)= linkText
 
 
 mixin formatEngine(engine, entries)
