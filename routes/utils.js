@@ -26,7 +26,7 @@ function readFile(filePath) {
  * @returns Promise<any>
  */
 function readJSON() {
-    const jsonPath = path.join(__dirname, '..', 'data', 'data.json');
+    const jsonPath = path.join(__dirname, '..', 'public', 'data', 'data.json');
     return readFile(jsonPath).then((text) => {
         const data = JSON.parse(text);
         Object.freeze(data);
