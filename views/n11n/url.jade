@@ -56,7 +56,6 @@ mixin formatFragment(url, fragment)
 mixin formatURL(host, urlEntry)
   - var url = urlEntry.url
   - var id = url
-  - var href = '/status/url/' + encodeURIComponent(url || 'about:blank');
   - var headingText = url || '(no url was specified)';
   - var linkText = 'View the spec (' + host + ')';
   section.url(id=id)
@@ -65,9 +64,6 @@ mixin formatURL(host, urlEntry)
       if url
         li.link-external
           a(href=url)= linkText
-      if !isStandalonePage
-        li.link-standalone
-          a(href=href) View on standalone page
 
     - var fragments = Object.keys(urlEntry.fragments).sort();
     each fragment in fragments
