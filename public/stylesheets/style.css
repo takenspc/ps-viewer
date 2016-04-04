@@ -60,7 +60,7 @@ body {
     padding: 0 1.125em;
 }
 
-.link-standalone {
+.link-internal {
     background: url('../images/icons/link-standalone.svg') no-repeat 0 .25em / 1em 1em;
     line-height: 1.5;
     padding: 0 1.125em;

@@ -62,7 +62,7 @@ mixin formatURL(host, urlEntry)
         li.link-external
           a(href=url)= linkText
       if !isStandalonePage
-        li.link-standalone
+        li.link-internal
           a(href=href) View on standalone page
 
     - var fragments = Object.keys(urlEntry.fragments).sort();
