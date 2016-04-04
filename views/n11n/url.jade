@@ -1,8 +1,9 @@
 include ../shared/nav-local
 extends ../layout
 
-mixin formatEntry(entry)
-  li.redirect
+mixin formatEntry(engine, entry)
+  - var id = utils.getPlatformStatusId(engine, entry.id) 
+  li.redirect(id=id)
     span.title= entry.title
     p.explain Platestatus normalized the specification URL as follows:
     ol.redirect-list
@@ -22,6 +23,9 @@ mixin formatEntry(entry)
           - if (redirect.type === 'redirect') { typeMessage = 'Follow redirection: '; }
           - var reason = typeMessage + redirect.reason
           div.reason= reason
+    div.status-link.link-internal
+      - var url = '/status/#' + id;
+      a(href=url) View more info of platform status entry
     div.status-link.link-external
       - var statusURL = entry.statusURL;
       - var statusHost = url2Host(statusURL);
@@ -34,7 +38,7 @@ mixin formatEngine(engine, entries)
     h5.engine-name(class=engine)= engine
     ul.entry-list
       each entry in entries
-        +formatEntry(entry)
+        +formatEntry(engine, entry)
 
 
 mixin formatFragment(url, fragment)

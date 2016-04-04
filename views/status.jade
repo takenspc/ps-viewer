@@ -1,14 +1,15 @@
 include ./shared/nav-local
 extends layout
 
-mixin formatEntry(entry)
+mixin formatEntry(engine, entry)
+  - var id = utils.getPlatformStatusId(engine, entry.id) 
   - var status = entry.status;
   - var classList = [];
   - classList.push(engine);
   - classList.push(status.status);
   - status.behindFlag && classList.push('behindFlag');
   - status.prefixed && classList.push('prefixed');
-  li.entry(class=classList)
+  li.entry(class=classList, id=id)
     span.title= entry.title
     div.status
       span.text= status.originalStatus
@@ -34,7 +35,7 @@ mixin formatEngine(engine, entries)
     h5.engine-name(class=engine)= engine
     ul.entry-list
       each entry in entries
-        +formatEntry(entry)
+        +formatEntry(engine, entry)
 
 
 mixin formatFragment(url, fragment)
