@@ -239,7 +239,7 @@ body {
 
 
 .entry.behindFlag:after {
-    background: url('../images/icons/behindFlag.svg') no-repeat 0 0 / 1rem 1rem;
+    background: url('../images/icons/behindflag.svg') no-repeat 0 0 / 1rem 1rem;
     content: '';
     display: block;
     height: 1rem;
