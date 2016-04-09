@@ -222,7 +222,7 @@ body {
 
 .entry.not-planned {
     background-color: #ffab91;
-    background-image: url('../images/icons/deprecated.svg');
+    background-image: url('../images/icons/not-planned.svg');
     border-top: #f4511e medium solid;
 }
 
