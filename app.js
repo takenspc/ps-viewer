@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'), {
     setHeaders: (res, path, stat) => {
-        if (res.url === '/data/data.json') {
+        if (res.req.url === '/data/data.json') {
             res.set('Access-Control-Allow-Origin', '*');
         }
     },
