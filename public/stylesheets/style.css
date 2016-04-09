@@ -10,7 +10,6 @@ ol {
     list-style: none;
 }
 
-
 body {
     background: #fff;
     color: #333;
@@ -20,6 +19,7 @@ body {
     max-width: 80rem;
     padding: 0 1rem;
 }
+
 
 .content {
     padding: 0 0 5rem;
@@ -56,7 +56,6 @@ body {
     margin-bottom: .5rem;
 }
 
-
 .content p {
     margin-bottom: 1em;
 }
@@ -74,6 +73,20 @@ body {
     background: url('../images/icons/link-internal.svg') no-repeat 0 .25em / 1em 1em;
     padding: 0 1.125em;
 }
+
+
+.note {
+    background: #f5f5f5;
+    padding: .5rem 0 0 1rem;
+    margin-bottom: 1rem;
+    border-bottom: #f5f5f5 thin solid;
+}
+
+.note summary {
+    margin-left: -.5rem;
+    padding-bottom: .5rem;
+}
+
 
 /*
  * header
@@ -112,6 +125,7 @@ body {
 .header .nav-global li {
     padding: .5rem .25rem .25rem;
 }
+
 
 /*
  * footer
@@ -166,7 +180,6 @@ body {
 .nav-local li a.webkit {
     background-image: url('../images/icons/webkit.png');
 }
-
 
 
 /*
@@ -225,6 +238,7 @@ body {
 .fragment {
     margin-bottom: 3rem;
 }
+
 
 .fragment:after {
     clear: both;
