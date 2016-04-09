@@ -58,13 +58,13 @@ mixin formatURL(host, urlEntry)
   - var linkText = 'View the spec (' + host + ')';
   section.url(id=id)
     h3.url-name= headingText
-    ul.url-nav
-      if url
-        li.link-external
-          a(href=url)= linkText
-      if !isStandalonePage
+    ul.nav-util
+      if pageType !== 'url'
         li.link-internal
           a(href=href) View on standalone page
+      if specUrl
+        li.link-external
+          a(href=specUrl)= linkText
 
     - var fragments = Object.keys(urlEntry.fragments).sort();
     each fragment in fragments
@@ -77,6 +77,13 @@ mixin formatHost(hostEntry)
   - var headingText = host || '(no host was specified)';
   section.host(id=id)
     h2.host-name= headingText
+    ul.nav-util
+      if pageType !== 'host'
+        li.link-internal
+          a(href=href) View on standalone page
+
+    each urlEntry in utils.queryUrlEntriesByHost(urls, host)
+      +formatURL(urlEntry)
 
     - var urls = Object.keys(hostEntry.urls).sort();
     each url in urls

@@ -23,14 +23,15 @@ mixin formatEntry(engine, entry)
           - if (redirect.type === 'redirect') { typeMessage = 'Follow redirection: '; }
           - var reason = typeMessage + redirect.reason;
           div.reason= reason
-    div.status-link.link-internal
-      - var url = '/status/#' + id;
-      a(href=url) View more info of platform status entry
-    div.status-link.link-external
-      - var statusUrl = utils.getPlatformStatusUrl(engine, entry.id);
-      - var statusHost = utils.getHost(statusUrl);
-      - var linkText = 'View the platform status entry (' + statusHost + ')';
-      a(href=statusUrl)= linkText
+    ul.nav-util
+      li.link-internal
+        - var url = '/status/#' + id;
+        a(href=url) View more info of this platform status entry
+      li.link-external
+        - var statusUrl = utils.getPlatformStatusUrl(engine, entry.id);
+        - var statusHost = utils.getHost(statusUrl);
+        - var linkText = 'View the platform status entry (' + statusHost + ')';
+        a(href=statusUrl)= linkText
 
 
 mixin formatEngine(engine, entries)
@@ -60,10 +61,10 @@ mixin formatURL(host, urlEntry)
   - var linkText = 'View the spec (' + host + ')';
   section.url(id=id)
     h3.url-name= headingText
-    ul.url-nav
-      if url
+    ul.nav-util
+      if specUrl
         li.link-external
-          a(href=url)= linkText
+          a(href=specUrl)= linkText
 
     - var fragments = Object.keys(urlEntry.fragments).sort();
     each fragment in fragments

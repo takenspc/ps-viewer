@@ -140,7 +140,7 @@ body {
     color: inherit;
 }
 
-.url-nav {
+.nav-util {
     display: flex;
     flex-wrap: wrap;
     font-size: .75em;
