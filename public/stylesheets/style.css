@@ -179,12 +179,8 @@ body {
 }
 
 .toc h2 {
-    padding: 0 0 .5rem;
-    font-size: 1em;
-}
-
-.toc a {
-    color: inherit;
+    margin: 0 0 .5rem;
+    font-size: .75em;
 }
 
 .toc-list {
@@ -365,10 +361,6 @@ body {
 .redirect .explain {
     margin-top: 1rem;
     margin-bottom: .5rem;
-}
-
-.redirect .status-link {
-    font-size: .75em;
 }
 
 .redirect-list {
