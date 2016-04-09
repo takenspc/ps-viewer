@@ -1,4 +1,5 @@
 {
+	"datetime": 1460207460801,
 	"entities": {
 		"": [
 			""
@@ -16430,11 +16431,11 @@
 								"engine": "chromium",
 								"id": 5753701012602880,
 								"status": {
-									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "Proposed",
+									"behindFlag": true,
+									"channel": 51,
+									"originalStatus": "Behind a flag",
 									"prefixed": false,
-									"status": "under-consideration"
+									"status": "in-development"
 								},
 								"title": "CSS @apply Rule",
 								"url": "https://tabatkins.github.io/specs/css-apply-rule/"

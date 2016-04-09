@@ -112,6 +112,7 @@ function queryByUrl(data, urlString) {
         urls: urls,
         entities: converMapToObj(entities),
         redirects: data.redirects,
+        datetime: data.datetime,
     };
 }
 
@@ -143,6 +144,7 @@ function queryByHost(data, host) {
         urls: urls,
         entities: converMapToObj(entities),
         redirects: data.redirects,
+        datetime: data.datetime,
     };
 }
 
@@ -192,6 +194,7 @@ function queryByEngine(data, engine) {
         urls: urls,
         entities: converMapToObj(entities),
         redirects: data.redirects,
+        datetime: data.datetime,
     };
 }
 
@@ -253,6 +256,7 @@ function queryHasRedirects(data) {
         urls: urls,
         entities: converMapToObj(entities),
         redirects: data.redirects,
+        datetime: data.datetime,
     };
 }
 

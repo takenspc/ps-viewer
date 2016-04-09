@@ -13,6 +13,8 @@ var n11n = require('./routes/n11n');
 var app = express();
 
 // local
+app.locals.moment = require('moment');
+app.locals.momentFormat = 'YYYY-M-D (UTC)';
 app.locals.utils = require('./utils');
 
 // view engine setup
