@@ -38,8 +38,8 @@ mixin formatEngine(engine, entries)
         +formatEntry(engine, entry)
 
 
-mixin formatFragment(url, fragment)
-  - var id = url + encodeURIComponent(fragment.fragment);
+mixin formatFragment(specUrl, fragment)
+  - var id = specUrl + encodeURIComponent(fragment.fragment);
   - var fragmentText = decodeURIComponent(fragment.fragment || '#');
   div.fragment(id=id)
     h4.fragment-name= fragmentText
@@ -50,13 +50,14 @@ mixin formatFragment(url, fragment)
         +formatEngine(engine, entries)
 
 
-mixin formatURL(host, urlEntry)
-  - var url = urlEntry.url
-  - var id = url
-  - var href = '/status/url/' + encodeURIComponent(url || 'about:blank');
-  - var headingText = url || '(no url was specified)';
-  - var linkText = 'View the spec (' + host + ')';
-  section.url(id=id)
+mixin formatURL(urlEntry)
+  - var specUrl = urlEntry.url
+  - var specHost = utils.getHost(specUrl);
+  - var id = specUrl || 'about:blank?url';
+  - var href = '/status/url/' + encodeURIComponent(specUrl || 'about:blank');
+  - var headingText = specUrl || '(no url was specified)';
+  - var linkText = 'View the specification (' + specHost + ')';
+  div.url(id=id)
     h3.url-name= headingText
     ul.nav-util
       if pageType !== 'url'
@@ -68,13 +69,13 @@ mixin formatURL(host, urlEntry)
 
     - var fragments = Object.keys(urlEntry.fragments).sort();
     each fragment in fragments
-      +formatFragment(url, urlEntry.fragments[fragment])
+      +formatFragment(specUrl, urlEntry.fragments[fragment])
 
 
-mixin formatHost(hostEntry)
-  - var host = hostEntry.host;
-  - var id = host || 'about:blank';
+mixin formatHost(host, urls)
+  - var id = host || 'about:blank?host';
   - var headingText = host || '(no host was specified)';
+  - var href = '/status/host/' + encodeURIComponent(host || 'about:blank');
   section.host(id=id)
     h2.host-name= headingText
     ul.nav-util
@@ -85,27 +86,28 @@ mixin formatHost(hostEntry)
     each urlEntry in utils.queryUrlEntriesByHost(urls, host)
       +formatURL(urlEntry)
 
-    - var urls = Object.keys(hostEntry.urls).sort();
-    each url in urls
-      +formatURL(host, hostEntry.urls[url])
+mixin formatEntity(entity, hosts, urls)
+  each host in hosts
+    +formatHost(host, urls)
 
 
-mixin formatTOC(hostEntry)
-  - var host = hostEntry.host;
-  - var href = '#' + encodeURIComponent(host || 'about:blank');
-  - var headingText = host || '(no url was specified)';
-  li
-    a(href=href)= headingText
+mixin formatTOC(entity, hosts)
+  each host in hosts
+    - var href = '#' + encodeURIComponent(host || 'about:blank?host');
+    - var headingText = host || '(no host was specified)';
+    li
+      a(href=href)= headingText
 
 block content
-  if !isStandalonePage
-    +navLocalEngines('/status/', engines, engine)
+  +navLocalEngines('/status/', engines, pageType)
   - var h1String = 'Platform Status: ' + h1;
+  - var entities = Object.keys(data.entities).sort();
   h1= h1String
+  p Compare the Platform Status data of Chromium, Edge, WebKit and Gecko.
   div.toc
     h2 Table of Contents
     ul.toc-list
-      each hostEntry in data
-        +formatTOC(hostEntry)
-  each hostEntry in data
-    +formatHost(hostEntry)
+      each entity in entities
+        +formatTOC(entity, data.entities[entity])
+  each entity in entities
+    +formatEntity(entity, data.entities[entity], data.urls)

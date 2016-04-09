@@ -2,9 +2,6 @@
 var fs = require('fs');
 var path = require('path');
 
-
-const engines = ['chromium', 'edge', 'webkit', 'gecko'];
-
 /**
  * @param filePath {string}
  * @returns Promise<string>
@@ -35,6 +32,5 @@ function readJSON() {
 }
 
 module.exports = {
-    engines: engines,
     readJSON: readJSON
 };
