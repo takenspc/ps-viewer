@@ -3,225 +3,248 @@ extends ../layout
 
 block content
   h1= h1
-  p Each Platform Status uses different set of status information. Therefore Plateostatus normalizes thier status information.
+  p Each Platform Status (Chromium, Edge, WebKit and Gecko) uses different set of statuses. Therefore Plateostatus normalizes those statuses into a custom set of statues.
 
-  h2 Normalized Status
-  p Plateostatus uses following normalized status information.
-  dl
-    dt Status
-    dd Staut information of the feature.
-    dt behind a flag
-    dd The feature is behind a flag, users need to turn the flag on to use the feature. 
-    dt prefixed
-    dd The feature is prefixed. The feature is not ready for production usage.
+  div.toc
+    h2 Table of Contents
+    ul.toc-list
+      li
+        a(href='#normalized') Normalized status
+      li
+        a(href='#chromium') Chromium
+      li
+        a(href='#edge') Edge
+      li
+        a(href='#webkit') WebKit
+      li
+        a(href='#gecko') Gecko
 
-  h3 Status
-  p Plateostatus uses following Status
-  table.status-table
-   thead
-     tr
-       th Status
-       th Description
-   tbody
-     tr
-       td
-         +normalizedStatus('supported')
-       td The feature is supported by an engine. The feature is exposed to users.
-     tr
-       td
-         +normalizedStatus('in-development')
-       td The feature is being developed by an engine. The feature is unstable or the feature is not exposed to all users (e.g. the feature is behind a flag).
-     tr
-       td
-         +normalizedStatus('under-consideration')
-       td The feature is possible to be developed by an engine. However there are no development activities.
-     tr
-       td
-         +normalizedStatus('not-planned')
-       td The feature is not planned by an engine.
-     tr
-       td
-         +normalizedStatus('deprecated')
-       td The feature is deprecated by an engine.
-     tr
-       td
-         +normalizedStatus('removed')
-       td The feature is removed from an engine.
-
-  h2 Chromium
-  p Plateostatus normalizes status information as follows.
+  section#normalized
+    h2 Normalized status
+    p Plateostatus uses following kind of information to represent status of Platform Status data.
+    dl
+      dt status
+      dd indicates main stauts information of a feature.
+      dt behind a flag
+      dd indicates a feature is behind a flag. Users need to turn the flag on to use the feature. 
+      dt prefixed
+      dd indicates a feature is prefixed. The feature is not ready for production usage.
   
-  h3 Status
-  table.status-table
-    thead
-      tr
-        th Original Status
-        th Normalized Status
-    tbody
-      tr
-        td Enabled by default
-        td
-          +normalizedStatus('supported')
-      tr
-        td In experimental framework
-        td
-          +normalizedStatus('in-development')
-      tr
-        td Behind a flag
-        td
-          +normalizedStatus('in-development')
-      tr
-        td In development
-        td
-          +normalizedStatus('in-development')
-      tr
-        td Proposed
-        td
-          +normalizedStatus('under-consideration')
-      tr
-        td No active development
-        td
-          +normalizedStatus('not-planned')
-      tr
-        td No longer pursuing
-        td
-          +normalizedStatus('not-planned')
-      tr
-        td Deprecated
-        td
-          +normalizedStatus('deprecated')
-      tr
-        td Removed
-        td
-          +normalizedStatus('removed')
+    h3 Status
+    p Plateostatus uses following set of statuses
+    table.status-table
+     thead
+       tr
+         th Status
+         th Description
+     tbody
+       tr
+         td
+           +normalizedStatus('supported')
+         td A feature is supported by a rendering engine. The feature exposed to all users.
+       tr
+         td
+           +normalizedStatus('in-development')
+         td A feature is being developed by a rendering engine. The feature may not be exposed to all users (e.g. the feature is behind a flag).
+       tr
+         td
+           +normalizedStatus('under-consideration')
+         td The feature is possible to be developed by a rendering engine. However there are no development activities at this moment.
+       tr
+         td
+           +normalizedStatus('not-planned')
+         td A rendering engine doesn't have any plans to support a feature.
+       tr
+         td
+           +normalizedStatus('deprecated')
+         td A feature is deprecated by a rendering engine.
+       tr
+         td
+           +normalizedStatus('removed')
+         td A feature is removed from a rendering engine.
 
-  h3 Conditions to mark Platfrom Status entry as "behind a flag"
-  p if <code>entry.meta.needFlag</code> is true or <code>entry.impl_status_chrome</code> is "Behind a flag", Plateostatus marks the entry as "behind a flag"
-
-  h3 Conditions to mark Platfrom Status entry as "prefixed"
-  p if <code>entry.prefixed</code> is true, Plateostatus marks the entry as "prefixed"
-
-
-  h2 Edge
-  p Plateostatus normalizes status information as follows.
+  section#chromium
+    h2 Chromium
+    p Chromium projects operates <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>. Plateostatus uses <a href="https://www.chromestatus.com/features.json">https://www.chromestatus.com/features.json</a> as sources of thier Platform Status data. The JSON file consists of an array of Platform Status entry (<code>entry</code>).
   
-  h3 Status
-  table.status-table
-    thead
-      tr
-        th Original Status
-        th Normalized Status
-    tbody
-      tr
-        td Shipped
-        td
-          +normalizedStatus('supported')
-      tr
-        td Preview Release
-        td
-          +normalizedStatus('supported')
-      tr
-        td Prefixed
-        td
-          +normalizedStatus('supported')
-      tr
-        td In Development
-        td
-          +normalizedStatus('in-development')
-      tr
-        td Under Consideration
-        td
-          +normalizedStatus('under-consideration')
-      tr
-        td Not currently planned
-        td
-          +normalizedStatus('not-planned')
-      tr
-        td Deprecated
-        td
-          +normalizedStatus('deprecated')
-
-  h3 Conditions to mark Platfrom Status entry as "behind a flag"
-  p if <code>entry.browsers.ie.flag</code> is true, Plateostatus marks the entry as "behind a flag"
-
-  h3 Conditions to mark Platfrom Status entry as "prefixed"
-  p if <code>entry.browsers.ie.status</code> is "Prefixed", Plateostatus marks the entry as "prefixed"
-
-  h2 WebKit
-  p Plateostatus normalizes status information as follows.
+    h3 Status
+    p Plateostatus normalizes status (<code>entry.impl_status_chrome</code>) as follows.
+    table.status-table
+      thead
+        tr
+          th Original status
+          th Normalized status
+      tbody
+        tr
+          td Enabled by default
+          td
+            +normalizedStatus('supported')
+        tr
+          td In experimental framework
+          td
+            +normalizedStatus('in-development')
+        tr
+          td Behind a flag
+          td
+            +normalizedStatus('in-development')
+        tr
+          td In development
+          td
+            +normalizedStatus('in-development')
+        tr
+          td Proposed
+          td
+            +normalizedStatus('under-consideration')
+        tr
+          td No active development
+          td
+            +normalizedStatus('not-planned')
+        tr
+          td No longer pursuing
+          td
+            +normalizedStatus('not-planned')
+        tr
+          td Deprecated
+          td
+            +normalizedStatus('deprecated')
+        tr
+          td Removed
+          td
+            +normalizedStatus('removed')
   
-  h3 Status
-  table.status-table
-    thead
-      tr
-        th Original Status
-        th Normalized Status
-    tbody
-      tr
-        td Done
-        td
-          +normalizedStatus('supported')
-      tr
-        td Partial Support
-        td
-          +normalizedStatus('supported')
-      tr
-        td In Development
-        td
-          +normalizedStatus('in-development')
-      tr
-        td Prototyping
-        td
-          +normalizedStatus('in-development')
-      tr
-        td Under Consideration
-        td
-          +normalizedStatus('under-consideration')
-      tr
-        td Not Considering
-        td
-          +normalizedStatus('not-planned')
-      tr
-        td Removed
-        td
-          +normalizedStatus('removed')
-
-  h3 Conditions to mark Platfrom Status entry as "behind a flag"
-  p if <code>entry.status.enabled-by-default</code> is true, Plateostatus marks the entry as "behind a flag"
-
-  h3 Conditions to mark Platfrom Status entry as "prefixed"
-  p There is no corresponding information in WebKit Platfrom Status.
-
-  h2 Gecko
-  p Plateostatus normalizes status information as follows.
+    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    p if <code>entry.impl_status_chrome</code> is "Behind a flag", Plateostatus marks the entry as "behind a flag"
   
-  h3 Status
-  table.status-table
-    thead
-      tr
-        th Original Status
-        th Normalized Status
-    tbody
-      tr
-        td (any numbers)
-        td
-          +normalizedStatus('supported')
-      tr
-        td in-development
-        td
-          +normalizedStatus('in-development')
-      tr
-        td under-consideration
-        td
-          +normalizedStatus('under-consideration')
-      tr
-        td not-planned
-        td
-          +normalizedStatus('not-planned')
-      
-  h3 Conditions to mark Platfrom Status entry as "behind a flag"
-  p There is no corresponding information in Gecko Platfrom Status.
+    h3 Conditions to mark a Platform Status entry as "prefixed"
+    p if <code>entry.prefixed</code> is true, Plateostatus marks the entry as "prefixed"
 
-  h3 Conditions to mark Platfrom Status entry as "prefixed"
-  p There is no corresponding information in Gecko Platfrom Status.
 
+  section#edge
+    h2 Edge
+    p Microsoft operates <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Platform status</a>. Plateostatus uses <a href="https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/">https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/</a> as sources of thier Platform Status data. The JSON file consists of an object which has <code>data</code> property. The value of <code>data</code> property is an array of Platform Status entry (<code>entry</code>).
+  
+    h3 Status
+    p Plateostatus normalizes status (<code>entry.position</code>) as follows.
+    table.status-table
+      thead
+        tr
+          th Original status
+          th Normalized status
+      tbody
+        tr
+          td Shipped
+          td
+            +normalizedStatus('supported')
+        tr
+          td Preview Release
+          td
+            +normalizedStatus('supported')
+        tr
+          td Prefixed
+          td
+            +normalizedStatus('supported')
+        tr
+          td In Development
+          td
+            +normalizedStatus('in-development')
+        tr
+          td Under Consideration
+          td
+            +normalizedStatus('under-consideration')
+        tr
+          td Not currently planned
+          td
+            +normalizedStatus('not-planned')
+        tr
+          td Deprecated
+          td
+            +normalizedStatus('deprecated')
+  
+    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    p if <code>entry.browsers.ie.flag</code> is true, Plateostatus marks the entry as "behind a flag"
+  
+    h3 Conditions to mark a Platform Status entry as "prefixed"
+    p if <code>entry.position</code> is "Prefixed", Plateostatus marks the entry as "prefixed"
+
+  section#webkit
+    h2 WebKit
+    p WebKit project operates <a href="https://webkit.org/status/">WebKit Feature Status</a>. Plateostatus uses <a href="https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json</a> and <a href="https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json</a> as sources of thier Platform Status data. Each JSON file consists of an object which has <code>specification</code> and <code>features</code> properties. The value of each property is an array of Platform Status entry (<code>entry</code>).
+    
+    h3 Status
+    p Plateostatus normalizes status (<code>entry.status.status</code>) as follows.
+    table.status-table
+      thead
+        tr
+          th Original status
+          th Normalized status
+      tbody
+        tr
+          td Done
+          td
+            +normalizedStatus('supported')
+        tr
+          td Partial Support
+          td
+            +normalizedStatus('supported')
+        tr
+          td In Development
+          td
+            +normalizedStatus('in-development')
+        tr
+          td Prototyping
+          td
+            +normalizedStatus('in-development')
+        tr
+          td Under Consideration
+          td
+            +normalizedStatus('under-consideration')
+        tr
+          td Not Considering
+          td
+            +normalizedStatus('not-planned')
+        tr
+          td Removed
+          td
+            +normalizedStatus('removed')
+  
+    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    p if <code>entry.status.enabled-by-default</code> is true, Plateostatus marks the entry as "behind a flag"
+  
+    h3 Conditions to mark a Platform Status entry as "prefixed"
+    p There is no corresponding information in the WebKit Feature Status.
+
+  section#gecko
+    h2 Gecko
+    p Mozilla project operates <a href="https://platform-status.mozilla.org/">Firefox Platform Status</a>. Plateostatus uses <a href="https://github.com/mozilla/platform-status/tree/master/features">https://github.com/mozilla/platform-status/tree/master/features</a> as sources of thier Platform Status data. Each Markdown file contains a YAML block which represents Platform Status entry (<code>entry</code>).
+    
+    h3 Status
+    p Plateostatus normalizes status (<code>entry.firefox_status</code>) as follows.
+    table.status-table
+      thead
+        tr
+          th Original status
+          th Normalized status
+      tbody
+        tr
+          td (any numbers)
+          td
+            +normalizedStatus('supported')
+        tr
+          td in-development
+          td
+            +normalizedStatus('in-development')
+        tr
+          td under-consideration
+          td
+            +normalizedStatus('under-consideration')
+        tr
+          td not-planned
+          td
+            +normalizedStatus('not-planned')
+        
+    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    p There is no corresponding information in Firefox Platform Status.
+  
+    h3 Conditions to mark a Platform Status entry as "prefixed"
+    p There is no corresponding information in Firefox Platform Status.
+  
