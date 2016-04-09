@@ -116,7 +116,7 @@ router.get('/url/', function(req, res, next) {
 router.get('/status/', function(req, res, next) {
     res.render('n11n/status.jade', {
         title: 'Status | Normalization',
-        h1: 'Normalization of status',
+        h1: 'Normalization of status of Platform Status data',
     });
 });
 
