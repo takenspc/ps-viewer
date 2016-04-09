@@ -13,9 +13,21 @@ var n11n = require('./routes/n11n');
 var app = express();
 
 // local
+app.locals.baseUrl = 'https://plateostatus.herokuapp.com/';
 app.locals.moment = require('moment');
 app.locals.momentFormat = 'YYYY-M-D (UTC)';
 app.locals.utils = require('./utils');
+
+if (app.get('env') === 'production') {
+    app.use(function(req, res, next) {
+        if (req.headers['x-forwarded-proto'] !== 'https') {
+            return res.redirect(app.locals.baseUrl + req.url);
+        }
+
+        return next();
+    });
+}
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
