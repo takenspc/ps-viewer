@@ -12,7 +12,7 @@ ol {
 
 body {
     background: #fff;
-    color: #333;
+    color: #212121;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     margin: auto;
@@ -439,13 +439,13 @@ body {
  */
 .status-table {
     border-collapse: collapse;
-    border-left: thin solid #ccc;
-    border-top: thin solid #ccc;
+    border-left: thin solid #757575;
+    border-top: thin solid #757575;
 }
 
 .status-table th,
 .status-table td {
     padding: .25em;
-    border-right: thin solid #ccc;
-    border-bottom: thin solid #ccc;
+    border-right: thin solid #757575;
+    border-bottom: thin solid #757575;
 }
