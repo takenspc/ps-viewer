@@ -142,10 +142,31 @@ body {
 
 .nav-local li a {
     display: block;
-    padding: .125rem .5rem .125rem;
-    background: #212121;
+    padding: .125em .5em .125em 1.5em;
+    background: #212121 no-repeat .25em .375em / 1em 1em;
     color: #fff;
 }
+
+.nav-local li a.index {
+    padding-left: .5em;
+}
+
+.nav-local li a.chromium {
+    background-image: url('../images/icons/chrome.png');
+}
+
+.nav-local li a.edge {
+    background-image: url('../images/icons/edge.png');
+}
+
+.nav-local li a.gecko {
+    background-image: url('../images/icons/firefox.png');
+}
+
+.nav-local li a.webkit {
+    background-image: url('../images/icons/webkit.png');
+}
+
 
 
 /*
