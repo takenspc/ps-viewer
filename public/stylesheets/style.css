@@ -64,6 +64,15 @@ body {
     font-weight: bold;
 }
 
+
+.nav-util {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .75em;
+    margin-bottom: .5rem;
+}
+
+
 .link-external {
     background: url('../images/icons/link-external.svg') no-repeat 0 .25em / 1em 1em;
     padding: 0 1.125em;
@@ -226,14 +235,6 @@ body {
 .url .url-name a {
     color: inherit;
 }
-
-.nav-util {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: .75em;
-    margin-bottom: .5rem;
-}
-
 
 .fragment {
     margin-bottom: 3rem;
