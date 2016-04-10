@@ -2,5 +2,46 @@ extends layout
 
 block content
   h1= title
-  h2 What does Platestatus mean?
-  p Platestatus is a pun on Platform Status and <a href="https://en.wikipedia.org/wiki/Plateosaurus">Platesaurus</a> which is an ancient creaturs.
+  h2 What does Plateostatus mean?
+  p Plateostatus is a pun on Platform Status and <a href="https://en.wikipedia.org/wiki/Plateosaurus">Plateosaurus</a> which is an ancient creature.
+
+  section
+    h2 Rational
+    p <a href="https://html.spec.whatwg.org/multipage/">WHATWG HTML Standard</a> has small box which shows Can I use... information.
+    div.figure
+      img(alt='', src='/images/about/whatwg-html.png')
+    p Some other specifications have smallbox which notifiy a section is not widely implemented yet.
+    div.figure
+      img(alt='', src='/images/about/cssom-view.png')
+    p However other specifications don't provides implementation information.
+
+  section
+    h2 What are Platform Statuses?
+    p Plateostatus tracks following Platform Statuses.
+    dl
+      dt Chromium
+      dd
+        p
+          a(href='https://www.chromestatus.com/features') Chrome Platform Status
+      dt Edge
+      dd
+        p
+          a(href='https://developer.microsoft.com/en-us/microsoft-edge/platform/status/') Platform status 
+      dt WebKit
+      dd
+        p
+          a(href='https://webkit.org/status/') WebKit Feature Status
+      dt Gecko
+      dd
+        p
+          a(href='https://platform-status.mozilla.org/') Firefox Platform Status
+    p Following web sites provides useful information. 
+    ul.list
+      li
+        a(href='http://caniuse.com/') Can I use...
+      li
+        a(href='https://platformstatustracker.azurewebsites.net') Browser Platform Status Tracker
+      li
+        a(href='https://jakearchibald.github.io/isserviceworkerready/') Is ServiceWorker ready?
+      li
+        a(href='https://birtles.github.io/areweanimatedyet/') Are we animated yet?

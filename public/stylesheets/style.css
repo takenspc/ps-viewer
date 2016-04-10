@@ -92,8 +92,20 @@ body {
 }
 
 .note summary {
+    display: block;
     margin-left: -.5rem;
     padding-bottom: .5rem;
+}
+
+.figure {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.figure img {
+    border: thin solid #424242;
+    box-shadow: #212121 0 0 .25rem;
+    max-width: 100%;
 }
 
 
