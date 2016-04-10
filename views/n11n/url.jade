@@ -5,7 +5,7 @@ mixin formatEntry(engine, entry)
   - var id = utils.getPlatformStatusId(engine, entry.id) 
   li.redirect(id=id)
     span.title= entry.title
-    p.explain Platestatus normalized the specification URL as follows:
+    p.explain Plateostatus normalized the specification URL as follows:
     ol.redirect-list
       li
         span.type original
@@ -95,27 +95,27 @@ block content
   +navLocalEngines('/n11n/url/', engines, pageType)
   - var entities = Object.keys(data.entities).sort();
   h1= h1
-  p Platestatus normalizes specification url of Platform Data data. This page describes how Platestatus normalized them.
+  p Plateostatus normalizes specification URL of Platform Data data. This page describes how Plateostatus normalized them.
   +lastUpdated()
-  details.note
+  details.note(open)
     summary Principals of URL normalization
-    p Platestatus normalizes specification url in accordance with following principles:
+    p Plateostatus normalizes specification URL in accordance with following principles:
     dl
       dt Follow redirection
       dd
         p Once specification pages have moved, specification pages usually redirect to new pages. Plateostatus follows such redirections.
       dt Prefer specification pages over repository
       dd
-        p One of objectives of Platestatus is providing quick access to the Platform Status from specification pages. Thus Platestatus prefers specification pages over repository (e.g. prefer github.io over github.com, tools.ietf.org over datatracker.ietf.org).
+        p One of objectives of Plateostatus is providing quick access to the Platform Status from specification pages. Thus Plateostatus prefers specification pages over repository (e.g. prefer github.io over github.com, tools.ietf.org over datatracker.ietf.org).
       dt Prefer Editor's Drafts over Working Drafts
       dd
-        p Plateostatus aims to make implementations (rendering engines) information and specification information more closer. In general, feedbacks from implementors (browser vendors) and others are firstly reflected Editor's Draft. Thus Platestatus assumes that Editor's Draft is closer to implementations (redering engines) than Working Draft and others.
+        p Plateostatus aims to make implementations (rendering engines) information and specification information more closer. In general, feedbacks from implementors (browser vendors) and others are firstly reflected to Editor's Draft. Thus Plateostatus assumes that Editor's Draft is closer to implementations (redering engines) than Working Draft and others.
   div.toc
     h2 Table of Contents
     ul.toc-list
       each entity in entities
         +formatTOC(entity, data.entities[entity])
-  details.note
+  details.note(open)
     summary Legends
     dl
       dt redirect
