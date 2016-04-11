@@ -2,18 +2,19 @@ extends layout
 
 block content
   h1= title
-  h2 What does Plateostatus mean?
-  p Plateostatus is a pun on Platform Status and <a href="https://en.wikipedia.org/wiki/Plateosaurus">Plateosaurus</a> which is an ancient creature.
 
   section
     h2 Rational
-    p <a href="https://html.spec.whatwg.org/multipage/">WHATWG HTML Standard</a> has small box which shows Can I use... information.
+    p Every time I read a specification, I imagine the world where every browser implements the specification. Soon after, I wake from the dream. I know the real is different. I know there are some specifications which some browsers supoort and others don't intent to support.
+    p Some specifications provides implementation information. For example, <a href="https://html.spec.whatwg.org/multipage/">WHATWG HTML Standard</a> has small boxes which show Can I use... information.
     div.figure
       img(alt='', src='/images/about/whatwg-html.png')
-    p Some other specifications have smallbox which notifiy a section is not widely implemented yet.
+    p Some other specifications have small boxes which notifiy a section is not yet widely implemented.
     div.figure
       img(alt='', src='/images/about/cssom-view.png')
-    p However other specifications don't provides implementation information.
+    p However majority of specifications don't provide implementation information.
+    p Today, major browser vendors maintain platform statuses which show roadmaps of their browsers. However, platform statuses are not integrated with specifications. Thus I need to open 4 web sites in addition to the specification.
+    p To ease this situation, Plateostatus provides a dashboard of platform statuses.
 
   section
     h2 What are Platform Statuses?
@@ -35,6 +36,9 @@ block content
       dd
         p
           a(href='https://platform-status.mozilla.org/') Firefox Platform Status
+
+  section
+    h2 Other resources
     p Following web sites provides useful information. 
     ul.list
       li
@@ -45,3 +49,8 @@ block content
         a(href='https://jakearchibald.github.io/isserviceworkerready/') Is ServiceWorker ready?
       li
         a(href='https://birtles.github.io/areweanimatedyet/') Are we animated yet?
+
+  section
+    h2 What does Plateostatus mean?
+    p Plateostatus is a pun on Platform Status and <a href="https://en.wikipedia.org/wiki/Plateosaurus">Plateosaurus</a> which is an ancient creature.
+
