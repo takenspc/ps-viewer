@@ -3,7 +3,7 @@ extends ../layout
 
 block content
   h1= h1
-  p Each Platform Status (Chromium, Edge, WebKit and Gecko) uses different set of statuses. Therefore Plateostatus normalizes those statuses into a custom set of statues.
+  p Each platform status (Chromium, Edge, WebKit and Gecko) uses different set of statuses. Therefore Plateostatus normalizes those statuses into a custom set of statues.
 
   div.toc
     h2 Table of Contents
@@ -21,14 +21,14 @@ block content
 
   section#normalized
     h2 Normalized status
-    p Plateostatus uses following kind of information to represent status of Platform Status data.
+    p Plateostatus uses following information to represent status of platform status data.
     dl
       dt status
-      dd indicates main stauts information of a feature.
+      dd status indicates main stauts information of a feature.
       dt behind a flag
-      dd indicates a feature is behind a flag. Users need to turn the flag on to use the feature. 
+      dd behind a flag indicates a feature is behind a flag. Users need to turn the flag on to use the feature. 
       dt prefixed
-      dd indicates a feature is prefixed. The feature is not ready for production usage.
+      dd prefixed indicates a feature is prefixed. The feature is not ready for production.
   
     h3 Status
     p Plateostatus uses following set of statuses
@@ -41,7 +41,7 @@ block content
        tr
          td
            +normalizedStatus('supported')
-         td A feature is supported by a rendering engine. The feature exposed to all users.
+         td A feature is supported by a rendering engine. The feature may be exposed to all users.
        tr
          td
            +normalizedStatus('in-development')
@@ -65,7 +65,7 @@ block content
 
   section#chromium
     h2 Chromium
-    p Chromium projects operates <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>. Plateostatus uses <a href="https://www.chromestatus.com/features.json">https://www.chromestatus.com/features.json</a> as sources of thier Platform Status data. The JSON file consists of an array of Platform Status entry (<code>entry</code>).
+    p Chromium projects operates <a href="https://www.chromestatus.com/features">Chrome Platform Status</a>. Plateostatus uses <a href="https://www.chromestatus.com/features.json">https://www.chromestatus.com/features.json</a> as sources of thier platform status data. The JSON file consists of an array of platform status entry (<code>entry</code>).
   
     h3 Status
     p Plateostatus normalizes status (<code>entry.impl_status_chrome</code>) as follows.
@@ -112,16 +112,16 @@ block content
           td
             +normalizedStatus('removed')
   
-    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    h3 Conditions to mark a platform status entry as "behind a flag"
     p if <code>entry.impl_status_chrome</code> is "Behind a flag", Plateostatus marks the entry as "behind a flag"
   
-    h3 Conditions to mark a Platform Status entry as "prefixed"
+    h3 Conditions to mark a platform status entry as "prefixed"
     p if <code>entry.prefixed</code> is true, Plateostatus marks the entry as "prefixed"
 
 
   section#edge
     h2 Edge
-    p Microsoft operates <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Platform status</a>. Plateostatus uses <a href="https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/">https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/</a> as sources of thier Platform Status data. The JSON file consists of an object which has <code>data</code> property. The value of <code>data</code> property is an array of Platform Status entry (<code>entry</code>).
+    p Microsoft operates <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/">Platform status</a>. Plateostatus uses <a href="https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/">https://developer.microsoft.com/en-us/microsoft-edge/api/platform/status/</a> as sources of thier platform status data. The JSON file consists of an object which has <code>data</code> property. The value of <code>data</code> property is an array of platform status entry (<code>entry</code>).
   
     h3 Status
     p Plateostatus normalizes status (<code>entry.position</code>) as follows.
@@ -160,15 +160,15 @@ block content
           td
             +normalizedStatus('deprecated')
   
-    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    h3 Conditions to mark a platform status entry as "behind a flag"
     p if <code>entry.browsers.ie.flag</code> is true, Plateostatus marks the entry as "behind a flag"
   
-    h3 Conditions to mark a Platform Status entry as "prefixed"
+    h3 Conditions to mark a platform status entry as "prefixed"
     p if <code>entry.position</code> is "Prefixed", Plateostatus marks the entry as "prefixed"
 
   section#webkit
     h2 WebKit
-    p WebKit project operates <a href="https://webkit.org/status/">WebKit Feature Status</a>. Plateostatus uses <a href="https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json</a> and <a href="https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json</a> as sources of thier Platform Status data. Each JSON file consists of an object which has <code>specification</code> and <code>features</code> properties. The value of each property is an array of Platform Status entry (<code>entry</code>).
+    p WebKit project operates <a href="https://webkit.org/status/">WebKit Feature Status</a>. Plateostatus uses <a href="https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/JavaScriptCore/features.json</a> and <a href="https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json">https://svn.webkit.org/repository/webkit/trunk/Source/WebCore/features.json</a> as sources of thier platform status data. Each JSON file consists of an object which has <code>specification</code> and <code>features</code> properties. The value of each property is an array of platform status entry (<code>entry</code>).
     
     h3 Status
     p Plateostatus normalizes status (<code>entry.status.status</code>) as follows.
@@ -207,15 +207,15 @@ block content
           td
             +normalizedStatus('removed')
   
-    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    h3 Conditions to mark a platform status entry as "behind a flag"
     p if <code>entry.status.enabled-by-default</code> is true, Plateostatus marks the entry as "behind a flag"
   
-    h3 Conditions to mark a Platform Status entry as "prefixed"
+    h3 Conditions to mark a platform status entry as "prefixed"
     p There is no corresponding information in the WebKit Feature Status.
 
   section#gecko
     h2 Gecko
-    p Mozilla project operates <a href="https://platform-status.mozilla.org/">Firefox Platform Status</a>. Plateostatus uses <a href="https://github.com/mozilla/platform-status/tree/master/features">https://github.com/mozilla/platform-status/tree/master/features</a> as sources of thier Platform Status data. Each Markdown file contains a YAML block which represents Platform Status entry (<code>entry</code>).
+    p Mozilla project operates <a href="https://platform-status.mozilla.org/">Firefox Platform Status</a>. Plateostatus uses <a href="https://github.com/mozilla/platform-status/tree/master/features">https://github.com/mozilla/platform-status/tree/master/features</a> as sources of thier platform status data. Each markdown file contains a YAML block which represents platform status entry (<code>entry</code>).
     
     h3 Status
     p Plateostatus normalizes status (<code>entry.firefox_status</code>) as follows.
@@ -242,9 +242,9 @@ block content
           td
             +normalizedStatus('not-planned')
         
-    h3 Conditions to mark a Platform Status entry as "behind a flag"
+    h3 Conditions to mark a platform status entry as "behind a flag"
     p There is no corresponding information in Firefox Platform Status.
   
-    h3 Conditions to mark a Platform Status entry as "prefixed"
+    h3 Conditions to mark a platform status entry as "prefixed"
     p There is no corresponding information in Firefox Platform Status.
   
