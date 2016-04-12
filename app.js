@@ -13,7 +13,7 @@ var n11n = require('./routes/n11n');
 var app = express();
 
 // local
-app.locals.baseUrl = 'https://plateostatus.herokuapp.com/';
+app.locals.baseUrl = 'https://plateostatus.herokuapp.com';
 app.locals.moment = require('moment');
 app.locals.momentFormat = 'YYYY-M-D (UTC)';
 app.locals.utils = require('./utils');
