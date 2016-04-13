@@ -1,5 +1,5 @@
 {
-	"datetime": 1460387024689,
+	"datetime": 1460584082216,
 	"entities": {
 		"": [
 			""
@@ -11734,6 +11734,33 @@
 			"host": "drafts.csswg.org",
 			"url": "https://drafts.csswg.org/css-transforms/"
 		},
+		"https://drafts.csswg.org/css-ui-4/": {
+			"entity": "csswg",
+			"fragments": {
+				"#appearance-switching": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5668635896971264,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "In development",
+									"prefixed": true,
+									"status": "in-development"
+								},
+								"title": "-webkit-appearance:none for METER and PROGRESS elements",
+								"url": "https://drafts.csswg.org/css-ui-4/#appearance-switching"
+							}
+						]
+					},
+					"fragment": "#appearance-switching"
+				}
+			},
+			"host": "drafts.csswg.org",
+			"url": "https://drafts.csswg.org/css-ui-4/"
+		},
 		"https://drafts.csswg.org/css-variables/": {
 			"entity": "csswg",
 			"fragments": {
@@ -13972,6 +13999,33 @@
 			"host": "heycam.github.io",
 			"url": "https://heycam.github.io/webidl/"
 		},
+		"https://html.spec.whatwg.org/": {
+			"entity": "whatwg",
+			"fragments": {
+				"#imagebitmapoptions": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5641240179638272,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "In development",
+									"prefixed": false,
+									"status": "in-development"
+								},
+								"title": "ImageBitmapOptions",
+								"url": "https://html.spec.whatwg.org/#imagebitmapoptions"
+							}
+						]
+					},
+					"fragment": "#imagebitmapoptions"
+				}
+			},
+			"host": "html.spec.whatwg.org",
+			"url": "https://html.spec.whatwg.org/"
+		},
 		"https://html.spec.whatwg.org/multipage/": {
 			"entity": "whatwg",
 			"fragments": {
@@ -14058,9 +14112,9 @@
 								"status": {
 									"behindFlag": false,
 									"channel": null,
-									"originalStatus": "Proposed",
+									"originalStatus": "In development",
 									"prefixed": false,
-									"status": "under-consideration"
+									"status": "in-development"
 								},
 								"title": "BroadcastChannel",
 								"url": "http://www.whatwg.org/specs/web-apps/current-work/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts"
@@ -14548,26 +14602,6 @@
 						]
 					},
 					"fragment": "#dom-cva-reportvalidity"
-				},
-				"#dom-form-nameditem": {
-					"engines": {
-						"chromium": [
-							{
-								"engine": "chromium",
-								"id": 5725368270979072,
-								"status": {
-									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "No longer pursuing",
-									"prefixed": false,
-									"status": "not-planned"
-								},
-								"title": "Form-associated IMG elements (Removal)",
-								"url": "https://html.spec.whatwg.org/multipage/forms.html#dom-form-nameditem"
-							}
-						]
-					},
-					"fragment": "#dom-form-nameditem"
 				},
 				"#dom-form-requestautocomplete": {
 					"engines": {
@@ -18900,6 +18934,33 @@
 			},
 			"host": "tools.ietf.org",
 			"url": "https://tools.ietf.org/html/rfc6797"
+		},
+		"https://tools.ietf.org/html/rfc7034": {
+			"entity": "ietf",
+			"fragments": {
+				"": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5760041927835648,
+								"status": {
+									"behindFlag": false,
+									"channel": 4,
+									"originalStatus": "Enabled by default",
+									"prefixed": false,
+									"status": "supported"
+								},
+								"title": "X-Frame-Options",
+								"url": "https://tools.ietf.org/html/rfc7034"
+							}
+						]
+					},
+					"fragment": ""
+				}
+			},
+			"host": "tools.ietf.org",
+			"url": "https://tools.ietf.org/html/rfc7034"
 		},
 		"https://tools.ietf.org/html/rfc7465": {
 			"entity": "ietf",
