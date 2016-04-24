@@ -1,5 +1,5 @@
 {
-	"datetime": 1460584082216,
+	"datetime": 1461464509359,
 	"entities": {
 		"": [
 			""
@@ -2323,6 +2323,24 @@
 				"type": "rewrite"
 			}
 		],
+		"http://w3c.github.io/mediacapture-image/index.html": [
+			{
+				"reason": "remove default index (index.html).",
+				"redirectInfo": {
+					"pathname": "/mediacapture-image/"
+				},
+				"to": "http://w3c.github.io/mediacapture-image/",
+				"type": "rewrite"
+			},
+			{
+				"reason": "prefer https: over http:",
+				"redirectInfo": {
+					"protocol": "https:"
+				},
+				"to": "https://w3c.github.io/mediacapture-image/",
+				"type": "rewrite"
+			}
+		],
 		"http://w3c.github.io/mediacapture-main/getusermedia.html#mediastream": [
 			{
 				"reason": "prefer https: over http:",
@@ -2519,6 +2537,16 @@
 					"protocol": "https:"
 				},
 				"to": "https://w3c.github.io/webrtc-pc/",
+				"type": "rewrite"
+			}
+		],
+		"http://w3c.github.io/webrtc-pc/#peer-to-peer-data-api": [
+			{
+				"reason": "prefer https: over http:",
+				"redirectInfo": {
+					"protocol": "https:"
+				},
+				"to": "https://w3c.github.io/webrtc-pc/#peer-to-peer-data-api",
 				"type": "rewrite"
 			}
 		],
@@ -6352,6 +6380,19 @@
 				"type": "rewrite"
 			}
 		],
+		"https://html.spec.whatwg.org/#pause": [
+			{
+				"reason": "use multipage version of HTML Standard https://html.spec.whatwg.org/multipage/",
+				"redirectInfo": {
+					"hash": "#pause",
+					"host": "html.spec.whatwg.org",
+					"pathname": "/multipage/webappapis.html",
+					"protocol": "https:"
+				},
+				"to": "https://html.spec.whatwg.org/multipage/webappapis.html#pause",
+				"type": "rewrite"
+			}
+		],
 		"https://html.spec.whatwg.org/#the-applet-element": [
 			{
 				"reason": "use multipage version of HTML Standard https://html.spec.whatwg.org/multipage/",
@@ -7692,6 +7733,19 @@
 				"type": "redirect"
 			}
 		],
+		"https://www.w3.org/TR/payment-request/": [
+			{
+				"reason": "using http://www.specref.org/ data",
+				"redirectInfo": {
+					"host": "w3c.github.io",
+					"pathname": "/browser-payment-api/specs/paymentrequest.html",
+					"protocol": "https:",
+					"search": null
+				},
+				"to": "https://w3c.github.io/browser-payment-api/specs/paymentrequest.html",
+				"type": "wd2ed"
+			}
+		],
 		"https://www.w3.org/TR/pointerevents/": [
 			{
 				"reason": "using http://www.specref.org/ data",
@@ -8579,6 +8633,19 @@
 							},
 							{
 								"engine": "chromium",
+								"id": 5719033043222528,
+								"status": {
+									"behindFlag": false,
+									"channel": 52,
+									"originalStatus": "Deprecated",
+									"prefixed": false,
+									"status": "deprecated"
+								},
+								"title": "Deprecate and remove: WebKit legacy window.postMessage() overload",
+								"url": ""
+							},
+							{
+								"engine": "chromium",
 								"id": 5722125839106048,
 								"status": {
 									"behindFlag": false,
@@ -8896,10 +8963,10 @@
 								"id": "fido20webapis",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14291,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "FIDO 2.0 Web APIs",
 								"url": ""
@@ -9395,10 +9462,10 @@
 								"id": "wofffileformat20",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "WOFF File Format 2.0",
 								"url": "https://www.w3.org/TR/WOFF2/"
@@ -11560,6 +11627,26 @@
 					},
 					"fragment": ""
 				},
+				"#propdef-hyphens": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5642121184804864,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Proposed",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "CSS hyphens property",
+								"url": "https://drafts.csswg.org/css-text-3/#propdef-hyphens"
+							}
+						]
+					},
+					"fragment": "#propdef-hyphens"
+				},
 				"#tab-size": {
 					"engines": {
 						"edge": [
@@ -11756,6 +11843,26 @@
 						]
 					},
 					"fragment": "#appearance-switching"
+				},
+				"#content-selection": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5722186220306432,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "In development",
+									"prefixed": false,
+									"status": "in-development"
+								},
+								"title": "CSS user-select",
+								"url": "https://drafts.csswg.org/css-ui-4/#content-selection"
+							}
+						]
+					},
+					"fragment": "#content-selection"
 				}
 			},
 			"host": "drafts.csswg.org",
@@ -12959,11 +13066,11 @@
 								"engine": "edge",
 								"id": "webnotifications",
 								"status": {
-									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"behindFlag": true,
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Web Notifications",
 								"url": "https://www.w3.org/TR/notifications/"
@@ -13028,10 +13135,10 @@
 								"id": "webspeechapisynthesis",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Web Speech API (synthesis)",
 								"url": "https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"
@@ -13050,6 +13157,19 @@
 				"": {
 					"engines": {
 						"gecko": [
+							{
+								"engine": "gecko",
+								"id": "webspeech-recognition",
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "in-development",
+									"prefixed": false,
+									"status": "in-development"
+								},
+								"title": "Web Speech Recognition",
+								"url": "https://dvcs.w3.org/hg/speech-api/raw-file/tip/webspeechapi.html"
+							},
 							{
 								"engine": "gecko",
 								"id": "webspeech-synthesis",
@@ -13314,11 +13434,11 @@
 								"engine": "edge",
 								"id": "fetchapi",
 								"status": {
-									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"behindFlag": true,
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Fetch API",
 								"url": "https://fetch.spec.whatwg.org/"
@@ -13803,6 +13923,33 @@
 			},
 			"host": "github.com/tc39",
 			"url": "https://github.com/tc39/proposal-object-getownpropertydescriptors"
+		},
+		"https://github.com/w3c/manifest/issues/450": {
+			"entity": "w3c",
+			"fragments": {
+				"": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5715015369752576,
+								"status": {
+									"behindFlag": false,
+									"channel": 52,
+									"originalStatus": "Removed",
+									"prefixed": false,
+									"status": "removed"
+								},
+								"title": "Remove density property from Manifest's icons",
+								"url": "https://github.com/w3c/manifest/issues/450"
+							}
+						]
+					},
+					"fragment": ""
+				}
+			},
+			"host": "github.com/w3c",
+			"url": "https://github.com/w3c/manifest/issues/450"
 		},
 		"https://github.com/w3c/push-api/pull/182/files": {
 			"entity": "w3c",
@@ -15217,6 +15364,26 @@
 					},
 					"fragment": "#opening-the-input-stream"
 				},
+				"#pause": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5683408571203584,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Proposed",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "Pause event loop during modal dialogs",
+								"url": "https://html.spec.whatwg.org/#pause"
+							}
+						]
+					},
+					"fragment": "#pause"
+				},
 				"#processing-model-8": {
 					"engines": {
 						"chromium": [
@@ -16275,6 +16442,19 @@
 						"chromium": [
 							{
 								"engine": "chromium",
+								"id": 5630353511284736,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Proposed",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "Storage quota estimate() API",
+								"url": "https://storage.spec.whatwg.org"
+							},
+							{
+								"engine": "chromium",
 								"id": 5715811364765696,
 								"status": {
 									"behindFlag": false,
@@ -17156,6 +17336,21 @@
 				},
 				"#sec-exp-operator": {
 					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5461064690958336,
+								"status": {
+									"behindFlag": true,
+									"channel": 51,
+									"originalStatus": "Behind a flag",
+									"prefixed": false,
+									"status": "in-development"
+								},
+								"title": "Exponentiation Operator (** / **=)",
+								"url": "https://tc39.github.io/ecma262/#sec-exp-operator"
+							}
+						],
 						"edge": [
 							{
 								"engine": "edge",
@@ -18877,10 +19072,10 @@
 								"id": "opusaudioplayback",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Opus Audio Playback",
 								"url": "https://tools.ietf.org/html/rfc6716"
@@ -18952,6 +19147,19 @@
 									"status": "supported"
 								},
 								"title": "X-Frame-Options",
+								"url": "https://tools.ietf.org/html/rfc7034"
+							},
+							{
+								"engine": "chromium",
+								"id": 6450843930853376,
+								"status": {
+									"behindFlag": false,
+									"channel": 52,
+									"originalStatus": "Removed",
+									"prefixed": false,
+									"status": "removed"
+								},
+								"title": "Deprecate 'X-Frame-Options' support inside '<meta>'.",
 								"url": "https://tools.ietf.org/html/rfc7034"
 							}
 						]
@@ -19350,6 +19558,26 @@
 						]
 					},
 					"fragment": "#dfn-multientry"
+				},
+				"#dom-idbkeyrange-includes": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 6571252802125824,
+								"status": {
+									"behindFlag": false,
+									"channel": 52,
+									"originalStatus": "Enabled by default",
+									"prefixed": false,
+									"status": "supported"
+								},
+								"title": "IDBKeyRange.includes()",
+								"url": "https://w3c.github.io/IndexedDB/#dom-idbkeyrange-includes"
+							}
+						]
+					},
+					"fragment": "#dom-idbkeyrange-includes"
 				}
 			},
 			"host": "w3c.github.io",
@@ -19535,7 +19763,7 @@
 			"host": "w3c.github.io",
 			"url": "https://w3c.github.io/beacon/"
 		},
-		"https://w3c.github.io/browser-payment-api/": {
+		"https://w3c.github.io/browser-payment-api/specs/paymentrequest.html": {
 			"entity": "w3c",
 			"fragments": {
 				"": {
@@ -19552,7 +19780,7 @@
 									"status": "in-development"
 								},
 								"title": "Web Payments API",
-								"url": "https://w3c.github.io/browser-payment-api/"
+								"url": "https://www.w3.org/TR/payment-request/"
 							}
 						]
 					},
@@ -19560,7 +19788,7 @@
 				}
 			},
 			"host": "w3c.github.io",
-			"url": "https://w3c.github.io/browser-payment-api/"
+			"url": "https://w3c.github.io/browser-payment-api/specs/paymentrequest.html"
 		},
 		"https://w3c.github.io/clipboard-apis/": {
 			"entity": "w3c",
@@ -20021,9 +20249,9 @@
 								"status": {
 									"behindFlag": false,
 									"channel": null,
-									"originalStatus": "Under Consideration",
+									"originalStatus": "In Development",
 									"prefixed": false,
-									"status": "under-consideration"
+									"status": "in-development"
 								},
 								"title": "Canvas focus ring",
 								"url": "https://www.w3.org/TR/2dcontext/"
@@ -20107,10 +20335,10 @@
 								"id": "canvas2dpath2d",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Canvas 2D path2D",
 								"url": "https://www.w3.org/TR/2dcontext2/#path2d-objects"
@@ -20467,6 +20695,26 @@
 					},
 					"fragment": "#the-audio-element"
 				},
+				"#the-data-element": {
+					"engines": {
+						"edge": [
+							{
+								"engine": "edge",
+								"id": "dataelement",
+								"status": {
+									"behindFlag": false,
+									"channel": 14316,
+									"originalStatus": "Preview Release",
+									"prefixed": false,
+									"status": "supported"
+								},
+								"title": "<data> Element",
+								"url": "https://w3c.github.io/html/semantics.html#the-data-element"
+							}
+						]
+					},
+					"fragment": "#the-data-element"
+				},
 				"#the-dialog-element": {
 					"engines": {
 						"edge": [
@@ -20575,10 +20823,10 @@
 								"id": "outputelement",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "Under Consideration",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "under-consideration"
+									"status": "supported"
 								},
 								"title": "<output> Element",
 								"url": "https://w3c.github.io/html/semantics.html#the-output-element"
@@ -20635,10 +20883,10 @@
 								"id": "timeelement",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "Under Consideration",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "under-consideration"
+									"status": "supported"
 								},
 								"title": "<time> Element",
 								"url": "https://w3c.github.io/html/semantics.html#the-time-element"
@@ -20953,6 +21201,33 @@
 			},
 			"host": "w3c.github.io",
 			"url": "https://w3c.github.io/mediacapture-fromelement/"
+		},
+		"https://w3c.github.io/mediacapture-image/": {
+			"entity": "w3c",
+			"fragments": {
+				"": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 4843864737185792,
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Proposed",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "Mediastream Image Capture",
+								"url": "http://w3c.github.io/mediacapture-image/index.html"
+							}
+						]
+					},
+					"fragment": ""
+				}
+			},
+			"host": "w3c.github.io",
+			"url": "https://w3c.github.io/mediacapture-image/"
 		},
 		"https://w3c.github.io/mediacapture-main/": {
 			"entity": "w3c",
@@ -22891,6 +23166,21 @@
 								"url": "https://www.w3.org/TR/web-animations/"
 							}
 						],
+						"gecko": [
+							{
+								"engine": "gecko",
+								"id": "web-animations",
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "in-development",
+									"prefixed": false,
+									"status": "in-development"
+								},
+								"title": "Web Animations API",
+								"url": "https://w3c.github.io/web-animations/"
+							}
+						],
 						"webkit": [
 							{
 								"engine": "webkit",
@@ -23094,6 +23384,26 @@
 						]
 					},
 					"fragment": "#source-list-guid-matching"
+				},
+				"#unsafe-dynamic-usage": {
+					"engines": {
+						"chromium": [
+							{
+								"engine": "chromium",
+								"id": 5633814718054400,
+								"status": {
+									"behindFlag": false,
+									"channel": 52,
+									"originalStatus": "Enabled by default",
+									"prefixed": false,
+									"status": "supported"
+								},
+								"title": "CSP3: The 'unsafe-dynamic' source expression.",
+								"url": "https://w3c.github.io/webappsec-csp/#unsafe-dynamic-usage"
+							}
+						]
+					},
+					"fragment": "#unsafe-dynamic-usage"
 				}
 			},
 			"host": "w3c.github.io",
@@ -23281,7 +23591,7 @@
 								"id": 5636088701911040,
 								"status": {
 									"behindFlag": false,
-									"channel": 49,
+									"channel": 50,
 									"originalStatus": "Removed",
 									"prefixed": false,
 									"status": "removed"
@@ -23398,6 +23708,21 @@
 								},
 								"title": "Subresource Integrity",
 								"url": "https://www.w3.org/TR/SRI/"
+							}
+						],
+						"webkit": [
+							{
+								"engine": "webkit",
+								"id": "feature-subresource-integrity",
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Under Consideration",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "Subresource Integrity",
+								"url": "https://w3c.github.io/webappsec-subresource-integrity/"
 							}
 						]
 					},
@@ -23794,10 +24119,10 @@
 								"id": 5743313768415232,
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In development",
+									"channel": 51,
+									"originalStatus": "Enabled by default",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "RTCPeerConnection promise-based methods",
 								"url": "https://w3c.github.io/webrtc-pc/"
@@ -23876,6 +24201,26 @@
 						]
 					},
 					"fragment": ""
+				},
+				"#peer-to-peer-data-api": {
+					"engines": {
+						"edge": [
+							{
+								"engine": "edge",
+								"id": "rtcdatachannels",
+								"status": {
+									"behindFlag": false,
+									"channel": null,
+									"originalStatus": "Under Consideration",
+									"prefixed": false,
+									"status": "under-consideration"
+								},
+								"title": "RTC Data Channels",
+								"url": "http://w3c.github.io/webrtc-pc/#peer-to-peer-data-api"
+							}
+						]
+					},
+					"fragment": "#peer-to-peer-data-api"
 				},
 				"#rtcpeerconnection-interface-extensions": {
 					"engines": {
@@ -24133,7 +24478,7 @@
 									"prefixed": false,
 									"status": "in-development"
 								},
-								"title": "WebAudio: Add SpatialPannerNode",
+								"title": "WebAudio: Add Automation Support to PannerNode and AudioListener",
 								"url": "http://webaudio.github.io/web-audio-api/"
 							},
 							{
@@ -24243,10 +24588,10 @@
 								"id": 5677186052784128,
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In development",
+									"channel": 44,
+									"originalStatus": "Enabled by default",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "WebAudio: AudioBufferSourceNode.detune",
 								"url": "http://webaudio.github.io/web-audio-api/#AudioBufferSourceNode"
@@ -24391,9 +24736,9 @@
 								"engine": "chromium",
 								"id": 5264933985976320,
 								"status": {
-									"behindFlag": false,
-									"channel": 51,
-									"originalStatus": "In experimental framework",
+									"behindFlag": true,
+									"channel": 45,
+									"originalStatus": "Behind a flag",
 									"prefixed": false,
 									"status": "in-development"
 								},
@@ -24571,9 +24916,9 @@
 								"engine": "chromium",
 								"id": 5651917954875392,
 								"status": {
-									"behindFlag": false,
+									"behindFlag": true,
 									"channel": 51,
-									"originalStatus": "In experimental framework",
+									"originalStatus": "Behind a flag",
 									"prefixed": false,
 									"status": "in-development"
 								},
@@ -26002,10 +26347,10 @@
 								"id": "colorinputtype",
 								"status": {
 									"behindFlag": false,
-									"channel": null,
-									"originalStatus": "In Development",
+									"channel": 14316,
+									"originalStatus": "Preview Release",
 									"prefixed": false,
-									"status": "in-development"
+									"status": "supported"
 								},
 								"title": "Color input type",
 								"url": "https://www.w3.org/TR/html5/forms.html#color-state-(type=color)"
