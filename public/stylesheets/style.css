@@ -56,8 +56,9 @@ body {
     margin-bottom: .5rem;
 }
 
-.content p {
-    margin-bottom: 1em;
+.content p,
+.content dd {
+    margin-bottom: 1rem;
 }
 
 .content dt {
