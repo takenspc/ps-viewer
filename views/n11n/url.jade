@@ -97,8 +97,8 @@ block content
   h1= h1
   p Plateostatus normalizes specification URL of Platform Data data. This page describes how Plateostatus normalized them.
   +lastUpdated()
-  details.note(open)
-    summary Principals of URL normalization
+  div.note
+    h2 Principals of URL normalization
     p Plateostatus normalizes specification URL in accordance with following principles:
     dl
       dt Follow redirection
@@ -115,8 +115,8 @@ block content
     ul.toc-list
       each entity in entities
         +formatTOC(entity, data.entities[entity])
-  details.note(open)
-    summary Legends
+  div.note
+    h2 Legends
     dl
       dt redirect
       dd
