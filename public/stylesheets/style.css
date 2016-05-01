@@ -86,9 +86,9 @@ body {
 
 .note {
     background: #f5f5f5;
-    padding: .5rem 0 0 1rem;
-    margin-bottom: 1rem;
     border-bottom: #f5f5f5 thin solid;
+    margin-bottom: 1rem;
+    padding: .5rem 0 0 1rem;
 }
 
 .note h2 {
@@ -109,15 +109,15 @@ body {
 }
 
 .download {
-    text-align: center;
     margin: 2rem 0;
+    text-align: center;
 }
 
 .download a {
     background: #212121;
+    border-radius: .5rem;
     color: #f5f5f5;
     padding: .5rem 1rem;
-    border-radius: .5rem;
 }
 
 
@@ -214,10 +214,10 @@ body {
 }
 
 .nav-local li a {
-    display: block;
-    padding: .125em .5em .125em 1.5em;
     background: #212121 no-repeat .25em .375em / 1em 1em;
     color: #fff;
+    display: block;
+    padding: .125em .5em .125em 1.5em;
 }
 
 .nav-local li a.index {
