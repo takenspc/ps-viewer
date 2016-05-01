@@ -95,11 +95,24 @@ block content
   +navLocalEngines('/n11n/url/', engines, pageType)
   - var entities = Object.keys(data.entities).sort();
   h1= h1
-  p Plateostatus normalizes specification URL of platform status data. This page describes how Plateostatus normalized them.
+  p Plateostatus normalizes specification URLs of platform status data. This page describes how Plateostatus normalized them.
   +lastUpdated()
-  div.note
+  div.toc
+    h2 Table of Contents
+    ul.toc-list
+      each entity in entities
+        +formatTOC(entity, data.entities[entity])
+      li
+        a(href='#principles') Principals of URL normalization
+      li
+        a(href='legends') Legends
+
+  each entity in entities
+    +formatEntity(entity, data.entities[entity], data.urls)
+
+  div.note#principles
     h2 Principals of URL normalization
-    p Plateostatus normalizes specification URL in accordance with following principles:
+    p Plateostatus normalizes specification URLs in accordance with following principles:
     dl
       dt Follow redirection
       dd
@@ -110,12 +123,8 @@ block content
       dt Prefer Editor's Drafts over Working Drafts
       dd
         p Plateostatus aims to make implementations (browsers) information and specification information closer. In general, feedbacks from implementors (browser vendors) and others are firstly reflected to Editor's Draft. Thus Plateostatus assumes that Editor's Draft is closer to implementations (browsers) than Working Draft and others.
-  div.toc
-    h2 Table of Contents
-    ul.toc-list
-      each entity in entities
-        +formatTOC(entity, data.entities[entity])
-  div.note
+
+  div.note#legends
     h2 Legends
     dl
       dt redirect
@@ -127,5 +136,3 @@ block content
       dt wd2d
       dd
         p Replace URL of a Working Draft with URL of its Editor's Draft 
-  each entity in entities
-    +formatEntity(entity, data.entities[entity], data.urls)
