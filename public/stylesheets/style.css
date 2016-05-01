@@ -65,6 +65,13 @@ body {
     font-weight: bold;
 }
 
+.content hr {
+    color: #eeeeee;
+    display: block;
+    margin: 1rem 0;
+}
+
+
 .nav-util {
     display: flex;
     flex-wrap: wrap;
