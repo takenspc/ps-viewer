@@ -7,14 +7,6 @@ block content
    a(href='https://chrome.google.com/webstore/detail/platform-status-indicator/fgpenaabfgmnbkgfhocpijmbnjmakpfg') Download Platform Status Indicator from Chrome Web Store
   div.figure
     img(alt='', src='/images/addons/ps-indicator.png')
-  
-  h2 Q &amp; A
-  dl
-  dt Are ther any plans to support browsers other than Google Chrome
-  dd
-    p Yes, Plateostatus intents to make Platform Status Indicator WebExtentions compatible.
-    div.figure
-      img(alt='', src='/images/addons/ps-indicator-webextensions.png')
 
   section
     h2 Rational
@@ -22,3 +14,16 @@ block content
     p Specifications themselves rarely provide information of implemenations (browsers) of them. On the other hand major browser vendors maintain the platform statuses which show roadmaps of their browsers. If the specifications is listed in the platform statuses, it is possible to know how browser vendors think about the specification: the specification is implemented by browsers,  being developed or not intent to support.
     p However platform statuses are not integrated with specifications. Thus it is not guaranteed whether the specification is listed in the platform statuses until you check all of platform statuses.
     p To ease this situation, Platform Status Indicator shows whether a specification you are reading is listed in the browsers' platform statuses (Chrome, Edge, WebKit and Firefox).
+
+  section
+    h2 Q &amp; A
+    dl
+      dt Will this addon send URLs I am visiting?
+      dd
+        p No. Platform Status Indicator does not send any URLs you are visiting to any servers. 
+        p Instead, Platform Status Indicator downloads platform status data which contains every URL of specification that Platform Status Indicator supports. So Platform Status Indicator does not need to send any URLs to any servers.
+      dt Are ther any plans to support browsers other than Google Chrome
+      dd
+        p Yes, Plateostatus intents to make Platform Status Indicator <a href="https://developer.mozilla.org/Add-ons/WebExtensions">WebExtentions</a> compatible.
+        div.figure
+        img(alt='', src='/images/addons/ps-indicator-webextensions.png')
