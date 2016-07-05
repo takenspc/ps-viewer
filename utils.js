@@ -12,7 +12,7 @@ function getPlatformStatusId(engine, id) {
     return engine + '-' + encodeURIComponent(id);
 }
 
-const ENGINES = ['chromium', 'edge', 'webkit', 'gecko'];
+const ENGINES = ['chromium', 'edge', 'webkit', 'gecko', 'caniuse'];
 
 
 const PLATFORM_STATUS_URL_MAP = new Map([
@@ -20,6 +20,7 @@ const PLATFORM_STATUS_URL_MAP = new Map([
     ['edge', 'https://developer.microsoft.com/en-us/microsoft-edge/platform/status/'],
     ['webkit', 'https://webkit.org/status/#'],
     ['gecko', 'https://platform-status.mozilla.org/#'],
+    ['caniuse', 'http://caniuse.com/#feat='],
 ]);
 
 /**
